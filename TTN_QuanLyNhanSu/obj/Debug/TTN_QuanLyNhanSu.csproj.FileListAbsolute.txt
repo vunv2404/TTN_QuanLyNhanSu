@@ -1,0 +1,9 @@
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\bin\Debug\TTN_QuanLyNhanSu.exe.config
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\bin\Debug\TTN_QuanLyNhanSu.exe
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\bin\Debug\TTN_QuanLyNhanSu.pdb
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.Properties.Resources.resources
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.GenerateResource.cache
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.exe
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.pdb
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csprojAssemblyReference.cache
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.GUI.FormTrangChu.resources
