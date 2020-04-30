@@ -47,18 +47,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\HoSoNhanSuBUS.cs" />
     <Compile Include="DAL\DataProvider.cs" />
-    <Compile Include="GUI\BaoHiem\ChiTiet.cs">
+    <Compile Include="DTO\BaoHiem.cs" />
+    <Compile Include="DTO\BoPhan.cs" />
+    <Compile Include="DTO\DangKiChuyenCa.cs" />
+    <Compile Include="DTO\DangKiLamThem.cs" />
+    <Compile Include="DTO\DangKiNghi.cs" />
+    <Compile Include="DTO\DaoTao.cs" />
+    <Compile Include="DTO\DaoTaoNhanVien.cs" />
+    <Compile Include="DTO\HopDongNhanSu.cs" />
+    <Compile Include="DTO\HoSoNhanSu.cs" />
+    <Compile Include="DTO\KhenThuong.cs" />
+    <Compile Include="DTO\KhenThuongNhanVien.cs" />
+    <Compile Include="DTO\KyLuat.cs" />
+    <Compile Include="DTO\KyLuatNhanVien.cs" />
+    <Compile Include="DTO\Luong.cs" />
+    <Compile Include="DTO\PhongBan.cs" />
+    <Compile Include="GUI\BaoHiem\ChiTietBaoHiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\BaoHiem\ChiTiet.Designer.cs">
-      <DependentUpon>ChiTiet.cs</DependentUpon>
+    <Compile Include="GUI\BaoHiem\ChiTietBaoHiem.Designer.cs">
+      <DependentUpon>ChiTietBaoHiem.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\BaoHiem\DanhSachBaoHiem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\BaoHiem\DanhSachBaoHiem.Designer.cs">
       <DependentUpon>DanhSachBaoHiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BaoHiem\ThemBaoHiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BaoHiem\ThemBaoHiem.Designer.cs">
+      <DependentUpon>ThemBaoHiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BoPhan\ChiTietBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BoPhan\ChiTietBoPhan.Designer.cs">
+      <DependentUpon>ChiTietBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BoPhan\DanhSachBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BoPhan\DanhSachBoPhan.Designer.cs">
+      <DependentUpon>DanhSachBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BoPhan\ThemBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BoPhan\ThemBoPhan.Designer.cs">
+      <DependentUpon>ThemBoPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ChamCong\DangKiChuyenCa.cs">
       <SubType>Form</SubType>
@@ -77,6 +117,12 @@
     </Compile>
     <Compile Include="GUI\ChamCong\DangKiNghi.Designer.cs">
       <DependentUpon>DangKiNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DaoTao\ChiTietKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DaoTao\ChiTietKhoaHoc.Designer.cs">
+      <DependentUpon>ChiTietKhoaHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DaoTao\DaoTaoNhanVien.cs">
       <SubType>Form</SubType>
@@ -132,6 +178,12 @@
     <Compile Include="GUI\HoSoNhanSu\ToanBoNhanSu.Designer.cs">
       <DependentUpon>ToanBoNhanSu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\KhenThuong\ChiTietKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KhenThuong\ChiTietKhenThuong.Designer.cs">
+      <DependentUpon>ChiTietKhenThuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\KhenThuong\KhenThuongNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +201,12 @@
     </Compile>
     <Compile Include="GUI\KhenThuong\ThemQuyetDinhKhenThuong.Designer.cs">
       <DependentUpon>ThemQuyetDinhKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\KyLuat\ChiTietQuyetDinhKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KyLuat\ChiTietQuyetDinhKyLuat.Designer.cs">
+      <DependentUpon>ChiTietQuyetDinhKyLuat.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\KyLuat\KyLuatNhanVien.cs">
       <SubType>Form</SubType>
@@ -168,23 +226,47 @@
     <Compile Include="GUI\KyLuat\ThemQuyetDinhKyLuat.Designer.cs">
       <DependentUpon>ThemQuyetDinhKyLuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Luong\ChiTiet.cs">
+    <Compile Include="GUI\Luong\ChiTietLuongNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Luong\ChiTiet.Designer.cs">
-      <DependentUpon>ChiTiet.cs</DependentUpon>
+    <Compile Include="GUI\Luong\ChiTietLuongNV.Designer.cs">
+      <DependentUpon>ChiTietLuongNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Luong\DanhSach.cs">
+    <Compile Include="GUI\Luong\DanhSachLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Luong\DanhSach.Designer.cs">
-      <DependentUpon>DanhSach.cs</DependentUpon>
+    <Compile Include="GUI\Luong\DanhSachLuong.Designer.cs">
+      <DependentUpon>DanhSachLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Luong\ThemLuongNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Luong\ThemLuongNV.Designer.cs">
+      <DependentUpon>ThemLuongNV.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PhongBan\ChiTietPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhongBan\ChiTietPhongBan.Designer.cs">
+      <DependentUpon>ChiTietPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PhongBan\DanhSachPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhongBan\DanhSachPhongBan.Designer.cs">
+      <DependentUpon>DanhSachPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PhongBan\ThemPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhongBan\ThemPhongBan.Designer.cs">
+      <DependentUpon>ThemPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,8 +275,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TTN_QLNhanSuDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\BaoHiem\ChiTietBaoHiem.resx">
+      <DependentUpon>ChiTietBaoHiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\BaoHiem\DanhSachBaoHiem.resx">
       <DependentUpon>DanhSachBaoHiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BaoHiem\ThemBaoHiem.resx">
+      <DependentUpon>ThemBaoHiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BoPhan\ChiTietBoPhan.resx">
+      <DependentUpon>ChiTietBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BoPhan\DanhSachBoPhan.resx">
+      <DependentUpon>DanhSachBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BoPhan\ThemBoPhan.resx">
+      <DependentUpon>ThemBoPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChamCong\DangKiChuyenCa.resx">
       <DependentUpon>DangKiChuyenCa.cs</DependentUpon>
@@ -205,6 +302,9 @@
     <EmbeddedResource Include="GUI\ChamCong\DangKiNghi.resx">
       <DependentUpon>DangKiNghi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DaoTao\ChiTietKhoaHoc.resx">
+      <DependentUpon>ChiTietKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DaoTao\DaoTaoNhanVien.resx">
       <DependentUpon>DaoTaoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,23 +314,68 @@
     <EmbeddedResource Include="GUI\DaoTao\ThemKhoaHoc.resx">
       <DependentUpon>ThemKhoaHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HopDongNhanSu\ChiTietHopDong.resx">
+      <DependentUpon>ChiTietHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HopDongNhanSu\ThemMoiHopDong.resx">
+      <DependentUpon>ThemMoiHopDong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\HopDongNhanSu\ToanBoHopDong.resx">
       <DependentUpon>ToanBoHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HoSoNhanSu\ChiTietNhanSu.resx">
+      <DependentUpon>ChiTietNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HoSoNhanSu\ThemMoiNhanSu.resx">
+      <DependentUpon>ThemMoiNhanSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HoSoNhanSu\ToanBoNhanSu.resx">
       <DependentUpon>ToanBoNhanSu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KhenThuong\ChiTietKhenThuong.resx">
+      <DependentUpon>ChiTietKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KhenThuong\KhenThuongNhanVien.resx">
+      <DependentUpon>KhenThuongNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\KhenThuong\QuyetDinhKhenThuong.resx">
       <DependentUpon>QuyetDinhKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KhenThuong\ThemQuyetDinhKhenThuong.resx">
+      <DependentUpon>ThemQuyetDinhKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KyLuat\ChiTietQuyetDinhKyLuat.resx">
+      <DependentUpon>ChiTietQuyetDinhKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KyLuat\KyLuatNhanVien.resx">
+      <DependentUpon>KyLuatNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KyLuat\QuyetDinhKyLuat.resx">
       <DependentUpon>QuyetDinhKyLuat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Luong\DanhSach.resx">
-      <DependentUpon>DanhSach.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\KyLuat\ThemQuyetDinhKyLuat.resx">
+      <DependentUpon>ThemQuyetDinhKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Luong\ChiTietLuongNV.resx">
+      <DependentUpon>ChiTietLuongNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Luong\DanhSachLuong.resx">
+      <DependentUpon>DanhSachLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Luong\ThemLuongNV.resx">
+      <DependentUpon>ThemLuongNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhongBan\ChiTietPhongBan.resx">
+      <DependentUpon>ChiTietPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhongBan\DanhSachPhongBan.resx">
+      <DependentUpon>DanhSachPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhongBan\ThemPhongBan.resx">
+      <DependentUpon>ThemPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -265,9 +410,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BUS\" />
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

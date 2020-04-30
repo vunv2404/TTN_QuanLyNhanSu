@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace TTN_QuanLyNhanSu.GUI.Luong
 {
-    public partial class ChiTiet : Form
+    public partial class ThemLuongNV : Form
     {
-        public ChiTiet()
+        public ThemLuongNV()
         {
             InitializeComponent();
+        }
+
+        private void buttonThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

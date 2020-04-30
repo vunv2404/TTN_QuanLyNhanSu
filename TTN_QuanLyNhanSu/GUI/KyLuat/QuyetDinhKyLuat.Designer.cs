@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
-            this.kyLuatBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kyLuatTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.KyLuatTableAdapter();
+            this.buttonThoat = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonKyLuatNhanSu = new System.Windows.Forms.Button();
+            this.textBoxTimKiem = new System.Windows.Forms.TextBox();
+            this.buttonTimKiem = new System.Windows.Forms.Button();
+            this.buttonChiTiet = new System.Windows.Forms.Button();
+            this.buttonThem = new System.Windows.Forms.Button();
+            this.dataGridViewQuyetDinhKyLuat = new System.Windows.Forms.DataGridView();
             this.soQuyetDinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayHieuLucDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayHetHanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,26 +45,114 @@
             this.noiDungDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hinhThucDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kyLuatBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
+            this.kyLuatTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.KyLuatTableAdapter();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuyetDinhKyLuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kyLuatBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.buttonThoat);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.dataGridViewQuyetDinhKyLuat);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(934, 491);
             this.panel1.TabIndex = 1;
             // 
-            // dataGridView1
+            // buttonThoat
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThoat.Location = new System.Drawing.Point(728, 71);
+            this.buttonThoat.Name = "buttonThoat";
+            this.buttonThoat.Size = new System.Drawing.Size(100, 25);
+            this.buttonThoat.TabIndex = 6;
+            this.buttonThoat.Text = "Thoát";
+            this.buttonThoat.UseVisualStyleBackColor = true;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox1.Controls.Add(this.buttonKyLuatNhanSu);
+            this.groupBox1.Controls.Add(this.textBoxTimKiem);
+            this.groupBox1.Controls.Add(this.buttonTimKiem);
+            this.groupBox1.Controls.Add(this.buttonChiTiet);
+            this.groupBox1.Controls.Add(this.buttonThem);
+            this.groupBox1.Location = new System.Drawing.Point(26, 11);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(884, 54);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            // 
+            // buttonKyLuatNhanSu
+            // 
+            this.buttonKyLuatNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonKyLuatNhanSu.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKyLuatNhanSu.Location = new System.Drawing.Point(273, 18);
+            this.buttonKyLuatNhanSu.Name = "buttonKyLuatNhanSu";
+            this.buttonKyLuatNhanSu.Size = new System.Drawing.Size(134, 25);
+            this.buttonKyLuatNhanSu.TabIndex = 5;
+            this.buttonKyLuatNhanSu.Text = "Kỷ Luật N/S";
+            this.buttonKyLuatNhanSu.UseVisualStyleBackColor = true;
+            this.buttonKyLuatNhanSu.Click += new System.EventHandler(this.buttonKyLuatNhanSu_Click);
+            // 
+            // textBoxTimKiem
+            // 
+            this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTimKiem.Location = new System.Drawing.Point(441, 20);
+            this.textBoxTimKiem.Name = "textBoxTimKiem";
+            this.textBoxTimKiem.Size = new System.Drawing.Size(300, 25);
+            this.textBoxTimKiem.TabIndex = 4;
+            // 
+            // buttonTimKiem
+            // 
+            this.buttonTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTimKiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTimKiem.Location = new System.Drawing.Point(760, 19);
+            this.buttonTimKiem.Name = "buttonTimKiem";
+            this.buttonTimKiem.Size = new System.Drawing.Size(100, 25);
+            this.buttonTimKiem.TabIndex = 3;
+            this.buttonTimKiem.Text = "Tìm Kiếm";
+            this.buttonTimKiem.UseVisualStyleBackColor = true;
+            this.buttonTimKiem.Click += new System.EventHandler(this.buttonTimKiem_Click);
+            // 
+            // buttonChiTiet
+            // 
+            this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonChiTiet.Location = new System.Drawing.Point(130, 19);
+            this.buttonChiTiet.Name = "buttonChiTiet";
+            this.buttonChiTiet.Size = new System.Drawing.Size(100, 25);
+            this.buttonChiTiet.TabIndex = 2;
+            this.buttonChiTiet.Text = "Chi Tiết";
+            this.buttonChiTiet.UseVisualStyleBackColor = true;
+            this.buttonChiTiet.Click += new System.EventHandler(this.buttonChiTiet_Click);
+            // 
+            // buttonThem
+            // 
+            this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThem.Location = new System.Drawing.Point(6, 18);
+            this.buttonThem.Name = "buttonThem";
+            this.buttonThem.Size = new System.Drawing.Size(100, 25);
+            this.buttonThem.TabIndex = 1;
+            this.buttonThem.Text = " + Thêm";
+            this.buttonThem.UseVisualStyleBackColor = true;
+            this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
+            // 
+            // dataGridViewQuyetDinhKyLuat
+            // 
+            this.dataGridViewQuyetDinhKyLuat.AutoGenerateColumns = false;
+            this.dataGridViewQuyetDinhKyLuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewQuyetDinhKyLuat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.soQuyetDinhDataGridViewTextBoxColumn,
             this.ngayHieuLucDataGridViewTextBoxColumn,
             this.ngayHetHanDataGridViewTextBoxColumn,
@@ -68,25 +160,11 @@
             this.noiDungDataGridViewTextBoxColumn,
             this.hinhThucDataGridViewTextBoxColumn,
             this.trangThaiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.kyLuatBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 176);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(927, 312);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // tTN_QLNhanSuDataSet
-            // 
-            this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
-            this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kyLuatBindingSource
-            // 
-            this.kyLuatBindingSource.DataMember = "KyLuat";
-            this.kyLuatBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
-            // 
-            // kyLuatTableAdapter
-            // 
-            this.kyLuatTableAdapter.ClearBeforeFill = true;
+            this.dataGridViewQuyetDinhKyLuat.DataSource = this.kyLuatBindingSource;
+            this.dataGridViewQuyetDinhKyLuat.Location = new System.Drawing.Point(4, 108);
+            this.dataGridViewQuyetDinhKyLuat.Name = "dataGridViewQuyetDinhKyLuat";
+            this.dataGridViewQuyetDinhKyLuat.Size = new System.Drawing.Size(927, 380);
+            this.dataGridViewQuyetDinhKyLuat.TabIndex = 0;
             // 
             // soQuyetDinhDataGridViewTextBoxColumn
             // 
@@ -134,6 +212,20 @@
             this.trangThaiDataGridViewTextBoxColumn.HeaderText = "Trạng Thái";
             this.trangThaiDataGridViewTextBoxColumn.Name = "trangThaiDataGridViewTextBoxColumn";
             // 
+            // kyLuatBindingSource
+            // 
+            this.kyLuatBindingSource.DataMember = "KyLuat";
+            this.kyLuatBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
+            // 
+            // tTN_QLNhanSuDataSet
+            // 
+            this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
+            this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kyLuatTableAdapter
+            // 
+            this.kyLuatTableAdapter.ClearBeforeFill = true;
+            // 
             // QuyetDinhKyLuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,12 +233,15 @@
             this.ClientSize = new System.Drawing.Size(937, 494);
             this.Controls.Add(this.panel1);
             this.Name = "QuyetDinhKyLuat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuyetDinhKyLuat";
             this.Load += new System.EventHandler(this.QuyetDinhKyLuat_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuyetDinhKyLuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kyLuatBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,7 +249,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewQuyetDinhKyLuat;
         private TTN_QLNhanSuDataSet tTN_QLNhanSuDataSet;
         private System.Windows.Forms.BindingSource kyLuatBindingSource;
         private TTN_QLNhanSuDataSetTableAdapters.KyLuatTableAdapter kyLuatTableAdapter;
@@ -165,5 +260,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn noiDungDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hinhThucDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button buttonThoat;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonKyLuatNhanSu;
+        private System.Windows.Forms.TextBox textBoxTimKiem;
+        private System.Windows.Forms.Button buttonTimKiem;
+        private System.Windows.Forms.Button buttonChiTiet;
+        private System.Windows.Forms.Button buttonThem;
     }
 }

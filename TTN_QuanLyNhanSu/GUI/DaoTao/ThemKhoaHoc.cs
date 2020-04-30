@@ -16,5 +16,15 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         {
             InitializeComponent();
         }
+
+        private void buttonQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonLuu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

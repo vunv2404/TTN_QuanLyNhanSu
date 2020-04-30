@@ -23,5 +23,50 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
             this.khenThuongTableAdapter.Fill(this.tTN_QLNhanSuDataSet.KhenThuong);
 
         }
+
+        private void buttonThem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemQuyetDinhKhenThuong formThemQuyetDinhKhenThuong = new ThemQuyetDinhKhenThuong();
+            formThemQuyetDinhKhenThuong.FormClosed += FormThemQuyetDinhKhenThuong_FormClosed;
+            formThemQuyetDinhKhenThuong.Show();
+        }
+
+        private void FormThemQuyetDinhKhenThuong_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void buttonChiTiet_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChiTietKhenThuong formChiTietKhenThuong = new ChiTietKhenThuong();
+            formChiTietKhenThuong.FormClosed += FormChiTietKhenThuong_FormClosed;
+            formChiTietKhenThuong.Show();
+
+        }
+
+        private void FormChiTietKhenThuong_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void buttonKhenThuongNhanSu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            KhenThuongNhanVien formKhenThuongNhanVien = new KhenThuongNhanVien();
+            formKhenThuongNhanVien.FormClosed += FormKhenThuongNhanVien_FormClosed;
+            formKhenThuongNhanVien.Show();
+        }
+
+        private void FormKhenThuongNhanVien_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace TTN_QuanLyNhanSu.GUI.BaoHiem
 {
-    public partial class ChiTiet : Form
+    public partial class ChiTietBaoHiem : Form
     {
-        public ChiTiet()
+        public ChiTietBaoHiem()
         {
             InitializeComponent();
+        }
+
+        private void buttonCapNhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonquaylai_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

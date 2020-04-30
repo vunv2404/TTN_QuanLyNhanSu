@@ -23,5 +23,15 @@ namespace TTN_QuanLyNhanSu.GUI.ChamCong
             this.dangKilamThemTableAdapter.Fill(this.tTN_QLNhanSuDataSet.DangKilamThem);
 
         }
+
+        private void buttonLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

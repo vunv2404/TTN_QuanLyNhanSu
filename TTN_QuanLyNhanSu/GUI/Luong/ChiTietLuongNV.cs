@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace TTN_QuanLyNhanSu.GUI.Luong
 {
-    public partial class DanhSach : Form
+    public partial class ChiTietLuongNV : Form
     {
-        public DanhSach()
+        public ChiTietLuongNV()
         {
             InitializeComponent();
         }
 
-        private void DanhSach_Load(object sender, EventArgs e)
+        private void buttonCapNhat_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.Luong' table. You can move, or remove it, as needed.
-            this.luongTableAdapter.Fill(this.tTN_QLNhanSuDataSet.Luong);
 
+        }
+
+        private void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

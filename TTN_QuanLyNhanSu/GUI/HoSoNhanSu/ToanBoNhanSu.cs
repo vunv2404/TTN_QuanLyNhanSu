@@ -23,5 +23,41 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             this.hoSoNhanSuTableAdapter.Fill(this.tTN_QLNhanSuDataSet.HoSoNhanSu);
 
         }
+
+        private void buttonThem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemMoiNhanSu formThemMoiNhanSu = new ThemMoiNhanSu();
+            formThemMoiNhanSu.FormClosed += FormThemMoiNhanSu_FormClosed;
+            formThemMoiNhanSu.Show();
+        }
+
+        private void FormThemMoiNhanSu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void buttonChiTiet_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChiTietNhanSu formChiTietNhanSu = new ChiTietNhanSu();
+            formChiTietNhanSu.FormClosed += FormChiTietNhanSu_FormClosed;
+            formChiTietNhanSu.Show();
+        }
+
+        private void FormChiTietNhanSu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void buttonTimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
