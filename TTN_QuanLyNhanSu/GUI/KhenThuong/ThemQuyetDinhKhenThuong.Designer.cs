@@ -36,7 +36,6 @@
             this.textBoxNoiDung = new System.Windows.Forms.TextBox();
             this.textBoxHinhThuc = new System.Windows.Forms.TextBox();
             this.textBoxSoTien = new System.Windows.Forms.TextBox();
-            this.textBoxTrangThai = new System.Windows.Forms.TextBox();
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,7 +47,9 @@
             this.buttonLuu = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +62,6 @@
             this.panel1.Controls.Add(this.textBoxNoiDung);
             this.panel1.Controls.Add(this.textBoxHinhThuc);
             this.panel1.Controls.Add(this.textBoxSoTien);
-            this.panel1.Controls.Add(this.textBoxTrangThai);
             this.panel1.Controls.Add(this.buttonQuayLai);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
@@ -82,7 +82,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(152, 25);
+            this.label8.Location = new System.Drawing.Point(133, 25);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(407, 33);
             this.label8.TabIndex = 18;
@@ -135,14 +135,6 @@
             this.textBoxSoTien.Name = "textBoxSoTien";
             this.textBoxSoTien.Size = new System.Drawing.Size(443, 25);
             this.textBoxSoTien.TabIndex = 13;
-            // 
-            // textBoxTrangThai
-            // 
-            this.textBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTrangThai.Location = new System.Drawing.Point(158, 362);
-            this.textBoxTrangThai.Name = "textBoxTrangThai";
-            this.textBoxTrangThai.Size = new System.Drawing.Size(443, 25);
-            this.textBoxTrangThai.TabIndex = 14;
             // 
             // buttonQuayLai
             // 
@@ -220,7 +212,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(34, 370);
+            this.label7.Location = new System.Drawing.Point(34, 366);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 17);
             this.label7.TabIndex = 8;
@@ -248,11 +240,25 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxTrangThai);
             this.groupBox1.Location = new System.Drawing.Point(22, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(600, 319);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxTrangThai
+            // 
+            this.comboBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTrangThai.FormattingEnabled = true;
+            this.comboBoxTrangThai.Items.AddRange(new object[] {
+            "Phê Duyệt",
+            "Đang Phê Duyệt",
+            "Không Phê Duyệt"});
+            this.comboBoxTrangThai.Location = new System.Drawing.Point(136, 278);
+            this.comboBoxTrangThai.Name = "comboBoxTrangThai";
+            this.comboBoxTrangThai.Size = new System.Drawing.Size(443, 25);
+            this.comboBoxTrangThai.TabIndex = 0;
             // 
             // ThemQuyetDinhKhenThuong
             // 
@@ -265,6 +271,7 @@
             this.Text = "ThemQuyetDinhKhenThuong";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -279,7 +286,6 @@
         private System.Windows.Forms.TextBox textBoxNoiDung;
         private System.Windows.Forms.TextBox textBoxHinhThuc;
         private System.Windows.Forms.TextBox textBoxSoTien;
-        private System.Windows.Forms.TextBox textBoxTrangThai;
         private System.Windows.Forms.Button buttonQuayLai;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -291,5 +297,6 @@
         private System.Windows.Forms.Button buttonLuu;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox comboBoxTrangThai;
     }
 }

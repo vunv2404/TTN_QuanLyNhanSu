@@ -30,17 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.buttonQuayLai = new System.Windows.Forms.Button();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTimKiem = new System.Windows.Forms.ComboBox();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.buttonChiTiet = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
             this.dataGridViewHoSoNhanSu = new System.Windows.Forms.DataGridView();
-            this.hoSoNhanSuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
-            this.tTNQLNhanSuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hoSoNhanSuTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.HoSoNhanSuTableAdapter();
             this.maNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoTenNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +55,10 @@
             this.hocHamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chungChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chuyenMonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoSoNhanSuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
+            this.tTNQLNhanSuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hoSoNhanSuTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.HoSoNhanSuTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoSoNhanSu)).BeginInit();
@@ -67,7 +70,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.buttonQuayLai);
+            this.panel1.Controls.Add(this.textBoxTong);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewHoSoNhanSu);
             this.panel1.Location = new System.Drawing.Point(0, 1);
@@ -75,11 +80,21 @@
             this.panel1.Size = new System.Drawing.Size(1148, 489);
             this.panel1.TabIndex = 0;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label10.Location = new System.Drawing.Point(6, 92);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 17);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Tổng";
+            // 
             // buttonQuayLai
             // 
             this.buttonQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonQuayLai.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuayLai.Location = new System.Drawing.Point(971, 86);
+            this.buttonQuayLai.Location = new System.Drawing.Point(971, 79);
             this.buttonQuayLai.Name = "buttonQuayLai";
             this.buttonQuayLai.Size = new System.Drawing.Size(100, 25);
             this.buttonQuayLai.TabIndex = 5;
@@ -87,9 +102,18 @@
             this.buttonQuayLai.UseVisualStyleBackColor = true;
             this.buttonQuayLai.Click += new System.EventHandler(this.buttonQuayLai_Click);
             // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(51, 87);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 49;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox1.Controls.Add(this.comboBoxTimKiem);
             this.groupBox1.Controls.Add(this.textBoxTimKiem);
             this.groupBox1.Controls.Add(this.buttonTimKiem);
             this.groupBox1.Controls.Add(this.buttonChiTiet);
@@ -100,12 +124,25 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
+            // comboBoxTimKiem
+            // 
+            this.comboBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxTimKiem.FormattingEnabled = true;
+            this.comboBoxTimKiem.Items.AddRange(new object[] {
+            "Mã Nhân Viên",
+            "Tên Nhân Viên",
+            "Bộ Phận"});
+            this.comboBoxTimKiem.Location = new System.Drawing.Point(463, 18);
+            this.comboBoxTimKiem.Name = "comboBoxTimKiem";
+            this.comboBoxTimKiem.Size = new System.Drawing.Size(186, 25);
+            this.comboBoxTimKiem.TabIndex = 5;
+            // 
             // textBoxTimKiem
             // 
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTimKiem.Location = new System.Drawing.Point(508, 18);
+            this.textBoxTimKiem.Location = new System.Drawing.Point(655, 18);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(378, 25);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(256, 25);
             this.textBoxTimKiem.TabIndex = 4;
             // 
             // buttonTimKiem
@@ -122,6 +159,7 @@
             // 
             // buttonChiTiet
             // 
+            this.buttonChiTiet.Enabled = false;
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChiTiet.Location = new System.Drawing.Point(212, 17);
@@ -169,25 +207,7 @@
             this.dataGridViewHoSoNhanSu.Name = "dataGridViewHoSoNhanSu";
             this.dataGridViewHoSoNhanSu.Size = new System.Drawing.Size(1142, 369);
             this.dataGridViewHoSoNhanSu.TabIndex = 0;
-            // 
-            // hoSoNhanSuBindingSource
-            // 
-            this.hoSoNhanSuBindingSource.DataMember = "HoSoNhanSu";
-            this.hoSoNhanSuBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
-            // 
-            // tTN_QLNhanSuDataSet
-            // 
-            this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
-            this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tTNQLNhanSuDataSetBindingSource
-            // 
-            this.tTNQLNhanSuDataSetBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
-            this.tTNQLNhanSuDataSetBindingSource.Position = 0;
-            // 
-            // hoSoNhanSuTableAdapter
-            // 
-            this.hoSoNhanSuTableAdapter.ClearBeforeFill = true;
+            this.dataGridViewHoSoNhanSu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHoSoNhanSu_CellClick);
             // 
             // maNVDataGridViewTextBoxColumn
             // 
@@ -284,6 +304,25 @@
             this.chuyenMonDataGridViewTextBoxColumn.HeaderText = "chuyên Môn";
             this.chuyenMonDataGridViewTextBoxColumn.Name = "chuyenMonDataGridViewTextBoxColumn";
             // 
+            // hoSoNhanSuBindingSource
+            // 
+            this.hoSoNhanSuBindingSource.DataMember = "HoSoNhanSu";
+            this.hoSoNhanSuBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
+            // 
+            // tTN_QLNhanSuDataSet
+            // 
+            this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
+            this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tTNQLNhanSuDataSetBindingSource
+            // 
+            this.tTNQLNhanSuDataSetBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
+            this.tTNQLNhanSuDataSetBindingSource.Position = 0;
+            // 
+            // hoSoNhanSuTableAdapter
+            // 
+            this.hoSoNhanSuTableAdapter.ClearBeforeFill = true;
+            // 
             // ToanBoNhanSu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,6 +334,7 @@
             this.Text = "ToanBoNhanSu";
             this.Load += new System.EventHandler(this.ToanBoNhanSu_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoSoNhanSu)).EndInit();
@@ -334,5 +374,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn hocHamDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn chungChiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn chuyenMonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox comboBoxTimKiem;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxTong;
     }
 }

@@ -12,6 +12,20 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
 {
     public partial class DanhSachPhongBan : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Button Thêm : sang form thêm 1 phòng ban mới
+        /// 
+        /// - Button CHi Tiết: click vào 1 dòng thì nút này mới hiện lên.
+        /// 
+        /// - Tìm kiếm theo tên phòng ban
+        /// 
+        /// - Textbox tổng là tổng só dòng có trên datagrid view.
+        /// 
+        /// 
+        /// </summary>
+
         public DanhSachPhongBan()
         {
             InitializeComponent();

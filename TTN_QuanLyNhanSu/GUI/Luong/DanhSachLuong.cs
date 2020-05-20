@@ -12,6 +12,18 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
 {
     public partial class DanhSachLuong : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Button Them sang form thêm mới .
+        /// 
+        /// - Button CHitieets : click 1 dòng trên dataGrid nút này dc mở và sang form chi tiết.
+        /// 
+        /// - Tìm Kiếm theo tên nhân viên.
+        /// 
+        /// - textBox Tổng là số bản ghi hiện tại có trên datagridView
+        /// </summary>
+
         public DanhSachLuong()
         {
             InitializeComponent();

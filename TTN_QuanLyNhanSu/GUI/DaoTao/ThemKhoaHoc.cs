@@ -12,6 +12,12 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
 {
     public partial class ThemKhoaHoc : Form
     {
+        /// <summary>
+        /// 
+        /// - xử lý ngày lập .
+        /// - trước khi thêm tạo thông báo có chắc chắn thêm
+        /// 
+        /// </summary>
         public ThemKhoaHoc()
         {
             InitializeComponent();

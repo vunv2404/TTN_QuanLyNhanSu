@@ -43,7 +43,10 @@
             this.noiCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTimKiem = new System.Windows.Forms.ComboBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.buttonChiTiet = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.baoHiemBindingSource)).BeginInit();
@@ -83,7 +86,7 @@
             // 
             this.buttonQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonQuayLai.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuayLai.Location = new System.Drawing.Point(620, 81);
+            this.buttonQuayLai.Location = new System.Drawing.Point(670, 88);
             this.buttonQuayLai.Name = "buttonQuayLai";
             this.buttonQuayLai.Size = new System.Drawing.Size(90, 30);
             this.buttonQuayLai.TabIndex = 21;
@@ -94,9 +97,9 @@
             // textBoxTimKiem
             // 
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTimKiem.Location = new System.Drawing.Point(280, 22);
+            this.textBoxTimKiem.Location = new System.Drawing.Point(482, 22);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(349, 25);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(159, 25);
             this.textBoxTimKiem.TabIndex = 25;
             // 
             // dataGridViewdsBaoHiem
@@ -111,7 +114,7 @@
             this.noiCapDataGridViewTextBoxColumn,
             this.ngayCapDataGridViewTextBoxColumn});
             this.dataGridViewdsBaoHiem.DataSource = this.baoHiemBindingSource;
-            this.dataGridViewdsBaoHiem.Location = new System.Drawing.Point(3, 125);
+            this.dataGridViewdsBaoHiem.Location = new System.Drawing.Point(3, 129);
             this.dataGridViewdsBaoHiem.Name = "dataGridViewdsBaoHiem";
             this.dataGridViewdsBaoHiem.Size = new System.Drawing.Size(791, 393);
             this.dataGridViewdsBaoHiem.TabIndex = 26;
@@ -159,6 +162,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.textBoxTong);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewdsBaoHiem);
             this.panel1.Controls.Add(this.buttonQuayLai);
@@ -167,8 +172,27 @@
             this.panel1.Size = new System.Drawing.Size(797, 526);
             this.panel1.TabIndex = 2;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label10.Location = new System.Drawing.Point(8, 99);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 17);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Tổng";
+            // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(53, 94);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 49;
+            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxTimKiem);
             this.groupBox1.Controls.Add(this.buttonTimKiem);
             this.groupBox1.Controls.Add(this.buttonChiTiet);
             this.groupBox1.Controls.Add(this.textBoxTimKiem);
@@ -178,6 +202,18 @@
             this.groupBox1.Size = new System.Drawing.Size(747, 64);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxTimKiem
+            // 
+            this.comboBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTimKiem.FormattingEnabled = true;
+            this.comboBoxTimKiem.Items.AddRange(new object[] {
+            "Mã Nhân Viên",
+            "Tên Nhân Viên"});
+            this.comboBoxTimKiem.Location = new System.Drawing.Point(308, 22);
+            this.comboBoxTimKiem.Name = "comboBoxTimKiem";
+            this.comboBoxTimKiem.Size = new System.Drawing.Size(161, 25);
+            this.comboBoxTimKiem.TabIndex = 26;
             // 
             // buttonTimKiem
             // 
@@ -193,9 +229,10 @@
             // 
             // buttonChiTiet
             // 
+            this.buttonChiTiet.Enabled = false;
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChiTiet.Location = new System.Drawing.Point(154, 19);
+            this.buttonChiTiet.Location = new System.Drawing.Point(120, 19);
             this.buttonChiTiet.Name = "buttonChiTiet";
             this.buttonChiTiet.Size = new System.Drawing.Size(90, 30);
             this.buttonChiTiet.TabIndex = 21;
@@ -217,6 +254,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewdsBaoHiem)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -241,5 +279,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn soBaoHiemYTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn noiCapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayCapDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox comboBoxTimKiem;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxTong;
     }
 }

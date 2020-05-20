@@ -30,8 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTimKiem = new System.Windows.Forms.ComboBox();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.buttonChiTiet = new System.Windows.Forms.Button();
@@ -56,6 +59,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBoxTong);
             this.panel1.Controls.Add(this.buttonThoat);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewDanhSachBoPhan);
@@ -64,11 +69,29 @@
             this.panel1.Size = new System.Drawing.Size(869, 515);
             this.panel1.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label1.Location = new System.Drawing.Point(11, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Tổng";
+            // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(56, 72);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 5;
+            // 
             // buttonThoat
             // 
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.Location = new System.Drawing.Point(652, 71);
+            this.buttonThoat.Location = new System.Drawing.Point(720, 70);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(100, 25);
             this.buttonThoat.TabIndex = 6;
@@ -79,29 +102,42 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox1.Controls.Add(this.comboBoxTimKiem);
             this.groupBox1.Controls.Add(this.textBoxTimKiem);
             this.groupBox1.Controls.Add(this.buttonTimKiem);
             this.groupBox1.Controls.Add(this.buttonChiTiet);
             this.groupBox1.Controls.Add(this.buttonThem);
             this.groupBox1.Location = new System.Drawing.Point(23, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(797, 54);
+            this.groupBox1.Size = new System.Drawing.Size(825, 54);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxTimKiem
+            // 
+            this.comboBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTimKiem.FormattingEnabled = true;
+            this.comboBoxTimKiem.Items.AddRange(new object[] {
+            "Tên Bộ Phận",
+            "Tên Phòng Ban"});
+            this.comboBoxTimKiem.Location = new System.Drawing.Point(344, 19);
+            this.comboBoxTimKiem.Name = "comboBoxTimKiem";
+            this.comboBoxTimKiem.Size = new System.Drawing.Size(161, 25);
+            this.comboBoxTimKiem.TabIndex = 27;
             // 
             // textBoxTimKiem
             // 
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTimKiem.Location = new System.Drawing.Point(343, 19);
+            this.textBoxTimKiem.Location = new System.Drawing.Point(511, 19);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(300, 25);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(175, 25);
             this.textBoxTimKiem.TabIndex = 4;
             // 
             // buttonTimKiem
             // 
             this.buttonTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTimKiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTimKiem.Location = new System.Drawing.Point(649, 19);
+            this.buttonTimKiem.Location = new System.Drawing.Point(696, 19);
             this.buttonTimKiem.Name = "buttonTimKiem";
             this.buttonTimKiem.Size = new System.Drawing.Size(100, 25);
             this.buttonTimKiem.TabIndex = 3;
@@ -111,9 +147,10 @@
             // 
             // buttonChiTiet
             // 
+            this.buttonChiTiet.Enabled = false;
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChiTiet.Location = new System.Drawing.Point(190, 18);
+            this.buttonChiTiet.Location = new System.Drawing.Point(145, 18);
             this.buttonChiTiet.Name = "buttonChiTiet";
             this.buttonChiTiet.Size = new System.Drawing.Size(100, 25);
             this.buttonChiTiet.TabIndex = 2;
@@ -125,7 +162,7 @@
             // 
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThem.Location = new System.Drawing.Point(73, 18);
+            this.buttonThem.Location = new System.Drawing.Point(34, 18);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(100, 25);
             this.buttonThem.TabIndex = 1;
@@ -214,6 +251,7 @@
             this.Text = "DanhSachBoPhan";
             this.Load += new System.EventHandler(this.DanhSachBoPhan_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDanhSachBoPhan)).EndInit();
@@ -242,5 +280,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dienThoaiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn faxDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxTong;
+        private System.Windows.Forms.ComboBox comboBoxTimKiem;
     }
 }

@@ -12,6 +12,16 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 {
     public partial class DanhSachBoPhan : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Tìm kiếm bộ phận theo tên phòng ban , tên bộ phận (combobox tìm kiếm)
+        /// 
+        /// - Chọn 1 dòng trên dataGrid mới cho hiện nút chi tiết .
+        ///     
+        /// - Textbox tổng là tổng dòng dữ liệu đang có trên datagridview
+        /// </summary>
+
         public DanhSachBoPhan()
         {
             InitializeComponent();

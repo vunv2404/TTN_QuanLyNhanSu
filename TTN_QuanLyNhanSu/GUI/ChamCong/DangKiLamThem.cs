@@ -12,6 +12,21 @@ namespace TTN_QuanLyNhanSu.GUI.ChamCong
 {
     public partial class DangKiLamThem : Form
     {
+
+        /// <summary>
+        /// - Ném dữ liệu từ dưới database lên combobox mã nhân viên.
+        /// 
+        /// - textBox tên nhân viên cũng đồng bộ tên nhaanvieen theo mã
+        /// 
+        /// - Xử lí dữ liệu trước khi thêm ,thiếu thì đặt focus vào đúng ô thiếu.
+        /// 
+        /// - hiện thông báo có muốn thêm không
+        /// 
+        /// - Xử lí dữ liệu ngày
+        /// 
+        /// - Textbox tổng là tổng dòng dữ liệu đang có trên datagridview
+        /// 
+        /// </summary>
         public DangKiLamThem()
         {
             InitializeComponent();

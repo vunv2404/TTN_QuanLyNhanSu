@@ -12,6 +12,23 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
 {
     public partial class ToanBoHopDong : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Bấm vào thêm mới sang form thêm mới.
+        /// 
+        /// - click vào 1 dòng trên data grid thì nút chi tiết mới mở khóa .
+        /// 
+        /// - Ném dữ liệu của dòng dataGrid sang bên chi tiết hợp đồng.
+        /// 
+        /// - Tìm kiếm theo 2 loại tên nhân viên và loại hợp đồng.
+        /// 
+        /// - TextBox Tìm kiếm là nhập nộ dung tìm kiếm theo 1 trong 2 loại trên.
+        /// 
+        /// - Textbox tổng là tổng dòng dữ liệu đang có trên datagridview
+        /// 
+        /// </summary>
+
         public ToanBoHopDong()
         {
             InitializeComponent();

@@ -12,6 +12,17 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
 {
     public partial class ThemQuyetDinhKyLuat : Form
     {
+
+        /// <summary>
+        /// 
+        /// - xử Lý ngày (regex)
+        /// 
+        /// - Trạng thái có 3 trạng thái đã được thêm sẵn.
+        /// 
+        /// - thông báo có muốn thêm trước khi lưu thay đổi
+        /// 
+        /// </summary>
+
         public ThemQuyetDinhKyLuat()
         {
             InitializeComponent();

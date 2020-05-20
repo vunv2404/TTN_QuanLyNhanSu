@@ -40,3 +40,6 @@ C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TT
 C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.GUI.PhongBan.DanhSachPhongBan.resources
 C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.GUI.PhongBan.ThemPhongBan.resources
 C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csprojAssemblyReference.cache
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.GUI.KyLuat.DanhSachNVBiKL.resources
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.GUI.KhenThuong.DanhSachNVDuocKT.resources
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.GUI.DaoTao.DanhSachNVDiDaoTao.resources

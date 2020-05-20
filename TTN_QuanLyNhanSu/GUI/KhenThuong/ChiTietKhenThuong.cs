@@ -12,6 +12,21 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
 {
     public partial class ChiTietKhenThuong : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Ném dữu liệu bên bảng danh sách khên thưởng sang vứt lên các textbox, combobox .
+        /// 
+        /// - trạng thái có 3 trang thái : phê duyệt , đang phê duyệt , không phê duyệt.
+        /// 
+        /// - xử lý ngày(regex)
+        /// 
+        /// - trước khi bấm lưu thông báo có muốn lưu thay đổi.
+        /// 
+        /// - 
+        /// 
+        /// </summary>
+
         public ChiTietKhenThuong()
         {
             InitializeComponent();

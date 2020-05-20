@@ -43,13 +43,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxLoaiHopDong = new System.Windows.Forms.ComboBox();
+            this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.textBoxNgayHetHan = new System.Windows.Forms.TextBox();
             this.textBoxNgayHieuLuc = new System.Windows.Forms.TextBox();
             this.textBoxSoHopDong = new System.Windows.Forms.TextBox();
-            this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
-            this.textBoxLoaiHopDong = new System.Windows.Forms.TextBox();
-            this.textBoxTrangThai = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -201,7 +201,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(289, 8);
+            this.label1.Location = new System.Drawing.Point(263, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(299, 36);
             this.label1.TabIndex = 0;
@@ -209,18 +209,52 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBoxLoaiHopDong);
+            this.groupBox1.Controls.Add(this.comboBoxMaNhanVien);
             this.groupBox1.Controls.Add(this.textBoxNgayHetHan);
             this.groupBox1.Controls.Add(this.textBoxNgayHieuLuc);
             this.groupBox1.Controls.Add(this.textBoxSoHopDong);
-            this.groupBox1.Controls.Add(this.textBoxMaNhanVien);
             this.groupBox1.Controls.Add(this.textBoxTenNhanVien);
-            this.groupBox1.Controls.Add(this.textBoxLoaiHopDong);
-            this.groupBox1.Controls.Add(this.textBoxTrangThai);
             this.groupBox1.Location = new System.Drawing.Point(36, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(708, 344);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Đã Gia Hạn",
+            "Đang Thực Hiện"});
+            this.comboBox1.Location = new System.Drawing.Point(124, 186);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(542, 25);
+            this.comboBox1.TabIndex = 29;
+            // 
+            // comboBoxLoaiHopDong
+            // 
+            this.comboBoxLoaiHopDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxLoaiHopDong.FormattingEnabled = true;
+            this.comboBoxLoaiHopDong.Items.AddRange(new object[] {
+            "Thử Việc",
+            "Chính Thức",
+            "Thời Vụ"});
+            this.comboBoxLoaiHopDong.Location = new System.Drawing.Point(124, 146);
+            this.comboBoxLoaiHopDong.Name = "comboBoxLoaiHopDong";
+            this.comboBoxLoaiHopDong.Size = new System.Drawing.Size(542, 25);
+            this.comboBoxLoaiHopDong.TabIndex = 28;
+            // 
+            // comboBoxMaNhanVien
+            // 
+            this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxMaNhanVien.FormattingEnabled = true;
+            this.comboBoxMaNhanVien.Location = new System.Drawing.Point(124, 62);
+            this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
+            this.comboBoxMaNhanVien.Size = new System.Drawing.Size(542, 25);
+            this.comboBoxMaNhanVien.TabIndex = 27;
             // 
             // textBoxNgayHetHan
             // 
@@ -246,37 +280,14 @@
             this.textBoxSoHopDong.Size = new System.Drawing.Size(542, 25);
             this.textBoxSoHopDong.TabIndex = 17;
             // 
-            // textBoxMaNhanVien
-            // 
-            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxMaNhanVien.Location = new System.Drawing.Point(124, 62);
-            this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
-            this.textBoxMaNhanVien.Size = new System.Drawing.Size(542, 25);
-            this.textBoxMaNhanVien.TabIndex = 18;
-            // 
             // textBoxTenNhanVien
             // 
+            this.textBoxTenNhanVien.Enabled = false;
             this.textBoxTenNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxTenNhanVien.Location = new System.Drawing.Point(124, 102);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
             this.textBoxTenNhanVien.Size = new System.Drawing.Size(542, 25);
             this.textBoxTenNhanVien.TabIndex = 19;
-            // 
-            // textBoxLoaiHopDong
-            // 
-            this.textBoxLoaiHopDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxLoaiHopDong.Location = new System.Drawing.Point(124, 146);
-            this.textBoxLoaiHopDong.Name = "textBoxLoaiHopDong";
-            this.textBoxLoaiHopDong.Size = new System.Drawing.Size(542, 25);
-            this.textBoxLoaiHopDong.TabIndex = 20;
-            // 
-            // textBoxTrangThai
-            // 
-            this.textBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTrangThai.Location = new System.Drawing.Point(124, 186);
-            this.textBoxTrangThai.Name = "textBoxTrangThai";
-            this.textBoxTrangThai.Size = new System.Drawing.Size(542, 25);
-            this.textBoxTrangThai.TabIndex = 21;
             // 
             // ThemMoiHopDong
             // 
@@ -316,9 +327,9 @@
         private System.Windows.Forms.TextBox textBoxNgayHetHan;
         private System.Windows.Forms.TextBox textBoxNgayHieuLuc;
         private System.Windows.Forms.TextBox textBoxSoHopDong;
-        private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.TextBox textBoxTenNhanVien;
-        private System.Windows.Forms.TextBox textBoxLoaiHopDong;
-        private System.Windows.Forms.TextBox textBoxTrangThai;
+        private System.Windows.Forms.ComboBox comboBoxMaNhanVien;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxLoaiHopDong;
     }
 }

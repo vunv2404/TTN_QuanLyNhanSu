@@ -39,7 +39,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxMaTruongPhong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.textBoxNgayThanhLap = new System.Windows.Forms.TextBox();
             this.textBoxTenPhongBan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxMaTruongPhong = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -110,12 +110,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxMaTruongPhong);
             this.groupBox1.Controls.Add(this.textBoxMaPhongBan);
             this.groupBox1.Controls.Add(this.textBoxFax);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBoxMaTruongPhong);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -175,14 +175,6 @@
             this.label5.Size = new System.Drawing.Size(100, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "Số Điện Thoại";
-            // 
-            // textBoxMaTruongPhong
-            // 
-            this.textBoxMaTruongPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxMaTruongPhong.Location = new System.Drawing.Point(188, 152);
-            this.textBoxMaTruongPhong.Name = "textBoxMaTruongPhong";
-            this.textBoxMaTruongPhong.Size = new System.Drawing.Size(489, 25);
-            this.textBoxMaTruongPhong.TabIndex = 13;
             // 
             // label4
             // 
@@ -256,6 +248,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Phòng Ban";
             // 
+            // comboBoxMaTruongPhong
+            // 
+            this.comboBoxMaTruongPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxMaTruongPhong.FormattingEnabled = true;
+            this.comboBoxMaTruongPhong.Location = new System.Drawing.Point(188, 153);
+            this.comboBoxMaTruongPhong.Name = "comboBoxMaTruongPhong";
+            this.comboBoxMaTruongPhong.Size = new System.Drawing.Size(489, 25);
+            this.comboBoxMaTruongPhong.TabIndex = 15;
+            // 
             // ThemPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,7 +288,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxMaTruongPhong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -296,5 +296,6 @@
         private System.Windows.Forms.TextBox textBoxNgayThanhLap;
         private System.Windows.Forms.TextBox textBoxTenPhongBan;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxMaTruongPhong;
     }
 }

@@ -40,8 +40,9 @@
             this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
             this.dangKiNghiTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.DangKiNghiTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
+            this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxTrangThai = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxLiDo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,11 +51,12 @@
             this.textBoxDenNgay = new System.Windows.Forms.TextBox();
             this.textBoxTuNgay = new System.Windows.Forms.TextBox();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
-            this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDangKiNghi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dangKiNghiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).BeginInit();
@@ -137,8 +139,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.textBoxTong);
+            this.panel1.Controls.Add(this.comboBoxTrangThai);
+            this.panel1.Controls.Add(this.comboBoxMaNhanVien);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBoxTrangThai);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.textBoxLiDo);
             this.panel1.Controls.Add(this.label5);
@@ -147,7 +152,6 @@
             this.panel1.Controls.Add(this.textBoxDenNgay);
             this.panel1.Controls.Add(this.textBoxTuNgay);
             this.panel1.Controls.Add(this.textBoxTenNhanVien);
-            this.panel1.Controls.Add(this.textBoxMaNhanVien);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -158,6 +162,27 @@
             this.panel1.Size = new System.Drawing.Size(802, 596);
             this.panel1.TabIndex = 1;
             // 
+            // comboBoxTrangThai
+            // 
+            this.comboBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTrangThai.FormattingEnabled = true;
+            this.comboBoxTrangThai.Items.AddRange(new object[] {
+            "Đã Phê Duyệt",
+            "Chưa Phê Duyệt"});
+            this.comboBoxTrangThai.Location = new System.Drawing.Point(519, 186);
+            this.comboBoxTrangThai.Name = "comboBoxTrangThai";
+            this.comboBoxTrangThai.Size = new System.Drawing.Size(252, 25);
+            this.comboBoxTrangThai.TabIndex = 28;
+            // 
+            // comboBoxMaNhanVien
+            // 
+            this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxMaNhanVien.FormattingEnabled = true;
+            this.comboBoxMaNhanVien.Location = new System.Drawing.Point(131, 86);
+            this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
+            this.comboBoxMaNhanVien.Size = new System.Drawing.Size(252, 25);
+            this.comboBoxMaNhanVien.TabIndex = 27;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -167,14 +192,6 @@
             this.label7.Size = new System.Drawing.Size(199, 36);
             this.label7.TabIndex = 26;
             this.label7.Text = "Đăng Kí Nghỉ";
-            // 
-            // textBoxTrangThai
-            // 
-            this.textBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTrangThai.Location = new System.Drawing.Point(519, 181);
-            this.textBoxTrangThai.Name = "textBoxTrangThai";
-            this.textBoxTrangThai.Size = new System.Drawing.Size(252, 25);
-            this.textBoxTrangThai.TabIndex = 25;
             // 
             // label6
             // 
@@ -246,19 +263,12 @@
             // 
             // textBoxTenNhanVien
             // 
+            this.textBoxTenNhanVien.Enabled = false;
             this.textBoxTenNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxTenNhanVien.Location = new System.Drawing.Point(131, 130);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
             this.textBoxTenNhanVien.Size = new System.Drawing.Size(252, 25);
             this.textBoxTenNhanVien.TabIndex = 17;
-            // 
-            // textBoxMaNhanVien
-            // 
-            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxMaNhanVien.Location = new System.Drawing.Point(131, 82);
-            this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
-            this.textBoxMaNhanVien.Size = new System.Drawing.Size(252, 25);
-            this.textBoxMaNhanVien.TabIndex = 16;
             // 
             // label4
             // 
@@ -300,6 +310,24 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Mã Nhân Viên";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label8.Location = new System.Drawing.Point(4, 278);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 17);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Tổng";
+            // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(49, 273);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 29;
+            // 
             // DangKiNghi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,7 +357,6 @@
         private System.Windows.Forms.TextBox textBoxDenNgay;
         private System.Windows.Forms.TextBox textBoxTuNgay;
         private System.Windows.Forms.TextBox textBoxTenNhanVien;
-        private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -342,10 +369,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn denNgayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn liDoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Trangthai;
-        private System.Windows.Forms.TextBox textBoxTrangThai;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxLiDo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxTrangThai;
+        private System.Windows.Forms.ComboBox comboBoxMaNhanVien;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxTong;
     }
 }

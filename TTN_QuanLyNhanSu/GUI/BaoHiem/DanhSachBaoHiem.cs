@@ -12,6 +12,26 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
 {
     public partial class DanhSachBaoHiem : Form
     {
+
+
+
+        /// <summary>
+        /// - Khi bấm vào 1 dòng trên datagridview thì nút chi tiết mới hiện lên
+        /// 
+        /// - Đưa dữ liệu sang bên bảng chi tiết .
+        /// 
+        /// - Click vào thêm chuyển sang bên Bảng Thêm
+        /// 
+        /// - Combobox tìm kiếm sẽ cho tìm kiếm theo loại Mã Nhân viên và tên nhân viên
+        /// 
+        /// - textBox Tìm kiếm : gõ từ muốn tìm kiếm 
+        /// 
+        /// - Textbox tổng là tổng dòng dữ liệu đang có trên datagridview 
+        /// 
+        /// </summary>
+
+
+
         public DanhSachBaoHiem()
         {
             InitializeComponent();

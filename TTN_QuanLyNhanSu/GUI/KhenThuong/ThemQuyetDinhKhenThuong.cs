@@ -12,6 +12,18 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
 {
     public partial class ThemQuyetDinhKhenThuong : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Thêm dữ liệu vào các textbox , combox có sãn dữ liệu : Phê duyệt , đang phe duyệt , không phê duyệt
+        /// 
+        /// - xử lý dư liệu ngày (regex).
+        /// 
+        /// - khi bấm lưu thì thông báo có muốn thêm .
+        /// 
+        /// </summary>
+
+
         public ThemQuyetDinhKhenThuong()
         {
             InitializeComponent();

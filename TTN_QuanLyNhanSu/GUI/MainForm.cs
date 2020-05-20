@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN_QuanLyNhanSu.DAL;
 using TTN_QuanLyNhanSu.GUI.BaoHiem;
 using TTN_QuanLyNhanSu.GUI.BoPhan;
 using TTN_QuanLyNhanSu.GUI.ChamCong;
@@ -183,6 +184,25 @@ namespace TTN_QuanLyNhanSu.GUI
         private void FormDangKiNghi_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            fillChart();
+        }
+
+        private void fillChart()
+        {
+            chart1.DataSource = DataProvider.Instance.ExecuteQuery("select count(MaNV) soluongnv , TenPB from HoSoNhanSu , PhongBan where HoSoNhanSu.MaPhongBan = PhongBan.MaPhongBan group by TenPB");
+            //set the member of the chart data source used to data bind to the X-values of the series  
+            chart1.Series["Phòng Ban"].XValueMember = "TenPB";
+            chart1.Series["Phòng Ban"].IsValueShownAsLabel = true;
+
+            //set the member columns of the chart data source used to data bind to the X-values of the series  
+            chart1.Series["Phòng Ban"].YValueMembers = "soluongnv";
+            chart1.Titles.Add("Nhân Viên Theo Phòng Ban");
+
+
         }
     }
 }

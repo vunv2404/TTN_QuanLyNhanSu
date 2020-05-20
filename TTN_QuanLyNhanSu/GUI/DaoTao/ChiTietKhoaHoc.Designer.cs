@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.buttonCapNhat = new System.Windows.Forms.Button();
-            this.textBoxTinhTrang = new System.Windows.Forms.TextBox();
             this.textBoxChiPhi = new System.Windows.Forms.TextBox();
             this.textBoxNguoiPhuTrach = new System.Windows.Forms.TextBox();
             this.textBoxSoLuong = new System.Windows.Forms.TextBox();
@@ -48,7 +47,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTinhTrang = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +57,6 @@
             this.panel1.BackColor = System.Drawing.Color.Linen;
             this.panel1.Controls.Add(this.buttonThoat);
             this.panel1.Controls.Add(this.buttonCapNhat);
-            this.panel1.Controls.Add(this.textBoxTinhTrang);
             this.panel1.Controls.Add(this.textBoxChiPhi);
             this.panel1.Controls.Add(this.textBoxNguoiPhuTrach);
             this.panel1.Controls.Add(this.textBoxSoLuong);
@@ -92,6 +92,7 @@
             // 
             // buttonCapNhat
             // 
+            this.buttonCapNhat.Enabled = false;
             this.buttonCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCapNhat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapNhat.Location = new System.Drawing.Point(482, 398);
@@ -101,14 +102,6 @@
             this.buttonCapNhat.Text = "Cập Nhật";
             this.buttonCapNhat.UseVisualStyleBackColor = true;
             this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
-            // 
-            // textBoxTinhTrang
-            // 
-            this.textBoxTinhTrang.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTinhTrang.Location = new System.Drawing.Point(185, 338);
-            this.textBoxTinhTrang.Name = "textBoxTinhTrang";
-            this.textBoxTinhTrang.Size = new System.Drawing.Size(556, 25);
-            this.textBoxTinhTrang.TabIndex = 14;
             // 
             // textBoxChiPhi
             // 
@@ -240,6 +233,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxTinhTrang);
             this.groupBox1.Location = new System.Drawing.Point(46, 48);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(712, 329);
@@ -254,6 +248,19 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
+            // comboBoxTinhTrang
+            // 
+            this.comboBoxTinhTrang.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTinhTrang.FormattingEnabled = true;
+            this.comboBoxTinhTrang.Items.AddRange(new object[] {
+            "Không Phê Duyệt",
+            "Đã Phê Duyệt",
+            "Chờ Phê Duyệt"});
+            this.comboBoxTinhTrang.Location = new System.Drawing.Point(139, 289);
+            this.comboBoxTinhTrang.Name = "comboBoxTinhTrang";
+            this.comboBoxTinhTrang.Size = new System.Drawing.Size(556, 25);
+            this.comboBoxTinhTrang.TabIndex = 19;
+            // 
             // ChiTietKhoaHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,6 +272,7 @@
             this.Text = "ChiTietKhoaHoc";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -273,7 +281,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxTinhTrang;
         private System.Windows.Forms.TextBox textBoxChiPhi;
         private System.Windows.Forms.TextBox textBoxNguoiPhuTrach;
         private System.Windows.Forms.TextBox textBoxSoLuong;
@@ -291,5 +298,6 @@
         private System.Windows.Forms.Button buttonCapNhat;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox comboBoxTinhTrang;
     }
 }

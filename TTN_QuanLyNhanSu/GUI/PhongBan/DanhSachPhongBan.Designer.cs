@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
@@ -57,6 +59,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBoxTong);
             this.panel1.Controls.Add(this.buttonThoat);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewDanhSachPhongBan);
@@ -65,11 +69,29 @@
             this.panel1.Size = new System.Drawing.Size(907, 539);
             this.panel1.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label1.Location = new System.Drawing.Point(7, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tổng";
+            // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(54, 74);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(62, 25);
+            this.textBoxTong.TabIndex = 5;
+            // 
             // buttonThoat
             // 
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.Location = new System.Drawing.Point(706, 71);
+            this.buttonThoat.Location = new System.Drawing.Point(757, 71);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(100, 25);
             this.buttonThoat.TabIndex = 6;
@@ -112,9 +134,10 @@
             // 
             // buttonChiTiet
             // 
+            this.buttonChiTiet.Enabled = false;
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChiTiet.Location = new System.Drawing.Point(190, 18);
+            this.buttonChiTiet.Location = new System.Drawing.Point(142, 18);
             this.buttonChiTiet.Name = "buttonChiTiet";
             this.buttonChiTiet.Size = new System.Drawing.Size(100, 25);
             this.buttonChiTiet.TabIndex = 2;
@@ -126,7 +149,7 @@
             // 
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThem.Location = new System.Drawing.Point(73, 18);
+            this.buttonThem.Location = new System.Drawing.Point(30, 18);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(100, 25);
             this.buttonThem.TabIndex = 1;
@@ -224,6 +247,7 @@
             this.Text = "DanhSachPhongBan";
             this.Load += new System.EventHandler(this.DanhSachPhongBan_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDanhSachPhongBan)).EndInit();
@@ -253,5 +277,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoaiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn faxDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxTong;
     }
 }

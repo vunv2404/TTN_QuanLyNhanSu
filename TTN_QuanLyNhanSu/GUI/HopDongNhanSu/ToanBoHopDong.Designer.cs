@@ -42,8 +42,11 @@
             this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
             this.hopDongNhanSuTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.HopDongNhanSuTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.buttonQuayLai = new System.Windows.Forms.Button();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTimKiem = new System.Windows.Forms.ComboBox();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.buttonChiTiet = new System.Windows.Forms.Button();
@@ -69,7 +72,7 @@
             this.ngayHetHanDataGridViewTextBoxColumn,
             this.noiDungDataGridViewTextBoxColumn});
             this.dataGridViewToanBoHopDong.DataSource = this.hopDongNhanSuBindingSource;
-            this.dataGridViewToanBoHopDong.Location = new System.Drawing.Point(0, 104);
+            this.dataGridViewToanBoHopDong.Location = new System.Drawing.Point(0, 106);
             this.dataGridViewToanBoHopDong.Name = "dataGridViewToanBoHopDong";
             this.dataGridViewToanBoHopDong.Size = new System.Drawing.Size(1030, 391);
             this.dataGridViewToanBoHopDong.TabIndex = 0;
@@ -145,7 +148,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.buttonQuayLai);
+            this.panel1.Controls.Add(this.textBoxTong);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewToanBoHopDong);
             this.panel1.Location = new System.Drawing.Point(3, -1);
@@ -153,11 +158,21 @@
             this.panel1.Size = new System.Drawing.Size(1030, 498);
             this.panel1.TabIndex = 1;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label10.Location = new System.Drawing.Point(5, 78);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 17);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Tổng";
+            // 
             // buttonQuayLai
             // 
             this.buttonQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonQuayLai.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuayLai.Location = new System.Drawing.Point(832, 73);
+            this.buttonQuayLai.Location = new System.Drawing.Point(891, 74);
             this.buttonQuayLai.Name = "buttonQuayLai";
             this.buttonQuayLai.Size = new System.Drawing.Size(100, 25);
             this.buttonQuayLai.TabIndex = 5;
@@ -165,9 +180,18 @@
             this.buttonQuayLai.UseVisualStyleBackColor = true;
             this.buttonQuayLai.Click += new System.EventHandler(this.buttonQuayLai_Click);
             // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(50, 73);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 49;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox1.Controls.Add(this.comboBoxTimKiem);
             this.groupBox1.Controls.Add(this.textBoxTimKiem);
             this.groupBox1.Controls.Add(this.buttonTimKiem);
             this.groupBox1.Controls.Add(this.buttonChiTiet);
@@ -178,12 +202,24 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
+            // comboBoxTimKiem
+            // 
+            this.comboBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxTimKiem.FormattingEnabled = true;
+            this.comboBoxTimKiem.Items.AddRange(new object[] {
+            "Tên Nhân Viên",
+            "Loại Hợp Đồng"});
+            this.comboBoxTimKiem.Location = new System.Drawing.Point(443, 18);
+            this.comboBoxTimKiem.Name = "comboBoxTimKiem";
+            this.comboBoxTimKiem.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxTimKiem.TabIndex = 5;
+            // 
             // textBoxTimKiem
             // 
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTimKiem.Location = new System.Drawing.Point(454, 18);
+            this.textBoxTimKiem.Location = new System.Drawing.Point(615, 18);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(378, 25);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(226, 25);
             this.textBoxTimKiem.TabIndex = 4;
             // 
             // buttonTimKiem
@@ -200,9 +236,10 @@
             // 
             // buttonChiTiet
             // 
+            this.buttonChiTiet.Enabled = false;
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChiTiet.Location = new System.Drawing.Point(191, 18);
+            this.buttonChiTiet.Location = new System.Drawing.Point(140, 17);
             this.buttonChiTiet.Name = "buttonChiTiet";
             this.buttonChiTiet.Size = new System.Drawing.Size(100, 25);
             this.buttonChiTiet.TabIndex = 2;
@@ -214,7 +251,7 @@
             // 
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThem.Location = new System.Drawing.Point(73, 17);
+            this.buttonThem.Location = new System.Drawing.Point(22, 17);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(100, 25);
             this.buttonThem.TabIndex = 1;
@@ -236,6 +273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.hopDongNhanSuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -263,5 +301,8 @@
         private System.Windows.Forms.Button buttonChiTiet;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.Button buttonQuayLai;
+        private System.Windows.Forms.ComboBox comboBoxTimKiem;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxTong;
     }
 }

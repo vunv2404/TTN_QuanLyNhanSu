@@ -12,6 +12,16 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
 {
     public partial class ChiTietPhongBan : Form
     {
+
+        /// <summary>
+        /// 
+        /// - xửa lý dữ liệu ngày (regex).
+        /// 
+        /// - đem dữ liệu bên danh sách phòng ban ném lên các textbox.
+        /// 
+        /// - thông báo có muốn sửa khi sửa
+        /// 
+        /// </summary>
         public ChiTietPhongBan()
         {
             InitializeComponent();

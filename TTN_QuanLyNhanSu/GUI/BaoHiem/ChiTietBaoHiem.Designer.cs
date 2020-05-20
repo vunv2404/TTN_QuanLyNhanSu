@@ -97,6 +97,7 @@
             // 
             // textBoxMaNhanVien
             // 
+            this.textBoxMaNhanVien.Enabled = false;
             this.textBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMaNhanVien.Location = new System.Drawing.Point(182, 106);
             this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
@@ -158,6 +159,7 @@
             // 
             // textBoxTenNhanVien
             // 
+            this.textBoxTenNhanVien.Enabled = false;
             this.textBoxTenNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxTenNhanVien.Location = new System.Drawing.Point(159, 72);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
@@ -212,6 +214,7 @@
             // 
             // buttonCapNhat
             // 
+            this.buttonCapNhat.Enabled = false;
             this.buttonCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCapNhat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapNhat.Location = new System.Drawing.Point(37, 14);

@@ -32,16 +32,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBoxChuyenMon = new System.Windows.Forms.TextBox();
             this.textBoxChungChi = new System.Windows.Forms.TextBox();
-            this.textBoxHocHam = new System.Windows.Forms.TextBox();
-            this.textBoxHocVi = new System.Windows.Forms.TextBox();
             this.textBoxQueQuan = new System.Windows.Forms.TextBox();
-            this.textBoxMaPhongBan = new System.Windows.Forms.TextBox();
             this.textBoxNgayVaoCoQuan = new System.Windows.Forms.TextBox();
-            this.textBoxBoPhan = new System.Windows.Forms.TextBox();
-            this.textBoxChucVu = new System.Windows.Forms.TextBox();
             this.textBoxSDT = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxGioiTinh = new System.Windows.Forms.TextBox();
             this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -65,6 +59,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.buttonCapNhat = new System.Windows.Forms.Button();
+            this.comboBoxGioiTinh = new System.Windows.Forms.ComboBox();
+            this.comboBoxChucVu = new System.Windows.Forms.ComboBox();
+            this.comboBoxBoPhan = new System.Windows.Forms.ComboBox();
+            this.comboBoxPhongBan = new System.Windows.Forms.ComboBox();
+            this.comboBoxHocHam = new System.Windows.Forms.ComboBox();
+            this.comboBoxHocVi = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNhanSu)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -73,19 +73,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.comboBoxHocHam);
+            this.panel1.Controls.Add(this.comboBoxHocVi);
+            this.panel1.Controls.Add(this.comboBoxPhongBan);
+            this.panel1.Controls.Add(this.comboBoxBoPhan);
+            this.panel1.Controls.Add(this.comboBoxChucVu);
+            this.panel1.Controls.Add(this.comboBoxGioiTinh);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.textBoxChuyenMon);
             this.panel1.Controls.Add(this.textBoxChungChi);
-            this.panel1.Controls.Add(this.textBoxHocHam);
-            this.panel1.Controls.Add(this.textBoxHocVi);
             this.panel1.Controls.Add(this.textBoxQueQuan);
-            this.panel1.Controls.Add(this.textBoxMaPhongBan);
             this.panel1.Controls.Add(this.textBoxNgayVaoCoQuan);
-            this.panel1.Controls.Add(this.textBoxBoPhan);
-            this.panel1.Controls.Add(this.textBoxChucVu);
             this.panel1.Controls.Add(this.textBoxSDT);
             this.panel1.Controls.Add(this.textBoxEmail);
-            this.panel1.Controls.Add(this.textBoxGioiTinh);
             this.panel1.Controls.Add(this.textBoxNgaySinh);
             this.panel1.Controls.Add(this.textBoxTenNhanVien);
             this.panel1.Controls.Add(this.label15);
@@ -139,22 +139,6 @@
             this.textBoxChungChi.Size = new System.Drawing.Size(310, 25);
             this.textBoxChungChi.TabIndex = 33;
             // 
-            // textBoxHocHam
-            // 
-            this.textBoxHocHam.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHocHam.Location = new System.Drawing.Point(724, 232);
-            this.textBoxHocHam.Name = "textBoxHocHam";
-            this.textBoxHocHam.Size = new System.Drawing.Size(310, 25);
-            this.textBoxHocHam.TabIndex = 32;
-            // 
-            // textBoxHocVi
-            // 
-            this.textBoxHocVi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHocVi.Location = new System.Drawing.Point(724, 192);
-            this.textBoxHocVi.Name = "textBoxHocVi";
-            this.textBoxHocVi.Size = new System.Drawing.Size(310, 25);
-            this.textBoxHocVi.TabIndex = 31;
-            // 
             // textBoxQueQuan
             // 
             this.textBoxQueQuan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,14 +147,6 @@
             this.textBoxQueQuan.Size = new System.Drawing.Size(310, 25);
             this.textBoxQueQuan.TabIndex = 30;
             // 
-            // textBoxMaPhongBan
-            // 
-            this.textBoxMaPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMaPhongBan.Location = new System.Drawing.Point(724, 112);
-            this.textBoxMaPhongBan.Name = "textBoxMaPhongBan";
-            this.textBoxMaPhongBan.Size = new System.Drawing.Size(310, 25);
-            this.textBoxMaPhongBan.TabIndex = 29;
-            // 
             // textBoxNgayVaoCoQuan
             // 
             this.textBoxNgayVaoCoQuan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,22 +154,6 @@
             this.textBoxNgayVaoCoQuan.Name = "textBoxNgayVaoCoQuan";
             this.textBoxNgayVaoCoQuan.Size = new System.Drawing.Size(307, 25);
             this.textBoxNgayVaoCoQuan.TabIndex = 28;
-            // 
-            // textBoxBoPhan
-            // 
-            this.textBoxBoPhan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBoPhan.Location = new System.Drawing.Point(297, 312);
-            this.textBoxBoPhan.Name = "textBoxBoPhan";
-            this.textBoxBoPhan.Size = new System.Drawing.Size(307, 25);
-            this.textBoxBoPhan.TabIndex = 27;
-            // 
-            // textBoxChucVu
-            // 
-            this.textBoxChucVu.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxChucVu.Location = new System.Drawing.Point(297, 272);
-            this.textBoxChucVu.Name = "textBoxChucVu";
-            this.textBoxChucVu.Size = new System.Drawing.Size(307, 25);
-            this.textBoxChucVu.TabIndex = 26;
             // 
             // textBoxSDT
             // 
@@ -210,14 +170,6 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(307, 25);
             this.textBoxEmail.TabIndex = 24;
-            // 
-            // textBoxGioiTinh
-            // 
-            this.textBoxGioiTinh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGioiTinh.Location = new System.Drawing.Point(297, 152);
-            this.textBoxGioiTinh.Name = "textBoxGioiTinh";
-            this.textBoxGioiTinh.Size = new System.Drawing.Size(307, 25);
-            this.textBoxGioiTinh.TabIndex = 23;
             // 
             // textBoxNgaySinh
             // 
@@ -286,9 +238,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(627, 120);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 17);
+            this.label10.Size = new System.Drawing.Size(79, 17);
             this.label10.TabIndex = 15;
-            this.label10.Text = "Mã P/Ban";
+            this.label10.Text = "Phòng Ban";
             // 
             // label9
             // 
@@ -442,6 +394,76 @@
             this.buttonCapNhat.UseVisualStyleBackColor = true;
             this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
             // 
+            // comboBoxGioiTinh
+            // 
+            this.comboBoxGioiTinh.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxGioiTinh.FormattingEnabled = true;
+            this.comboBoxGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.comboBoxGioiTinh.Location = new System.Drawing.Point(297, 152);
+            this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
+            this.comboBoxGioiTinh.Size = new System.Drawing.Size(307, 25);
+            this.comboBoxGioiTinh.TabIndex = 37;
+            // 
+            // comboBoxChucVu
+            // 
+            this.comboBoxChucVu.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxChucVu.FormattingEnabled = true;
+            this.comboBoxChucVu.Location = new System.Drawing.Point(297, 273);
+            this.comboBoxChucVu.Name = "comboBoxChucVu";
+            this.comboBoxChucVu.Size = new System.Drawing.Size(307, 25);
+            this.comboBoxChucVu.TabIndex = 38;
+            // 
+            // comboBoxBoPhan
+            // 
+            this.comboBoxBoPhan.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxBoPhan.FormattingEnabled = true;
+            this.comboBoxBoPhan.Location = new System.Drawing.Point(297, 313);
+            this.comboBoxBoPhan.Name = "comboBoxBoPhan";
+            this.comboBoxBoPhan.Size = new System.Drawing.Size(307, 25);
+            this.comboBoxBoPhan.TabIndex = 39;
+            // 
+            // comboBoxPhongBan
+            // 
+            this.comboBoxPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxPhongBan.FormattingEnabled = true;
+            this.comboBoxPhongBan.Location = new System.Drawing.Point(724, 112);
+            this.comboBoxPhongBan.Name = "comboBoxPhongBan";
+            this.comboBoxPhongBan.Size = new System.Drawing.Size(310, 25);
+            this.comboBoxPhongBan.TabIndex = 40;
+            // 
+            // comboBoxHocHam
+            // 
+            this.comboBoxHocHam.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxHocHam.FormattingEnabled = true;
+            this.comboBoxHocHam.Items.AddRange(new object[] {
+            "Trống",
+            "Thạc Sĩ",
+            "Tiến Sĩ",
+            "Phó Giáo Sư",
+            "Giáo Sư",
+            "PGS,TS",
+            "GS,TS"});
+            this.comboBoxHocHam.Location = new System.Drawing.Point(724, 232);
+            this.comboBoxHocHam.Name = "comboBoxHocHam";
+            this.comboBoxHocHam.Size = new System.Drawing.Size(310, 25);
+            this.comboBoxHocHam.TabIndex = 43;
+            // 
+            // comboBoxHocVi
+            // 
+            this.comboBoxHocVi.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxHocVi.FormattingEnabled = true;
+            this.comboBoxHocVi.Items.AddRange(new object[] {
+            "Trống",
+            "Cử Nhân",
+            "Kĩ Sư",
+            "Cao Học"});
+            this.comboBoxHocVi.Location = new System.Drawing.Point(724, 192);
+            this.comboBoxHocVi.Name = "comboBoxHocVi";
+            this.comboBoxHocVi.Size = new System.Drawing.Size(310, 25);
+            this.comboBoxHocVi.TabIndex = 42;
+            // 
             // ChiTietNhanSu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,7 +485,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxGioiTinh;
         private System.Windows.Forms.TextBox textBoxNgaySinh;
         private System.Windows.Forms.TextBox textBoxTenNhanVien;
         private System.Windows.Forms.Label label15;
@@ -489,14 +510,15 @@
         private System.Windows.Forms.Button buttonCapNhat;
         private System.Windows.Forms.TextBox textBoxChuyenMon;
         private System.Windows.Forms.TextBox textBoxChungChi;
-        private System.Windows.Forms.TextBox textBoxHocHam;
-        private System.Windows.Forms.TextBox textBoxHocVi;
         private System.Windows.Forms.TextBox textBoxQueQuan;
-        private System.Windows.Forms.TextBox textBoxMaPhongBan;
         private System.Windows.Forms.TextBox textBoxNgayVaoCoQuan;
-        private System.Windows.Forms.TextBox textBoxBoPhan;
-        private System.Windows.Forms.TextBox textBoxChucVu;
         private System.Windows.Forms.TextBox textBoxSDT;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comboBoxGioiTinh;
+        private System.Windows.Forms.ComboBox comboBoxChucVu;
+        private System.Windows.Forms.ComboBox comboBoxBoPhan;
+        private System.Windows.Forms.ComboBox comboBoxPhongBan;
+        private System.Windows.Forms.ComboBox comboBoxHocHam;
+        private System.Windows.Forms.ComboBox comboBoxHocVi;
     }
 }

@@ -50,12 +50,12 @@
             this.textBoxTongNgayCong = new System.Windows.Forms.TextBox();
             this.textBoxSoQuyetDinh = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxMucLuong = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.buttonCapNhat = new System.Windows.Forms.Button();
+            this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -95,6 +95,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxMaNhanVien);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
@@ -113,7 +114,6 @@
             this.groupBox1.Controls.Add(this.textBoxTongNgayCong);
             this.groupBox1.Controls.Add(this.textBoxSoQuyetDinh);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBoxMaNhanVien);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBoxMucLuong);
             this.groupBox1.Location = new System.Drawing.Point(46, 48);
@@ -284,14 +284,6 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Phụ Cấp";
             // 
-            // textBoxMaNhanVien
-            // 
-            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMaNhanVien.Location = new System.Drawing.Point(160, 30);
-            this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
-            this.textBoxMaNhanVien.Size = new System.Drawing.Size(533, 25);
-            this.textBoxMaNhanVien.TabIndex = 8;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -344,6 +336,15 @@
             this.buttonCapNhat.UseVisualStyleBackColor = true;
             this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
             // 
+            // comboBoxMaNhanVien
+            // 
+            this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxMaNhanVien.FormattingEnabled = true;
+            this.comboBoxMaNhanVien.Location = new System.Drawing.Point(160, 30);
+            this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
+            this.comboBoxMaNhanVien.Size = new System.Drawing.Size(533, 25);
+            this.comboBoxMaNhanVien.TabIndex = 28;
+            // 
             // ChiTietLuongNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,11 +387,11 @@
         private System.Windows.Forms.TextBox textBoxTongNgayCong;
         private System.Windows.Forms.TextBox textBoxSoQuyetDinh;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxMucLuong;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonThoat;
         private System.Windows.Forms.Button buttonCapNhat;
+        private System.Windows.Forms.ComboBox comboBoxMaNhanVien;
     }
 }

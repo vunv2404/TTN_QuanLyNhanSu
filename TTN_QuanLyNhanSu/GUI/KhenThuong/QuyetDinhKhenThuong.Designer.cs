@@ -30,8 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.buttonThoat = new System.Windows.Forms.Button();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonDSNVBiKyLuat = new System.Windows.Forms.Button();
             this.buttonKhenThuongNhanSu = new System.Windows.Forms.Button();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
@@ -58,7 +61,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.buttonThoat);
+            this.panel1.Controls.Add(this.textBoxTong);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewQuyetDinhKhenThuong);
             this.panel1.Location = new System.Drawing.Point(1, 0);
@@ -66,11 +71,21 @@
             this.panel1.Size = new System.Drawing.Size(941, 539);
             this.panel1.TabIndex = 1;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label10.Location = new System.Drawing.Point(5, 77);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 17);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Tổng";
+            // 
             // buttonThoat
             // 
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.Location = new System.Drawing.Point(738, 71);
+            this.buttonThoat.Location = new System.Drawing.Point(783, 71);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(100, 25);
             this.buttonThoat.TabIndex = 7;
@@ -78,9 +93,18 @@
             this.buttonThoat.UseVisualStyleBackColor = true;
             this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(50, 72);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 49;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox1.Controls.Add(this.buttonDSNVBiKyLuat);
             this.groupBox1.Controls.Add(this.buttonKhenThuongNhanSu);
             this.groupBox1.Controls.Add(this.textBoxTimKiem);
             this.groupBox1.Controls.Add(this.buttonTimKiem);
@@ -92,11 +116,25 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
+            // buttonDSNVBiKyLuat
+            // 
+            this.buttonDSNVBiKyLuat.Enabled = false;
+            this.buttonDSNVBiKyLuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDSNVBiKyLuat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDSNVBiKyLuat.Location = new System.Drawing.Point(356, 18);
+            this.buttonDSNVBiKyLuat.Name = "buttonDSNVBiKyLuat";
+            this.buttonDSNVBiKyLuat.Size = new System.Drawing.Size(133, 25);
+            this.buttonDSNVBiKyLuat.TabIndex = 7;
+            this.buttonDSNVBiKyLuat.Text = "D/S N/V Được KT";
+            this.buttonDSNVBiKyLuat.UseVisualStyleBackColor = true;
+            this.buttonDSNVBiKyLuat.Click += new System.EventHandler(this.buttonDSNVBiKyLuat_Click);
+            // 
             // buttonKhenThuongNhanSu
             // 
+            this.buttonKhenThuongNhanSu.Enabled = false;
             this.buttonKhenThuongNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonKhenThuongNhanSu.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKhenThuongNhanSu.Location = new System.Drawing.Point(273, 18);
+            this.buttonKhenThuongNhanSu.Location = new System.Drawing.Point(216, 18);
             this.buttonKhenThuongNhanSu.Name = "buttonKhenThuongNhanSu";
             this.buttonKhenThuongNhanSu.Size = new System.Drawing.Size(134, 25);
             this.buttonKhenThuongNhanSu.TabIndex = 5;
@@ -107,9 +145,9 @@
             // textBoxTimKiem
             // 
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTimKiem.Location = new System.Drawing.Point(441, 20);
+            this.textBoxTimKiem.Location = new System.Drawing.Point(536, 20);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(300, 25);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(218, 25);
             this.textBoxTimKiem.TabIndex = 4;
             // 
             // buttonTimKiem
@@ -125,9 +163,10 @@
             // 
             // buttonChiTiet
             // 
+            this.buttonChiTiet.Enabled = false;
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChiTiet.Location = new System.Drawing.Point(130, 19);
+            this.buttonChiTiet.Location = new System.Drawing.Point(110, 18);
             this.buttonChiTiet.Name = "buttonChiTiet";
             this.buttonChiTiet.Size = new System.Drawing.Size(100, 25);
             this.buttonChiTiet.TabIndex = 2;
@@ -236,6 +275,7 @@
             this.Text = "QuyetDinhKhenThuong";
             this.Load += new System.EventHandler(this.QuyetDinhKhenThuong_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuyetDinhKhenThuong)).EndInit();
@@ -266,5 +306,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button buttonThoat;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxTong;
+        private System.Windows.Forms.Button buttonDSNVBiKyLuat;
     }
 }

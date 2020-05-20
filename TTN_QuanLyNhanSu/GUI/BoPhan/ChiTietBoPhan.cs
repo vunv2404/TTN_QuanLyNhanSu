@@ -12,6 +12,23 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 {
     public partial class ChiTietBoPhan : Form
     {
+
+        /// <summary>
+        /// 
+        /// - Dữ liệu được vứt lên các textbox và combobox
+        /// 
+        /// - Xử lí mã phòng ban bên bảng danh sách bộ phận thành tên phòng ban
+        /// 
+        /// - khi sửa lại bộ phận thuộc phòng ban nào mới thì phải ánh xạ lại từ tên pb về mã pb
+        /// 
+        /// - xử lí dữ liệu trước khi cập nhật.(regex)
+        /// 
+        /// - kiểm ta các trường phải đủ dữ liệu ko thì phải focus đến đúng trường thiếu.
+        /// 
+        /// 
+        /// </summary>
+
+
         public ChiTietBoPhan()
         {
             InitializeComponent();

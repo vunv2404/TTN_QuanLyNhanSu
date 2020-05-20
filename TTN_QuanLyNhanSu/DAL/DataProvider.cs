@@ -92,5 +92,23 @@ namespace TTN_QuanLyNhanSu.DAL
             return data;
         }
 
+        public int ExecuteNonQuery(SqlCommand query)
+        {
+            int data = 0;
+
+            using (SqlConnection conn = new SqlConnection(str))
+            {
+                conn.Open();
+
+                query.Connection = conn;
+
+                data = query.ExecuteNonQuery();
+
+                conn.Close();
+            }
+
+            return data;
+        }
+
     }
 }

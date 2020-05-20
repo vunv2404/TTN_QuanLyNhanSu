@@ -43,9 +43,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxSoDienThoai = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxMaPhongBan = new System.Windows.Forms.TextBox();
             this.textBoxTenBoPhan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxTenPhongBan = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -108,6 +108,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxTenPhongBan);
             this.groupBox1.Controls.Add(this.textBoxMaBoPhan);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -117,7 +118,6 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxSoDienThoai);
             this.groupBox1.Controls.Add(this.textBoxEmail);
-            this.groupBox1.Controls.Add(this.textBoxMaPhongBan);
             this.groupBox1.Controls.Add(this.textBoxTenBoPhan);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(63, 78);
@@ -178,9 +178,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(43, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 17);
+            this.label3.Size = new System.Drawing.Size(109, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Mã Phòng Ban";
+            this.label3.Text = "Tên Phòng Ban";
             // 
             // label2
             // 
@@ -208,14 +208,6 @@
             this.textBoxEmail.Size = new System.Drawing.Size(489, 25);
             this.textBoxEmail.TabIndex = 11;
             // 
-            // textBoxMaPhongBan
-            // 
-            this.textBoxMaPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxMaPhongBan.Location = new System.Drawing.Point(188, 109);
-            this.textBoxMaPhongBan.Name = "textBoxMaPhongBan";
-            this.textBoxMaPhongBan.Size = new System.Drawing.Size(489, 25);
-            this.textBoxMaPhongBan.TabIndex = 10;
-            // 
             // textBoxTenBoPhan
             // 
             this.textBoxTenBoPhan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
@@ -233,6 +225,15 @@
             this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Bộ Phận";
+            // 
+            // comboBoxTenPhongBan
+            // 
+            this.comboBoxTenPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTenPhongBan.FormattingEnabled = true;
+            this.comboBoxTenPhongBan.Location = new System.Drawing.Point(188, 112);
+            this.comboBoxTenPhongBan.Name = "comboBoxTenPhongBan";
+            this.comboBoxTenPhongBan.Size = new System.Drawing.Size(489, 25);
+            this.comboBoxTenPhongBan.TabIndex = 14;
             // 
             // ThemBoPhan
             // 
@@ -269,8 +270,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxSoDienThoai;
         private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxMaPhongBan;
         private System.Windows.Forms.TextBox textBoxTenBoPhan;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxTenPhongBan;
     }
 }

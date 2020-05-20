@@ -34,6 +34,7 @@
             this.buttonThem = new System.Windows.Forms.Button();
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxNoiCap = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.textBoxNgayCap = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
-            this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
             this.textBoxSoBaoHiemYT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -108,6 +108,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxMaNhanVien);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBoxNoiCap);
@@ -115,7 +116,6 @@
             this.groupBox1.Controls.Add(this.textBoxNgayCap);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxTenNhanVien);
-            this.groupBox1.Controls.Add(this.textBoxMaNhanVien);
             this.groupBox1.Controls.Add(this.textBoxSoBaoHiemYT);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
@@ -126,11 +126,20 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
+            // comboBoxMaNhanVien
+            // 
+            this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxMaNhanVien.FormattingEnabled = true;
+            this.comboBoxMaNhanVien.Location = new System.Drawing.Point(159, 32);
+            this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
+            this.comboBoxMaNhanVien.Size = new System.Drawing.Size(370, 25);
+            this.comboBoxMaNhanVien.TabIndex = 26;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 80);
+            this.label2.Location = new System.Drawing.Point(14, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 13;
@@ -149,7 +158,7 @@
             // textBoxNoiCap
             // 
             this.textBoxNoiCap.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxNoiCap.Location = new System.Drawing.Point(159, 219);
+            this.textBoxNoiCap.Location = new System.Drawing.Point(159, 216);
             this.textBoxNoiCap.Name = "textBoxNoiCap";
             this.textBoxNoiCap.Size = new System.Drawing.Size(370, 25);
             this.textBoxNoiCap.TabIndex = 23;
@@ -158,7 +167,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 181);
+            this.label4.Location = new System.Drawing.Point(14, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 17);
             this.label4.TabIndex = 15;
@@ -184,19 +193,12 @@
             // 
             // textBoxTenNhanVien
             // 
+            this.textBoxTenNhanVien.Enabled = false;
             this.textBoxTenNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTenNhanVien.Location = new System.Drawing.Point(159, 72);
+            this.textBoxTenNhanVien.Location = new System.Drawing.Point(159, 77);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
             this.textBoxTenNhanVien.Size = new System.Drawing.Size(370, 25);
             this.textBoxTenNhanVien.TabIndex = 17;
-            // 
-            // textBoxMaNhanVien
-            // 
-            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxMaNhanVien.Location = new System.Drawing.Point(159, 30);
-            this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
-            this.textBoxMaNhanVien.Size = new System.Drawing.Size(370, 25);
-            this.textBoxMaNhanVien.TabIndex = 16;
             // 
             // textBoxSoBaoHiemYT
             // 
@@ -210,7 +212,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(14, 267);
+            this.label6.Location = new System.Drawing.Point(14, 261);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 17);
             this.label6.TabIndex = 24;
@@ -220,7 +222,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 130);
+            this.label3.Location = new System.Drawing.Point(14, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 17);
             this.label3.TabIndex = 14;
@@ -229,7 +231,7 @@
             // textBoxSoBaoHiemXH
             // 
             this.textBoxSoBaoHiemXH.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxSoBaoHiemXH.Location = new System.Drawing.Point(159, 122);
+            this.textBoxSoBaoHiemXH.Location = new System.Drawing.Point(159, 125);
             this.textBoxSoBaoHiemXH.Name = "textBoxSoBaoHiemXH";
             this.textBoxSoBaoHiemXH.Size = new System.Drawing.Size(370, 25);
             this.textBoxSoBaoHiemXH.TabIndex = 18;
@@ -267,10 +269,10 @@
         private System.Windows.Forms.TextBox textBoxNgayCap;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxTenNhanVien;
-        private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.TextBox textBoxSoBaoHiemYT;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxSoBaoHiemXH;
+        private System.Windows.Forms.ComboBox comboBoxMaNhanVien;
     }
 }

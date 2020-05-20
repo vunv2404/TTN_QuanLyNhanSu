@@ -42,13 +42,14 @@
             this.textBoxSoLuong = new System.Windows.Forms.TextBox();
             this.textBoxNguoiPhuTrach = new System.Windows.Forms.TextBox();
             this.textBoxChiPhi = new System.Windows.Forms.TextBox();
-            this.textBoxTinhTrang = new System.Windows.Forms.TextBox();
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTinhTrang = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonLuu
@@ -135,7 +136,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(34, 370);
+            this.label7.Location = new System.Drawing.Point(34, 365);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 17);
             this.label7.TabIndex = 8;
@@ -181,14 +182,6 @@
             this.textBoxChiPhi.Size = new System.Drawing.Size(443, 25);
             this.textBoxChiPhi.TabIndex = 13;
             // 
-            // textBoxTinhTrang
-            // 
-            this.textBoxTinhTrang.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTinhTrang.Location = new System.Drawing.Point(158, 362);
-            this.textBoxTinhTrang.Name = "textBoxTinhTrang";
-            this.textBoxTinhTrang.Size = new System.Drawing.Size(443, 25);
-            this.textBoxTinhTrang.TabIndex = 14;
-            // 
             // buttonQuayLai
             // 
             this.buttonQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -211,7 +204,6 @@
             this.panel1.Controls.Add(this.textBoxSoLuong);
             this.panel1.Controls.Add(this.textBoxNguoiPhuTrach);
             this.panel1.Controls.Add(this.textBoxChiPhi);
-            this.panel1.Controls.Add(this.textBoxTinhTrang);
             this.panel1.Controls.Add(this.buttonQuayLai);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
@@ -248,11 +240,25 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxTinhTrang);
             this.groupBox1.Location = new System.Drawing.Point(22, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(585, 319);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxTinhTrang
+            // 
+            this.comboBoxTinhTrang.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTinhTrang.FormattingEnabled = true;
+            this.comboBoxTinhTrang.Items.AddRange(new object[] {
+            "Không Phê Duyệt",
+            "Đã Phê Duyệt",
+            "Chờ Phê Duyệt"});
+            this.comboBoxTinhTrang.Location = new System.Drawing.Point(136, 279);
+            this.comboBoxTinhTrang.Name = "comboBoxTinhTrang";
+            this.comboBoxTinhTrang.Size = new System.Drawing.Size(443, 25);
+            this.comboBoxTinhTrang.TabIndex = 0;
             // 
             // ThemKhoaHoc
             // 
@@ -265,6 +271,7 @@
             this.Text = "ThemKhoaHoc";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -285,11 +292,11 @@
         private System.Windows.Forms.TextBox textBoxSoLuong;
         private System.Windows.Forms.TextBox textBoxNguoiPhuTrach;
         private System.Windows.Forms.TextBox textBoxChiPhi;
-        private System.Windows.Forms.TextBox textBoxTinhTrang;
         private System.Windows.Forms.Button buttonQuayLai;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxTinhTrang;
     }
 }

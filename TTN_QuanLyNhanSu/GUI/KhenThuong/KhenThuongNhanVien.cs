@@ -12,6 +12,18 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
 {
     public partial class KhenThuongNhanVien : Form
     {
+
+        /// <summary>
+        /// 
+        /// - lấy dữu liệu bên form danh sách khen thưởng  ném vào cột bên trái ,
+        /// 
+        /// - bên phải dùng combobox mã nhân viên để chọn nhân viên được khen thưởng.
+        /// 
+        /// - các textbox hiển thị dữ liệu theo mã nhân viên.
+        /// 
+        /// - khi bấm lưu thì thông báo có muốn lưu thay đổi.
+        /// 
+        /// </summary>
         public KhenThuongNhanVien()
         {
             InitializeComponent();

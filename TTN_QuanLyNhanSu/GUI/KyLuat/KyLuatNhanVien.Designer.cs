@@ -189,6 +189,7 @@
             // 
             // textBoxHoTen
             // 
+            this.textBoxHoTen.Enabled = false;
             this.textBoxHoTen.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxHoTen.Location = new System.Drawing.Point(560, 52);
             this.textBoxHoTen.Name = "textBoxHoTen";
@@ -197,6 +198,7 @@
             // 
             // textBoxNgaySinh
             // 
+            this.textBoxNgaySinh.Enabled = false;
             this.textBoxNgaySinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNgaySinh.Location = new System.Drawing.Point(560, 90);
             this.textBoxNgaySinh.Name = "textBoxNgaySinh";
@@ -205,6 +207,7 @@
             // 
             // textBoxGioiTinh
             // 
+            this.textBoxGioiTinh.Enabled = false;
             this.textBoxGioiTinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGioiTinh.Location = new System.Drawing.Point(560, 134);
             this.textBoxGioiTinh.Name = "textBoxGioiTinh";
@@ -213,6 +216,7 @@
             // 
             // textBoxChucVu
             // 
+            this.textBoxChucVu.Enabled = false;
             this.textBoxChucVu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxChucVu.Location = new System.Drawing.Point(560, 177);
             this.textBoxChucVu.Name = "textBoxChucVu";
@@ -221,6 +225,7 @@
             // 
             // textBoxBoPhan
             // 
+            this.textBoxBoPhan.Enabled = false;
             this.textBoxBoPhan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBoPhan.Location = new System.Drawing.Point(560, 213);
             this.textBoxBoPhan.Name = "textBoxBoPhan";
@@ -229,6 +234,7 @@
             // 
             // textBoxPhongban
             // 
+            this.textBoxPhongban.Enabled = false;
             this.textBoxPhongban.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPhongban.Location = new System.Drawing.Point(560, 250);
             this.textBoxPhongban.Name = "textBoxPhongban";
@@ -287,6 +293,7 @@
             // 
             // textBoxTrangThai
             // 
+            this.textBoxTrangThai.Enabled = false;
             this.textBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTrangThai.Location = new System.Drawing.Point(142, 254);
             this.textBoxTrangThai.Name = "textBoxTrangThai";
@@ -305,6 +312,7 @@
             // 
             // textBoxSoQuyetDinh
             // 
+            this.textBoxSoQuyetDinh.Enabled = false;
             this.textBoxSoQuyetDinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSoQuyetDinh.Location = new System.Drawing.Point(142, 19);
             this.textBoxSoQuyetDinh.Name = "textBoxSoQuyetDinh";
@@ -323,6 +331,7 @@
             // 
             // textBoxNgayHieuLuc
             // 
+            this.textBoxNgayHieuLuc.Enabled = false;
             this.textBoxNgayHieuLuc.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNgayHieuLuc.Location = new System.Drawing.Point(142, 52);
             this.textBoxNgayHieuLuc.Name = "textBoxNgayHieuLuc";
@@ -341,6 +350,7 @@
             // 
             // textBoxNgayHetHan
             // 
+            this.textBoxNgayHetHan.Enabled = false;
             this.textBoxNgayHetHan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNgayHetHan.Location = new System.Drawing.Point(142, 89);
             this.textBoxNgayHetHan.Name = "textBoxNgayHetHan";
@@ -359,6 +369,7 @@
             // 
             // textBoxHinhThuc
             // 
+            this.textBoxHinhThuc.Enabled = false;
             this.textBoxHinhThuc.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxHinhThuc.Location = new System.Drawing.Point(142, 217);
             this.textBoxHinhThuc.Name = "textBoxHinhThuc";
@@ -377,6 +388,7 @@
             // 
             // textBoxNoiDung
             // 
+            this.textBoxNoiDung.Enabled = false;
             this.textBoxNoiDung.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNoiDung.Location = new System.Drawing.Point(142, 177);
             this.textBoxNoiDung.Name = "textBoxNoiDung";
@@ -395,6 +407,7 @@
             // 
             // textBoxLiDo
             // 
+            this.textBoxLiDo.Enabled = false;
             this.textBoxLiDo.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLiDo.Location = new System.Drawing.Point(142, 134);
             this.textBoxLiDo.Name = "textBoxLiDo";
