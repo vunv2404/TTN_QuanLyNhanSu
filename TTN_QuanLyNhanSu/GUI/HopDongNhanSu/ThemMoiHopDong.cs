@@ -16,6 +16,7 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
     public partial class ThemMoiHopDong : Form
     {
         private HopDongNhanSuBUS hopDongBUS = new HopDongNhanSuBUS();
+        private Utility utility = new Utility();
         /// <summary>
         /// 
         /// - Thêm mới 1 bản ghi
@@ -100,74 +101,22 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
 
         private void textBoxNgayHieuLuc_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxNgayHieuLuc.Text.Length == 2 && Regex.IsMatch(textBoxNgayHieuLuc.Text.Substring(0, 2), @"\d") && textBoxNgayHieuLuc.Text.Length < 3)
-            {
-                textBoxNgayHieuLuc.Text += "/";
-                textBoxNgayHieuLuc.SelectionStart = textBoxNgayHieuLuc.Text.Length;
-                textBoxNgayHieuLuc.SelectionLength = 0;
-            }
-            if (textBoxNgayHieuLuc.Text.Length == 5 && Regex.IsMatch(textBoxNgayHieuLuc.Text.Substring(3, 2), @"\d"))
-            {
-                textBoxNgayHieuLuc.Text += "/";
-                textBoxNgayHieuLuc.SelectionStart = textBoxNgayHieuLuc.Text.Length;
-                textBoxNgayHieuLuc.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_TextChanged(sender as TextBox);
         }
 
         private void textBoxNgayHieuLuc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-            if (textBoxNgayHieuLuc.Text.Length == 3 && e.KeyChar == '\b')
-            {
-                textBoxNgayHieuLuc.Text = textBoxNgayHieuLuc.Text.Remove(1, 2);
-                textBoxNgayHieuLuc.SelectionStart = textBoxNgayHieuLuc.Text.Length;
-                textBoxNgayHieuLuc.SelectionLength = 0;
-            }
-            if (textBoxNgayHieuLuc.Text.Length == 6 && e.KeyChar == '\b')
-            {
-                textBoxNgayHieuLuc.Text = textBoxNgayHieuLuc.Text.Remove(4, 2);
-                textBoxNgayHieuLuc.SelectionStart = textBoxNgayHieuLuc.Text.Length;
-                textBoxNgayHieuLuc.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_KeyPressed(sender as TextBox, e);
         }
 
         private void textBoxNgayHetHan_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxNgayHetHan.Text.Length == 2 && Regex.IsMatch(textBoxNgayHetHan.Text.Substring(0, 2), @"\d") && textBoxNgayHetHan.Text.Length < 3)
-            {
-                textBoxNgayHetHan.Text += "/";
-                textBoxNgayHetHan.SelectionStart = textBoxNgayHetHan.Text.Length;
-                textBoxNgayHetHan.SelectionLength = 0;
-            }
-            if (textBoxNgayHetHan.Text.Length == 5 && Regex.IsMatch(textBoxNgayHetHan.Text.Substring(3, 2), @"\d"))
-            {
-                textBoxNgayHetHan.Text += "/";
-                textBoxNgayHetHan.SelectionStart = textBoxNgayHetHan.Text.Length;
-                textBoxNgayHetHan.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_TextChanged(sender as TextBox);
         }
 
         private void textBoxNgayHetHan_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-            if (textBoxNgayHetHan.Text.Length == 3 && e.KeyChar == '\b')
-            {
-                textBoxNgayHetHan.Text = textBoxNgayHetHan.Text.Remove(1, 2);
-                textBoxNgayHetHan.SelectionStart = textBoxNgayHetHan.Text.Length;
-                textBoxNgayHetHan.SelectionLength = 0;
-            }
-            if (textBoxNgayHetHan.Text.Length == 6 && e.KeyChar == '\b')
-            {
-                textBoxNgayHetHan.Text = textBoxNgayHetHan.Text.Remove(4, 2);
-                textBoxNgayHetHan.SelectionStart = textBoxNgayHetHan.Text.Length;
-                textBoxNgayHetHan.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_KeyPressed(sender as TextBox, e);
         }
     }
 }
