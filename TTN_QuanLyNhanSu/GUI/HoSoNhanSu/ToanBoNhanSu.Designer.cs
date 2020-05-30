@@ -107,6 +107,7 @@
             this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTong.Location = new System.Drawing.Point(51, 87);
             this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.ReadOnly = true;
             this.textBoxTong.Size = new System.Drawing.Size(75, 25);
             this.textBoxTong.TabIndex = 49;
             // 
@@ -126,19 +127,23 @@
             // 
             // comboBoxTimKiem
             // 
+            this.comboBoxTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.comboBoxTimKiem.FormattingEnabled = true;
             this.comboBoxTimKiem.Items.AddRange(new object[] {
             "Mã Nhân Viên",
             "Tên Nhân Viên",
-            "Bộ Phận"});
+            "Bộ Phận",
+            "None"});
             this.comboBoxTimKiem.Location = new System.Drawing.Point(463, 18);
             this.comboBoxTimKiem.Name = "comboBoxTimKiem";
             this.comboBoxTimKiem.Size = new System.Drawing.Size(186, 25);
             this.comboBoxTimKiem.TabIndex = 5;
+            this.comboBoxTimKiem.SelectedIndexChanged += new System.EventHandler(this.comboBoxTimKiem_SelectedIndexChanged);
             // 
             // textBoxTimKiem
             // 
+            this.textBoxTimKiem.Enabled = false;
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTimKiem.Location = new System.Drawing.Point(655, 18);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
@@ -184,6 +189,7 @@
             // 
             // dataGridViewHoSoNhanSu
             // 
+            this.dataGridViewHoSoNhanSu.AllowUserToAddRows = false;
             this.dataGridViewHoSoNhanSu.AutoGenerateColumns = false;
             this.dataGridViewHoSoNhanSu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHoSoNhanSu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {

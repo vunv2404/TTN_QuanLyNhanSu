@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN_QuanLyNhanSu.BUS;
 
 namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
 {
     public partial class ToanBoNhanSu : Form
     {
+        HoSoNhanSuBUS BUS = new HoSoNhanSuBUS();
         /// <summary>
         /// 
         /// - button Thêm sang form Thêm mới 1 hồ sơ nhân sự
@@ -28,13 +30,15 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         public ToanBoNhanSu()
         {
             InitializeComponent();
+
+            comboBoxTimKiem.SelectedItem = "None";
         }
 
         private void ToanBoNhanSu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.HoSoNhanSu' table. You can move, or remove it, as needed.
             this.hoSoNhanSuTableAdapter.Fill(this.tTN_QLNhanSuDataSet.HoSoNhanSu);
-
+            textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
         }
 
         private void buttonThem_Click(object sender, EventArgs e)
@@ -48,6 +52,8 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void FormThemMoiNhanSu_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            //
+            textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
         }
 
         private void buttonChiTiet_Click(object sender, EventArgs e)
@@ -78,11 +84,21 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void FormChiTietNhanSu_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            //
         }
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-
+            if(textBoxTimKiem.Text.Trim() == "")
+            {
+                MessageBox.Show("Nhập dữ liệu cần tìm kiếm");
+            }
+            else
+            {
+                dataGridViewHoSoNhanSu.DataSource = null;
+                dataGridViewHoSoNhanSu.DataSource = BUS.GetDanhSachNhanSuFilter(comboBoxTimKiem.SelectedItem.ToString(), textBoxTimKiem.Text.Trim());
+                textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
+            }
         }
 
         private void buttonQuayLai_Click(object sender, EventArgs e)
@@ -93,6 +109,22 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void dataGridViewHoSoNhanSu_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             buttonChiTiet.Enabled = true;
+        }
+
+        private void comboBoxTimKiem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBoxTimKiem.Text == "None")
+            {
+                textBoxTimKiem.Enabled = false;
+                textBoxTimKiem.Text = "";
+                dataGridViewHoSoNhanSu.DataSource = null;
+                dataGridViewHoSoNhanSu.DataSource = BUS.GetDanhSachNhanSuFilter(comboBoxTimKiem.SelectedItem.ToString(), textBoxTimKiem.Text.ToString());
+                textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
+            }
+            else
+            {
+                textBoxTimKiem.Enabled = true;
+            }
         }
     }
 }

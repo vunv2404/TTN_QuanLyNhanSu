@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
+            this.comboBoxHocHam = new System.Windows.Forms.ComboBox();
+            this.comboBoxHocVi = new System.Windows.Forms.ComboBox();
+            this.comboBoxPhongBan = new System.Windows.Forms.ComboBox();
+            this.comboBoxBoPhan = new System.Windows.Forms.ComboBox();
             this.comboBoxChucVu = new System.Windows.Forms.ComboBox();
             this.comboBoxGioiTinh = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -38,7 +43,6 @@
             this.textBoxNgayVaoCoQuan = new System.Windows.Forms.TextBox();
             this.textBoxSDT = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -61,10 +65,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
-            this.comboBoxBoPhan = new System.Windows.Forms.ComboBox();
-            this.comboBoxPhongBan = new System.Windows.Forms.ComboBox();
-            this.comboBoxHocVi = new System.Windows.Forms.ComboBox();
-            this.comboBoxHocHam = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNhanSu)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -73,6 +73,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.textBoxNgaySinh);
             this.panel1.Controls.Add(this.comboBoxHocHam);
             this.panel1.Controls.Add(this.comboBoxHocVi);
             this.panel1.Controls.Add(this.comboBoxPhongBan);
@@ -86,7 +87,6 @@
             this.panel1.Controls.Add(this.textBoxNgayVaoCoQuan);
             this.panel1.Controls.Add(this.textBoxSDT);
             this.panel1.Controls.Add(this.textBoxEmail);
-            this.panel1.Controls.Add(this.textBoxNgaySinh);
             this.panel1.Controls.Add(this.textBoxTenNhanVien);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
@@ -113,10 +113,79 @@
             this.panel1.Size = new System.Drawing.Size(1070, 470);
             this.panel1.TabIndex = 3;
             // 
+            // textBoxNgaySinh
+            // 
+            this.textBoxNgaySinh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNgaySinh.Location = new System.Drawing.Point(724, 72);
+            this.textBoxNgaySinh.MaxLength = 10;
+            this.textBoxNgaySinh.Name = "textBoxNgaySinh";
+            this.textBoxNgaySinh.Size = new System.Drawing.Size(310, 25);
+            this.textBoxNgaySinh.TabIndex = 42;
+            this.textBoxNgaySinh.TextChanged += new System.EventHandler(this.textBoxNgaySinh_TextChanged);
+            this.textBoxNgaySinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNgaySinh_KeyPress);
+            // 
+            // comboBoxHocHam
+            // 
+            this.comboBoxHocHam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxHocHam.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxHocHam.FormattingEnabled = true;
+            this.comboBoxHocHam.Items.AddRange(new object[] {
+            "Trống",
+            "Thạc Sĩ",
+            "Tiến Sĩ",
+            "Phó Giáo Sư",
+            "Giáo Sư",
+            "PGS,TS",
+            "GS,TS"});
+            this.comboBoxHocHam.Location = new System.Drawing.Point(724, 232);
+            this.comboBoxHocHam.Name = "comboBoxHocHam";
+            this.comboBoxHocHam.Size = new System.Drawing.Size(310, 25);
+            this.comboBoxHocHam.TabIndex = 41;
+            // 
+            // comboBoxHocVi
+            // 
+            this.comboBoxHocVi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxHocVi.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxHocVi.FormattingEnabled = true;
+            this.comboBoxHocVi.Items.AddRange(new object[] {
+            "Trống",
+            "Cử Nhân",
+            "Kĩ Sư",
+            "Cao Học"});
+            this.comboBoxHocVi.Location = new System.Drawing.Point(724, 192);
+            this.comboBoxHocVi.Name = "comboBoxHocVi";
+            this.comboBoxHocVi.Size = new System.Drawing.Size(310, 25);
+            this.comboBoxHocVi.TabIndex = 40;
+            // 
+            // comboBoxPhongBan
+            // 
+            this.comboBoxPhongBan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxPhongBan.FormattingEnabled = true;
+            this.comboBoxPhongBan.Location = new System.Drawing.Point(724, 112);
+            this.comboBoxPhongBan.Name = "comboBoxPhongBan";
+            this.comboBoxPhongBan.Size = new System.Drawing.Size(310, 25);
+            this.comboBoxPhongBan.TabIndex = 39;
+            // 
+            // comboBoxBoPhan
+            // 
+            this.comboBoxBoPhan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBoPhan.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxBoPhan.FormattingEnabled = true;
+            this.comboBoxBoPhan.Location = new System.Drawing.Point(297, 312);
+            this.comboBoxBoPhan.Name = "comboBoxBoPhan";
+            this.comboBoxBoPhan.Size = new System.Drawing.Size(307, 25);
+            this.comboBoxBoPhan.TabIndex = 38;
+            // 
             // comboBoxChucVu
             // 
+            this.comboBoxChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxChucVu.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.comboBoxChucVu.FormattingEnabled = true;
+            this.comboBoxChucVu.Items.AddRange(new object[] {
+            "Nhân Viên",
+            "Giám Đốc",
+            "Công Nhân"});
             this.comboBoxChucVu.Location = new System.Drawing.Point(297, 272);
             this.comboBoxChucVu.Name = "comboBoxChucVu";
             this.comboBoxChucVu.Size = new System.Drawing.Size(307, 25);
@@ -124,6 +193,7 @@
             // 
             // comboBoxGioiTinh
             // 
+            this.comboBoxGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGioiTinh.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.comboBoxGioiTinh.FormattingEnabled = true;
             this.comboBoxGioiTinh.Items.AddRange(new object[] {
@@ -172,17 +242,22 @@
             // 
             this.textBoxNgayVaoCoQuan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNgayVaoCoQuan.Location = new System.Drawing.Point(297, 352);
+            this.textBoxNgayVaoCoQuan.MaxLength = 10;
             this.textBoxNgayVaoCoQuan.Name = "textBoxNgayVaoCoQuan";
             this.textBoxNgayVaoCoQuan.Size = new System.Drawing.Size(307, 25);
             this.textBoxNgayVaoCoQuan.TabIndex = 28;
+            this.textBoxNgayVaoCoQuan.TextChanged += new System.EventHandler(this.textBoxNgayVaoCoQuan_TextChanged);
+            this.textBoxNgayVaoCoQuan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNgayVaoCoQuan_KeyPress);
             // 
             // textBoxSDT
             // 
             this.textBoxSDT.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSDT.Location = new System.Drawing.Point(297, 232);
+            this.textBoxSDT.MaxLength = 11;
             this.textBoxSDT.Name = "textBoxSDT";
             this.textBoxSDT.Size = new System.Drawing.Size(307, 25);
             this.textBoxSDT.TabIndex = 25;
+            this.textBoxSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSDT_KeyPress);
             // 
             // textBoxEmail
             // 
@@ -191,14 +266,6 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(307, 25);
             this.textBoxEmail.TabIndex = 24;
-            // 
-            // textBoxNgaySinh
-            // 
-            this.textBoxNgaySinh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNgaySinh.Location = new System.Drawing.Point(724, 72);
-            this.textBoxNgaySinh.Name = "textBoxNgaySinh";
-            this.textBoxNgaySinh.Size = new System.Drawing.Size(310, 25);
-            this.textBoxNgaySinh.TabIndex = 22;
             // 
             // textBoxTenNhanVien
             // 
@@ -377,6 +444,7 @@
             this.textBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMaNhanVien.Location = new System.Drawing.Point(297, 72);
             this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
+            this.textBoxMaNhanVien.ReadOnly = true;
             this.textBoxMaNhanVien.Size = new System.Drawing.Size(307, 25);
             this.textBoxMaNhanVien.TabIndex = 4;
             // 
@@ -415,55 +483,6 @@
             this.buttonThem.UseVisualStyleBackColor = true;
             this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
             // 
-            // comboBoxBoPhan
-            // 
-            this.comboBoxBoPhan.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.comboBoxBoPhan.FormattingEnabled = true;
-            this.comboBoxBoPhan.Location = new System.Drawing.Point(297, 312);
-            this.comboBoxBoPhan.Name = "comboBoxBoPhan";
-            this.comboBoxBoPhan.Size = new System.Drawing.Size(307, 25);
-            this.comboBoxBoPhan.TabIndex = 38;
-            // 
-            // comboBoxPhongBan
-            // 
-            this.comboBoxPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.comboBoxPhongBan.FormattingEnabled = true;
-            this.comboBoxPhongBan.Location = new System.Drawing.Point(724, 112);
-            this.comboBoxPhongBan.Name = "comboBoxPhongBan";
-            this.comboBoxPhongBan.Size = new System.Drawing.Size(310, 25);
-            this.comboBoxPhongBan.TabIndex = 39;
-            // 
-            // comboBoxHocVi
-            // 
-            this.comboBoxHocVi.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.comboBoxHocVi.FormattingEnabled = true;
-            this.comboBoxHocVi.Items.AddRange(new object[] {
-            "Trống",
-            "Cử Nhân",
-            "Kĩ Sư",
-            "Cao Học"});
-            this.comboBoxHocVi.Location = new System.Drawing.Point(724, 192);
-            this.comboBoxHocVi.Name = "comboBoxHocVi";
-            this.comboBoxHocVi.Size = new System.Drawing.Size(310, 25);
-            this.comboBoxHocVi.TabIndex = 40;
-            // 
-            // comboBoxHocHam
-            // 
-            this.comboBoxHocHam.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.comboBoxHocHam.FormattingEnabled = true;
-            this.comboBoxHocHam.Items.AddRange(new object[] {
-            "Trống",
-            "Thạc Sĩ",
-            "Tiến Sĩ",
-            "Phó Giáo Sư",
-            "Giáo Sư",
-            "PGS,TS",
-            "GS,TS"});
-            this.comboBoxHocHam.Location = new System.Drawing.Point(724, 232);
-            this.comboBoxHocHam.Name = "comboBoxHocHam";
-            this.comboBoxHocHam.Size = new System.Drawing.Size(310, 25);
-            this.comboBoxHocHam.TabIndex = 41;
-            // 
             // ThemMoiNhanSu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,7 +510,6 @@
         private System.Windows.Forms.TextBox textBoxNgayVaoCoQuan;
         private System.Windows.Forms.TextBox textBoxSDT;
         private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxNgaySinh;
         private System.Windows.Forms.TextBox textBoxTenNhanVien;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
@@ -520,5 +538,6 @@
         private System.Windows.Forms.ComboBox comboBoxHocHam;
         private System.Windows.Forms.ComboBox comboBoxHocVi;
         private System.Windows.Forms.ComboBox comboBoxPhongBan;
+        private System.Windows.Forms.TextBox textBoxNgaySinh;
     }
 }

@@ -40,7 +40,6 @@
             this.noiDungDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hopDongNhanSuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
-            this.hopDongNhanSuTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.HopDongNhanSuTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonQuayLai = new System.Windows.Forms.Button();
@@ -51,6 +50,7 @@
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.buttonChiTiet = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
+            this.hopDongNhanSuTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.HopDongNhanSuTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToanBoHopDong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopDongNhanSuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tTN_QLNhanSuDataSet)).BeginInit();
@@ -60,6 +60,7 @@
             // 
             // dataGridViewToanBoHopDong
             // 
+            this.dataGridViewToanBoHopDong.AllowUserToAddRows = false;
             this.dataGridViewToanBoHopDong.AutoGenerateColumns = false;
             this.dataGridViewToanBoHopDong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewToanBoHopDong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -76,6 +77,7 @@
             this.dataGridViewToanBoHopDong.Name = "dataGridViewToanBoHopDong";
             this.dataGridViewToanBoHopDong.Size = new System.Drawing.Size(1030, 391);
             this.dataGridViewToanBoHopDong.TabIndex = 0;
+            this.dataGridViewToanBoHopDong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewToanBoHopDong_CellClick);
             // 
             // soHopDongDataGridViewTextBoxColumn
             // 
@@ -141,10 +143,6 @@
             this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
             this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // hopDongNhanSuTableAdapter
-            // 
-            this.hopDongNhanSuTableAdapter.ClearBeforeFill = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Linen;
@@ -185,6 +183,7 @@
             this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTong.Location = new System.Drawing.Point(50, 73);
             this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.ReadOnly = true;
             this.textBoxTong.Size = new System.Drawing.Size(75, 25);
             this.textBoxTong.TabIndex = 49;
             // 
@@ -204,18 +203,23 @@
             // 
             // comboBoxTimKiem
             // 
+            this.comboBoxTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.comboBoxTimKiem.FormattingEnabled = true;
             this.comboBoxTimKiem.Items.AddRange(new object[] {
+            "None",
+            "Số Hợp Đồng",
             "Tên Nhân Viên",
             "Loại Hợp Đồng"});
             this.comboBoxTimKiem.Location = new System.Drawing.Point(443, 18);
             this.comboBoxTimKiem.Name = "comboBoxTimKiem";
             this.comboBoxTimKiem.Size = new System.Drawing.Size(157, 25);
             this.comboBoxTimKiem.TabIndex = 5;
+            this.comboBoxTimKiem.SelectedIndexChanged += new System.EventHandler(this.comboBoxTimKiem_SelectedIndexChanged);
             // 
             // textBoxTimKiem
             // 
+            this.textBoxTimKiem.Enabled = false;
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTimKiem.Location = new System.Drawing.Point(615, 18);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
@@ -258,6 +262,10 @@
             this.buttonThem.Text = " + Thêm";
             this.buttonThem.UseVisualStyleBackColor = true;
             this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
+            // 
+            // hopDongNhanSuTableAdapter
+            // 
+            this.hopDongNhanSuTableAdapter.ClearBeforeFill = true;
             // 
             // ToanBoHopDong
             // 

@@ -22,7 +22,7 @@ namespace TTN_QuanLyNhanSu.DAL
 
         //Copy vào 1 lần , lần sau của ai thì người ấy bỏ comment đi.
         //của Vũ
-        private string str = @"Data Source=nguyenvanvu563a\sqlexpress;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+        //private string str = @"Data Source=nguyenvanvu563a\sqlexpress;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
 
         //Của Nam
         //private string str = @"";
@@ -34,7 +34,8 @@ namespace TTN_QuanLyNhanSu.DAL
         //private string str = @"";
 
         //Của Dũng
-        //private string str = @"";
+        private string str = @"Data Source=.;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+
 
         public DataTable ExecuteQuery(string query)
         {
