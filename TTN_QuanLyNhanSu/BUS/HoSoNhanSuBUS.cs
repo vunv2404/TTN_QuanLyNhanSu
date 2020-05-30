@@ -110,7 +110,10 @@ namespace TTN_QuanLyNhanSu.BUS
 
         }
 
-
-
+        public DataTable NhanSuKyLuat(string SoQuyetDinh)
+        {
+            string query = string.Format("NhanVienBiKyLuat '{0}'", SoQuyetDinh);
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
     }
 }

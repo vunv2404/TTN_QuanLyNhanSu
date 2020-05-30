@@ -95,9 +95,11 @@
             // 
             // textBoxTong
             // 
+            this.textBoxTong.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTong.Location = new System.Drawing.Point(49, 77);
             this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.ReadOnly = true;
             this.textBoxTong.Size = new System.Drawing.Size(75, 25);
             this.textBoxTong.TabIndex = 49;
             // 
@@ -131,7 +133,6 @@
             // 
             // buttonKyLuatNhanSu
             // 
-            this.buttonKyLuatNhanSu.Enabled = false;
             this.buttonKyLuatNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonKyLuatNhanSu.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKyLuatNhanSu.Location = new System.Drawing.Point(222, 18);
@@ -189,6 +190,8 @@
             // 
             // dataGridViewQuyetDinhKyLuat
             // 
+            this.dataGridViewQuyetDinhKyLuat.AllowUserToAddRows = false;
+            this.dataGridViewQuyetDinhKyLuat.AllowUserToDeleteRows = false;
             this.dataGridViewQuyetDinhKyLuat.AutoGenerateColumns = false;
             this.dataGridViewQuyetDinhKyLuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQuyetDinhKyLuat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -201,15 +204,20 @@
             this.trangThaiDataGridViewTextBoxColumn});
             this.dataGridViewQuyetDinhKyLuat.DataSource = this.kyLuatBindingSource;
             this.dataGridViewQuyetDinhKyLuat.Location = new System.Drawing.Point(4, 108);
+            this.dataGridViewQuyetDinhKyLuat.MultiSelect = false;
             this.dataGridViewQuyetDinhKyLuat.Name = "dataGridViewQuyetDinhKyLuat";
+            this.dataGridViewQuyetDinhKyLuat.ReadOnly = true;
+            this.dataGridViewQuyetDinhKyLuat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewQuyetDinhKyLuat.Size = new System.Drawing.Size(927, 380);
             this.dataGridViewQuyetDinhKyLuat.TabIndex = 0;
+            this.dataGridViewQuyetDinhKyLuat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewQuyetDinhKyLuat_CellClick);
             // 
             // soQuyetDinhDataGridViewTextBoxColumn
             // 
             this.soQuyetDinhDataGridViewTextBoxColumn.DataPropertyName = "SoQuyetDinh";
             this.soQuyetDinhDataGridViewTextBoxColumn.HeaderText = "Số Quyết Định";
             this.soQuyetDinhDataGridViewTextBoxColumn.Name = "soQuyetDinhDataGridViewTextBoxColumn";
+            this.soQuyetDinhDataGridViewTextBoxColumn.ReadOnly = true;
             this.soQuyetDinhDataGridViewTextBoxColumn.Width = 110;
             // 
             // ngayHieuLucDataGridViewTextBoxColumn
@@ -217,6 +225,7 @@
             this.ngayHieuLucDataGridViewTextBoxColumn.DataPropertyName = "NgayHieuLuc";
             this.ngayHieuLucDataGridViewTextBoxColumn.HeaderText = "Ngày Hiệu Lực";
             this.ngayHieuLucDataGridViewTextBoxColumn.Name = "ngayHieuLucDataGridViewTextBoxColumn";
+            this.ngayHieuLucDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayHieuLucDataGridViewTextBoxColumn.Width = 110;
             // 
             // ngayHetHanDataGridViewTextBoxColumn
@@ -224,6 +233,7 @@
             this.ngayHetHanDataGridViewTextBoxColumn.DataPropertyName = "NgayHetHan";
             this.ngayHetHanDataGridViewTextBoxColumn.HeaderText = "Ngày Hết Hạn";
             this.ngayHetHanDataGridViewTextBoxColumn.Name = "ngayHetHanDataGridViewTextBoxColumn";
+            this.ngayHetHanDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayHetHanDataGridViewTextBoxColumn.Width = 110;
             // 
             // liDoDataGridViewTextBoxColumn
@@ -231,6 +241,7 @@
             this.liDoDataGridViewTextBoxColumn.DataPropertyName = "LiDo";
             this.liDoDataGridViewTextBoxColumn.HeaderText = "Lí Do";
             this.liDoDataGridViewTextBoxColumn.Name = "liDoDataGridViewTextBoxColumn";
+            this.liDoDataGridViewTextBoxColumn.ReadOnly = true;
             this.liDoDataGridViewTextBoxColumn.Width = 250;
             // 
             // noiDungDataGridViewTextBoxColumn
@@ -238,18 +249,21 @@
             this.noiDungDataGridViewTextBoxColumn.DataPropertyName = "NoiDung";
             this.noiDungDataGridViewTextBoxColumn.HeaderText = "Nội Dung";
             this.noiDungDataGridViewTextBoxColumn.Name = "noiDungDataGridViewTextBoxColumn";
+            this.noiDungDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hinhThucDataGridViewTextBoxColumn
             // 
             this.hinhThucDataGridViewTextBoxColumn.DataPropertyName = "HinhThuc";
             this.hinhThucDataGridViewTextBoxColumn.HeaderText = "Hình Thức";
             this.hinhThucDataGridViewTextBoxColumn.Name = "hinhThucDataGridViewTextBoxColumn";
+            this.hinhThucDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // trangThaiDataGridViewTextBoxColumn
             // 
             this.trangThaiDataGridViewTextBoxColumn.DataPropertyName = "TrangThai";
             this.trangThaiDataGridViewTextBoxColumn.HeaderText = "Trạng Thái";
             this.trangThaiDataGridViewTextBoxColumn.Name = "trangThaiDataGridViewTextBoxColumn";
+            this.trangThaiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kyLuatBindingSource
             // 

@@ -51,6 +51,9 @@
             // 
             // dataGridViewDSNVBikyLuat
             // 
+            this.dataGridViewDSNVBikyLuat.AllowUserToAddRows = false;
+            this.dataGridViewDSNVBikyLuat.AllowUserToDeleteRows = false;
+            this.dataGridViewDSNVBikyLuat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDSNVBikyLuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDSNVBikyLuat.Location = new System.Drawing.Point(10, 45);
             this.dataGridViewDSNVBikyLuat.Name = "dataGridViewDSNVBikyLuat";

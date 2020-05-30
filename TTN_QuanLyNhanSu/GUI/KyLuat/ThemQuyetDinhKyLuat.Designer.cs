@@ -41,13 +41,13 @@
             this.buttonLuu = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxLiDo = new System.Windows.Forms.TextBox();
             this.textBoxHinhThuc = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxNoiDung = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +89,7 @@
             this.textBoxSoQuyetDinh.Name = "textBoxSoQuyetDinh";
             this.textBoxSoQuyetDinh.Size = new System.Drawing.Size(443, 25);
             this.textBoxSoQuyetDinh.TabIndex = 2;
+            this.textBoxSoQuyetDinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSoQuyetDinh_KeyPress);
             // 
             // textBoxNgayHieuLuc
             // 
@@ -97,6 +98,8 @@
             this.textBoxNgayHieuLuc.Name = "textBoxNgayHieuLuc";
             this.textBoxNgayHieuLuc.Size = new System.Drawing.Size(443, 25);
             this.textBoxNgayHieuLuc.TabIndex = 9;
+            this.textBoxNgayHieuLuc.TextChanged += new System.EventHandler(this.textBoxDateTime_TextChanged);
+            this.textBoxNgayHieuLuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDateTime_KeyPress);
             // 
             // textBoxNgayHetHan
             // 
@@ -105,6 +108,8 @@
             this.textBoxNgayHetHan.Name = "textBoxNgayHetHan";
             this.textBoxNgayHetHan.Size = new System.Drawing.Size(443, 25);
             this.textBoxNgayHetHan.TabIndex = 10;
+            this.textBoxNgayHetHan.TextChanged += new System.EventHandler(this.textBoxDateTime_TextChanged);
+            this.textBoxNgayHetHan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDateTime_KeyPress);
             // 
             // buttonQuayLai
             // 
@@ -193,6 +198,20 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
+            // comboBoxTrangThai
+            // 
+            this.comboBoxTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTrangThai.FormattingEnabled = true;
+            this.comboBoxTrangThai.Items.AddRange(new object[] {
+            "Phê Duyệt",
+            "Đang Phê Duyệt",
+            "Không Phê Duyệt"});
+            this.comboBoxTrangThai.Location = new System.Drawing.Point(136, 279);
+            this.comboBoxTrangThai.Name = "comboBoxTrangThai";
+            this.comboBoxTrangThai.Size = new System.Drawing.Size(443, 25);
+            this.comboBoxTrangThai.TabIndex = 19;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -246,19 +265,6 @@
             this.label4.Size = new System.Drawing.Size(70, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Nội Dung";
-            // 
-            // comboBoxTrangThai
-            // 
-            this.comboBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBoxTrangThai.FormattingEnabled = true;
-            this.comboBoxTrangThai.Items.AddRange(new object[] {
-            "Phê Duyệt",
-            "Đang Phê Duyệt",
-            "Không Phê Duyệt"});
-            this.comboBoxTrangThai.Location = new System.Drawing.Point(136, 279);
-            this.comboBoxTrangThai.Name = "comboBoxTrangThai";
-            this.comboBoxTrangThai.Size = new System.Drawing.Size(443, 25);
-            this.comboBoxTrangThai.TabIndex = 19;
             // 
             // ThemQuyetDinhKyLuat
             // 

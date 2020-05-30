@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace TTN_QuanLyNhanSu.DAL
 {
@@ -22,10 +23,10 @@ namespace TTN_QuanLyNhanSu.DAL
 
         //Copy vào 1 lần , lần sau của ai thì người ấy bỏ comment đi.
         //của Vũ
-        private string str = @"Data Source=nguyenvanvu563a\sqlexpress;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+        //private string str = @"Data Source=nguyenvanvu563a\sqlexpress;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
 
         //Của Nam
-        //private string str = @"";
+        private string str = ConfigurationManager.ConnectionStrings["TTN_QuanLyNhanSu.Properties.Settings.TTN_QLNhanSuConnectionString"].ConnectionString;
 
         //Của Trung
         //private string str = @"";
