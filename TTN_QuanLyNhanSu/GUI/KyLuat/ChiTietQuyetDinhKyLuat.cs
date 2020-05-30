@@ -50,11 +50,20 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void buttonLuu_Click(object sender, EventArgs e)
         {
             // lưu dữ liệu lại chỗ này này
-            buttonLuu.Enabled = false;
-            if (LuuDuLieu())
+            switch (MessageBox.Show(this, "Bạn có muốn lưu?", "Lưu dữ liệu", MessageBoxButtons.YesNo))
             {
-                this.Close();
-            }
+                case DialogResult.No:
+                    break;
+                case DialogResult.Yes:
+                    buttonLuu.Enabled = false;
+                    if (LuuDuLieu())
+                    {
+                        this.Close();
+                    }
+                    break;
+                default:
+                    break;
+            }            
         }
 
         private void buttonQuayLai_Click(object sender, EventArgs e)
@@ -65,11 +74,13 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
 
         private void textBoxDateTime_KeyPress(object sender, KeyPressEventArgs e)
         {
+            buttonLuu.Enabled = true;
             DateTimeFiller_KeyPressed(sender as TextBox, e);
         }
 
         private void textBoxDateTime_TextChanged(object sender, EventArgs e)
         {
+            buttonLuu.Enabled = true;
             DateTimeFiller_TextChanged(sender as TextBox);
         }
 

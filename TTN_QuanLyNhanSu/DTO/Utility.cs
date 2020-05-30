@@ -23,7 +23,7 @@ namespace TTN_QuanLyNhanSu.DTO
             }
         }
 
-        private void DateTimeFiller_KeyPressed(TextBox tb, KeyPressEventArgs e)
+        public void DateTimeFiller_KeyPressed(TextBox tb, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
