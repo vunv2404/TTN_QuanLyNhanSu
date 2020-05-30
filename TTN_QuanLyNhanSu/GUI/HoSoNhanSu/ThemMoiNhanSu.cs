@@ -43,6 +43,7 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         HoSoNhanSuBUS BUS = new HoSoNhanSuBUS();
         List<DTO.BoPhan> lbp = new List<DTO.BoPhan>();
         List<DTO.PhongBan> lpb = new List<DTO.PhongBan>();
+        private Utility utility = new Utility();
 
         public ThemMoiNhanSu()
         {
@@ -154,74 +155,22 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
 
         private void textBoxNgaySinh_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-            if (textBoxNgaySinh.Text.Length == 3 && e.KeyChar == '\b')
-            {
-                textBoxNgaySinh.Text = textBoxNgaySinh.Text.Remove(1, 2);
-                textBoxNgaySinh.SelectionStart = textBoxNgaySinh.Text.Length;
-                textBoxNgaySinh.SelectionLength = 0;
-            }
-            if (textBoxNgaySinh.Text.Length == 6 && e.KeyChar == '\b')
-            {
-                textBoxNgaySinh.Text = textBoxNgaySinh.Text.Remove(4, 2);
-                textBoxNgaySinh.SelectionStart = textBoxNgaySinh.Text.Length;
-                textBoxNgaySinh.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_KeyPressed(sender as TextBox, e);
         }
 
         private void textBoxNgaySinh_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxNgaySinh.Text.Length == 2 && Regex.IsMatch(textBoxNgaySinh.Text.Substring(0, 2), @"\d") && textBoxNgaySinh.Text.Length < 3)
-            {
-                textBoxNgaySinh.Text += "/";
-                textBoxNgaySinh.SelectionStart = textBoxNgaySinh.Text.Length;
-                textBoxNgaySinh.SelectionLength = 0;
-            }
-            if (textBoxNgaySinh.Text.Length == 5 && Regex.IsMatch(textBoxNgaySinh.Text.Substring(3, 2), @"\d"))
-            {
-                textBoxNgaySinh.Text += "/";
-                textBoxNgaySinh.SelectionStart = textBoxNgaySinh.Text.Length;
-                textBoxNgaySinh.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_TextChanged(sender as TextBox);
         }
 
         private void textBoxNgayVaoCoQuan_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxNgayVaoCoQuan.Text.Length == 2 && Regex.IsMatch(textBoxNgayVaoCoQuan.Text.Substring(0, 2), @"\d") && textBoxNgayVaoCoQuan.Text.Length < 3)
-            {
-                textBoxNgayVaoCoQuan.Text += "/";
-                textBoxNgayVaoCoQuan.SelectionStart = textBoxNgayVaoCoQuan.Text.Length;
-                textBoxNgayVaoCoQuan.SelectionLength = 0;
-            }
-            if (textBoxNgayVaoCoQuan.Text.Length == 5 && Regex.IsMatch(textBoxNgayVaoCoQuan.Text.Substring(3, 2), @"\d"))
-            {
-                textBoxNgayVaoCoQuan.Text += "/";
-                textBoxNgayVaoCoQuan.SelectionStart = textBoxNgayVaoCoQuan.Text.Length;
-                textBoxNgayVaoCoQuan.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_TextChanged(sender as TextBox);
         }
 
         private void textBoxNgayVaoCoQuan_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-            if (textBoxNgayVaoCoQuan.Text.Length == 3 && e.KeyChar == '\b')
-            {
-                textBoxNgayVaoCoQuan.Text = textBoxNgayVaoCoQuan.Text.Remove(1, 2);
-                textBoxNgayVaoCoQuan.SelectionStart = textBoxNgayVaoCoQuan.Text.Length;
-                textBoxNgayVaoCoQuan.SelectionLength = 0;
-            }
-            if (textBoxNgayVaoCoQuan.Text.Length == 6 && e.KeyChar == '\b')
-            {
-                textBoxNgayVaoCoQuan.Text = textBoxNgayVaoCoQuan.Text.Remove(4, 2);
-                textBoxNgayVaoCoQuan.SelectionStart = textBoxNgayVaoCoQuan.Text.Length;
-                textBoxNgayVaoCoQuan.SelectionLength = 0;
-            }
+            utility.DateTimeFiller_KeyPressed(sender as TextBox, e);
         }
 
         private void textBoxSDT_KeyPress(object sender, KeyPressEventArgs e)

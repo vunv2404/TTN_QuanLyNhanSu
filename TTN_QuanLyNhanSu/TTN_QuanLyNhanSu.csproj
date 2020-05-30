@@ -66,6 +66,7 @@
     <Compile Include="DTO\KyLuatNhanVien.cs" />
     <Compile Include="DTO\Luong.cs" />
     <Compile Include="DTO\PhongBan.cs" />
+    <Compile Include="DTO\Utility.cs" />
     <Compile Include="GUI\BaoHiem\ChiTietBaoHiem.cs">
       <SubType>Form</SubType>
     </Compile>
