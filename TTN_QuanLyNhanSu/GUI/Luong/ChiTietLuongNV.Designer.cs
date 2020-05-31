@@ -32,6 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.buttonCapNhat = new System.Windows.Forms.Button();
-            this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -121,6 +121,15 @@
             this.groupBox1.Size = new System.Drawing.Size(743, 483);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxMaNhanVien
+            // 
+            this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.comboBoxMaNhanVien.FormattingEnabled = true;
+            this.comboBoxMaNhanVien.Location = new System.Drawing.Point(160, 30);
+            this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
+            this.comboBoxMaNhanVien.Size = new System.Drawing.Size(533, 25);
+            this.comboBoxMaNhanVien.TabIndex = 28;
             // 
             // label3
             // 
@@ -336,15 +345,6 @@
             this.buttonCapNhat.UseVisualStyleBackColor = true;
             this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
             // 
-            // comboBoxMaNhanVien
-            // 
-            this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.comboBoxMaNhanVien.FormattingEnabled = true;
-            this.comboBoxMaNhanVien.Location = new System.Drawing.Point(160, 30);
-            this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
-            this.comboBoxMaNhanVien.Size = new System.Drawing.Size(533, 25);
-            this.comboBoxMaNhanVien.TabIndex = 28;
-            // 
             // ChiTietLuongNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,6 +354,7 @@
             this.Name = "ChiTietLuongNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTiet";
+            this.Load += new System.EventHandler(this.ChiTietLuongNV_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

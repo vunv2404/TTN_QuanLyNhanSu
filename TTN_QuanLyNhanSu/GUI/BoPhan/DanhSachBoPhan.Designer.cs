@@ -184,14 +184,18 @@
             this.dataGridViewDanhSachBoPhan.DataSource = this.boPhanBindingSource;
             this.dataGridViewDanhSachBoPhan.Location = new System.Drawing.Point(3, 102);
             this.dataGridViewDanhSachBoPhan.Name = "dataGridViewDanhSachBoPhan";
+            this.dataGridViewDanhSachBoPhan.ReadOnly = true;
+            this.dataGridViewDanhSachBoPhan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDanhSachBoPhan.Size = new System.Drawing.Size(863, 411);
             this.dataGridViewDanhSachBoPhan.TabIndex = 0;
+            this.dataGridViewDanhSachBoPhan.Click += new System.EventHandler(this.DataGridViewDanhSachBoPhan_Click);
             // 
             // maBoPhanDataGridViewTextBoxColumn
             // 
             this.maBoPhanDataGridViewTextBoxColumn.DataPropertyName = "MaBoPhan";
             this.maBoPhanDataGridViewTextBoxColumn.HeaderText = "Mã Bộ Phận";
             this.maBoPhanDataGridViewTextBoxColumn.Name = "maBoPhanDataGridViewTextBoxColumn";
+            this.maBoPhanDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tenBoPhanDataGridViewTextBoxColumn
             // 
@@ -199,12 +203,14 @@
             this.tenBoPhanDataGridViewTextBoxColumn.DataPropertyName = "TenBoPhan";
             this.tenBoPhanDataGridViewTextBoxColumn.HeaderText = "Tên Bộ Phận";
             this.tenBoPhanDataGridViewTextBoxColumn.Name = "tenBoPhanDataGridViewTextBoxColumn";
+            this.tenBoPhanDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // maPhongbanDataGridViewTextBoxColumn
             // 
             this.maPhongbanDataGridViewTextBoxColumn.DataPropertyName = "MaPhongban";
             this.maPhongbanDataGridViewTextBoxColumn.HeaderText = "Mã Phòng Ban";
             this.maPhongbanDataGridViewTextBoxColumn.Name = "maPhongbanDataGridViewTextBoxColumn";
+            this.maPhongbanDataGridViewTextBoxColumn.ReadOnly = true;
             this.maPhongbanDataGridViewTextBoxColumn.Width = 110;
             // 
             // emailDataGridViewTextBoxColumn
@@ -212,12 +218,14 @@
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
             this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dienThoaiDataGridViewTextBoxColumn
             // 
             this.dienThoaiDataGridViewTextBoxColumn.DataPropertyName = "DienThoai";
             this.dienThoaiDataGridViewTextBoxColumn.HeaderText = "Số Điện Thoại";
             this.dienThoaiDataGridViewTextBoxColumn.Name = "dienThoaiDataGridViewTextBoxColumn";
+            this.dienThoaiDataGridViewTextBoxColumn.ReadOnly = true;
             this.dienThoaiDataGridViewTextBoxColumn.Width = 110;
             // 
             // faxDataGridViewTextBoxColumn
@@ -225,6 +233,7 @@
             this.faxDataGridViewTextBoxColumn.DataPropertyName = "Fax";
             this.faxDataGridViewTextBoxColumn.HeaderText = "Fax";
             this.faxDataGridViewTextBoxColumn.Name = "faxDataGridViewTextBoxColumn";
+            this.faxDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // boPhanBindingSource
             // 

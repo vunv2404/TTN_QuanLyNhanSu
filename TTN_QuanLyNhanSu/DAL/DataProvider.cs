@@ -31,7 +31,7 @@ namespace TTN_QuanLyNhanSu.DAL
         //private string str = @"";
 
         //Của Hiếu
-        //private string str = @"";
+        private string str = @"Data Source=DESKTOP-HKOJN4O;Initial Catalog=TTN_QLNS;Integrated Security=True";
 
         //Của Dũng
         private string str = @"Data Source=.;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";

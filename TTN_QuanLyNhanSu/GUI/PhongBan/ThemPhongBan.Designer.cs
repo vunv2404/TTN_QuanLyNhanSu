@@ -34,6 +34,7 @@
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxMaTruongPhong = new System.Windows.Forms.ComboBox();
             this.textBoxMaPhongBan = new System.Windows.Forms.TextBox();
             this.textBoxFax = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.textBoxNgayThanhLap = new System.Windows.Forms.TextBox();
             this.textBoxTenPhongBan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxMaTruongPhong = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -129,6 +129,15 @@
             this.groupBox1.Size = new System.Drawing.Size(715, 319);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxMaTruongPhong
+            // 
+            this.comboBoxMaTruongPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxMaTruongPhong.FormattingEnabled = true;
+            this.comboBoxMaTruongPhong.Location = new System.Drawing.Point(188, 153);
+            this.comboBoxMaTruongPhong.Name = "comboBoxMaTruongPhong";
+            this.comboBoxMaTruongPhong.Size = new System.Drawing.Size(489, 25);
+            this.comboBoxMaTruongPhong.TabIndex = 15;
             // 
             // textBoxMaPhongBan
             // 
@@ -229,6 +238,8 @@
             this.textBoxNgayThanhLap.Name = "textBoxNgayThanhLap";
             this.textBoxNgayThanhLap.Size = new System.Drawing.Size(489, 25);
             this.textBoxNgayThanhLap.TabIndex = 10;
+            this.textBoxNgayThanhLap.TextChanged += new System.EventHandler(this.TextBoxNgayThanhLap_TextChanged);
+            this.textBoxNgayThanhLap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxNgayThanhLap_KeyPress);
             // 
             // textBoxTenPhongBan
             // 
@@ -248,15 +259,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Phòng Ban";
             // 
-            // comboBoxMaTruongPhong
-            // 
-            this.comboBoxMaTruongPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBoxMaTruongPhong.FormattingEnabled = true;
-            this.comboBoxMaTruongPhong.Location = new System.Drawing.Point(188, 153);
-            this.comboBoxMaTruongPhong.Name = "comboBoxMaTruongPhong";
-            this.comboBoxMaTruongPhong.Size = new System.Drawing.Size(489, 25);
-            this.comboBoxMaTruongPhong.TabIndex = 15;
-            // 
             // ThemPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,6 +268,7 @@
             this.Name = "ThemPhongBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemPhongBan";
+            this.Load += new System.EventHandler(this.ThemPhongBan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

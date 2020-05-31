@@ -34,6 +34,7 @@
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.buttonCapNhat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTenPhongBan = new System.Windows.Forms.ComboBox();
             this.textBoxMaBoPhan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxTenBoPhan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxTenPhongBan = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -96,7 +96,6 @@
             // 
             // buttonCapNhat
             // 
-            this.buttonCapNhat.Enabled = false;
             this.buttonCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCapNhat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapNhat.Location = new System.Drawing.Point(25, 17);
@@ -126,6 +125,15 @@
             this.groupBox1.Size = new System.Drawing.Size(715, 297);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxTenPhongBan
+            // 
+            this.comboBoxTenPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTenPhongBan.FormattingEnabled = true;
+            this.comboBoxTenPhongBan.Location = new System.Drawing.Point(188, 109);
+            this.comboBoxTenPhongBan.Name = "comboBoxTenPhongBan";
+            this.comboBoxTenPhongBan.Size = new System.Drawing.Size(489, 25);
+            this.comboBoxTenPhongBan.TabIndex = 15;
             // 
             // textBoxMaBoPhan
             // 
@@ -227,15 +235,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Bộ Phận";
             // 
-            // comboBoxTenPhongBan
-            // 
-            this.comboBoxTenPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBoxTenPhongBan.FormattingEnabled = true;
-            this.comboBoxTenPhongBan.Location = new System.Drawing.Point(188, 109);
-            this.comboBoxTenPhongBan.Name = "comboBoxTenPhongBan";
-            this.comboBoxTenPhongBan.Size = new System.Drawing.Size(489, 25);
-            this.comboBoxTenPhongBan.TabIndex = 15;
-            // 
             // ChiTietBoPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,6 +244,7 @@
             this.Name = "ChiTietBoPhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietBoPhan";
+            this.Load += new System.EventHandler(this.ChiTietBoPhan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
