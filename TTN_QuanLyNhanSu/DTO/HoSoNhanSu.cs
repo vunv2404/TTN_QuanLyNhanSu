@@ -66,4 +66,56 @@ namespace TTN_QuanLyNhanSu.DTO
         public string ChungChi { get => chungChi; set => chungChi = value; }
         public string ChuyenMon { get => chuyenMon; set => chuyenMon = value; }
     }
+
+    public class NhanSu
+    {
+        private string maNV;
+        private string hoTenNV;
+        DateTime ngaySinh;
+        private string gioiTinh;
+        private string chucVu;
+        private string boPhan;
+        private string phongBan;
+
+        public NhanSu()
+        {
+            this.maNV = "";
+            this.hoTenNV = "";
+            this.ngaySinh = new DateTime();
+            this.gioiTinh = "";
+            this.chucVu = "";
+            this.boPhan = "";
+            this.phongBan = "";
+        }
+
+        public NhanSu(string maNV, string hoTenNV, DateTime ngaySinh, string gioiTinh, string chucVu, string boPhan, string phongBan)
+        {
+            this.maNV = maNV;
+            this.hoTenNV = hoTenNV;
+            this.ngaySinh = ngaySinh;
+            this.gioiTinh = gioiTinh;
+            this.chucVu = chucVu;
+            this.boPhan = boPhan;
+            this.phongBan = phongBan;
+        }
+
+        public string MaNV { get => maNV; set => maNV = value; }
+        public string HoTenNV { get => hoTenNV; set => hoTenNV = value; }
+        public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }
+        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public string ChucVu { get => chucVu; set => chucVu = value; }
+        public string BoPhan { get => boPhan; set => boPhan = value; }
+        public string PhongBan { get => phongBan; set => phongBan = value; }
+
+        public override string ToString()
+        {
+            return this.maNV +
+            this.hoTenNV +
+            this.ngaySinh.ToString() +
+            this.gioiTinh +
+            this.chucVu +
+            this.boPhan +
+            this.phongBan;
+        }
+    }
 }

@@ -133,6 +133,7 @@
             // 
             // buttonKyLuatNhanSu
             // 
+            this.buttonKyLuatNhanSu.Enabled = false;
             this.buttonKyLuatNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonKyLuatNhanSu.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKyLuatNhanSu.Location = new System.Drawing.Point(222, 18);

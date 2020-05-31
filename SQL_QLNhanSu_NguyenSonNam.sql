@@ -39,3 +39,10 @@ as
 begin
 	select MaNV,HotenNV,TenPB from HoSoNhanSu,PhongBan where MaNV in (select MaNV from KyLuatNhanVien where SoQuyetDinh = @SoQuyetDinh) and HoSoNhanSu.MaPhongBan = PhongBan.MaPhongBan
 end
+
+
+create proc DanhSachNhanVien
+as
+begin
+	select MaNV,HoTenNV,convert(varchar, NgaySinh, 1),GioiTinh,ChucVu,BoPhan,TenPB from HoSoNhanSu,PhongBan where HoSoNhanSu.MaPhongBan = PhongBan.MaPhongBan
+end

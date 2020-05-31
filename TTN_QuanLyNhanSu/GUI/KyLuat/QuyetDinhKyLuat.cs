@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN_QuanLyNhanSu.BUS;
 using TTN_QuanLyNhanSu.DTO;
 using static TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet;
 
@@ -35,6 +36,7 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         /// 
         /// - Đưa ra danh sách nhân viên bị kỷ luật theo số quyết định.(gồm mã nhân viên , tên nhân viên) button danh sách nhân viên bị kỉ luật.
         /// </summary>
+        ///
         public QuyetDinhKyLuat()
         {
             InitializeComponent();
@@ -81,8 +83,10 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
 
         private void buttonKyLuatNhanSu_Click(object sender, EventArgs e)
         {
+            DataGridViewCellCollection cell = dataGridViewQuyetDinhKyLuat.CurrentRow.Cells;
+            DTO.KyLuat kyLuat = new DTO.KyLuat(cell[0].Value.ToString(), DateTime.ParseExact(cell[1].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), DateTime.ParseExact(cell[2].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), cell[3].Value.ToString(), cell[4].Value.ToString(), cell[5].Value.ToString(), cell[6].Value.ToString());
             this.Hide();
-            KyLuatNhanVien formKyLuatNhanVien = new KyLuatNhanVien();
+            KyLuatNhanVien formKyLuatNhanVien = new KyLuatNhanVien(kyLuat);
             formKyLuatNhanVien.FormClosed += FormKyLuatNhanVien_FormClosed;
             formKyLuatNhanVien.Show();
         }
@@ -120,6 +124,7 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         {
             buttonChiTiet.Enabled = true;
             buttonDSNVBiKyLuat.Enabled = true;
+            buttonKyLuatNhanSu.Enabled = true;
         }
     }
 }
