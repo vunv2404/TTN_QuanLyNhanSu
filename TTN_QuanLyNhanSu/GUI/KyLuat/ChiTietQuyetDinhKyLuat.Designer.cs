@@ -34,6 +34,7 @@
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.buttonLuu = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
             this.textBoxSoQuyetDinh = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.textBoxNgayHetHan = new System.Windows.Forms.TextBox();
             this.textBoxNgayHieuLuc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -130,11 +130,28 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
+            // comboBoxTrangThai
+            // 
+            this.comboBoxTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTrangThai.FormattingEnabled = true;
+            this.comboBoxTrangThai.Items.AddRange(new object[] {
+            "Phê Duyệt",
+            "Đang Phê Duyệt",
+            "Không Phê Duyệt"});
+            this.comboBoxTrangThai.Location = new System.Drawing.Point(188, 279);
+            this.comboBoxTrangThai.Name = "comboBoxTrangThai";
+            this.comboBoxTrangThai.Size = new System.Drawing.Size(489, 25);
+            this.comboBoxTrangThai.TabIndex = 19;
+            this.comboBoxTrangThai.TextChanged += new System.EventHandler(this.comboBoxTrangThai_TextChanged);
+            // 
             // textBoxSoQuyetDinh
             // 
+            this.textBoxSoQuyetDinh.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxSoQuyetDinh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxSoQuyetDinh.Location = new System.Drawing.Point(188, 27);
             this.textBoxSoQuyetDinh.Name = "textBoxSoQuyetDinh";
+            this.textBoxSoQuyetDinh.ReadOnly = true;
             this.textBoxSoQuyetDinh.Size = new System.Drawing.Size(489, 25);
             this.textBoxSoQuyetDinh.TabIndex = 2;
             // 
@@ -175,6 +192,7 @@
             this.textBoxLiDo.Name = "textBoxLiDo";
             this.textBoxLiDo.Size = new System.Drawing.Size(489, 25);
             this.textBoxLiDo.TabIndex = 13;
+            this.textBoxLiDo.TextChanged += new System.EventHandler(this.textBoxLiDo_TextChanged);
             // 
             // label4
             // 
@@ -213,6 +231,7 @@
             this.textBoxHinhThuc.Name = "textBoxHinhThuc";
             this.textBoxHinhThuc.Size = new System.Drawing.Size(489, 25);
             this.textBoxHinhThuc.TabIndex = 12;
+            this.textBoxHinhThuc.TextChanged += new System.EventHandler(this.textBoxHinhThuc_TextChanged);
             // 
             // textBoxNoiDung
             // 
@@ -221,6 +240,7 @@
             this.textBoxNoiDung.Name = "textBoxNoiDung";
             this.textBoxNoiDung.Size = new System.Drawing.Size(489, 25);
             this.textBoxNoiDung.TabIndex = 11;
+            this.textBoxNoiDung.TextChanged += new System.EventHandler(this.textBoxNoiDung_TextChanged);
             // 
             // textBoxNgayHetHan
             // 
@@ -229,6 +249,8 @@
             this.textBoxNgayHetHan.Name = "textBoxNgayHetHan";
             this.textBoxNgayHetHan.Size = new System.Drawing.Size(489, 25);
             this.textBoxNgayHetHan.TabIndex = 10;
+            this.textBoxNgayHetHan.TextChanged += new System.EventHandler(this.textBoxDateTime_TextChanged);
+            this.textBoxNgayHetHan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDateTime_KeyPress);
             // 
             // textBoxNgayHieuLuc
             // 
@@ -237,6 +259,8 @@
             this.textBoxNgayHieuLuc.Name = "textBoxNgayHieuLuc";
             this.textBoxNgayHieuLuc.Size = new System.Drawing.Size(489, 25);
             this.textBoxNgayHieuLuc.TabIndex = 9;
+            this.textBoxNgayHieuLuc.TextChanged += new System.EventHandler(this.textBoxDateTime_TextChanged);
+            this.textBoxNgayHieuLuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDateTime_KeyPress);
             // 
             // label1
             // 
@@ -247,19 +271,6 @@
             this.label1.Size = new System.Drawing.Size(103, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Số Quyết Định";
-            // 
-            // comboBoxTrangThai
-            // 
-            this.comboBoxTrangThai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBoxTrangThai.FormattingEnabled = true;
-            this.comboBoxTrangThai.Items.AddRange(new object[] {
-            "Phê Duyệt",
-            "Đang Phê Duyệt",
-            "Không Phê Duyệt"});
-            this.comboBoxTrangThai.Location = new System.Drawing.Point(188, 279);
-            this.comboBoxTrangThai.Name = "comboBoxTrangThai";
-            this.comboBoxTrangThai.Size = new System.Drawing.Size(489, 25);
-            this.comboBoxTrangThai.TabIndex = 19;
             // 
             // ChiTietQuyetDinhKyLuat
             // 

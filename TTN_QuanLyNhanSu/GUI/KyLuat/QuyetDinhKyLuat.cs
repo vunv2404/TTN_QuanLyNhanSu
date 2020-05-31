@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN_QuanLyNhanSu.BUS;
+using TTN_QuanLyNhanSu.DTO;
+using static TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet;
 
 namespace TTN_QuanLyNhanSu.GUI.KyLuat
 {
@@ -31,6 +36,7 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         /// 
         /// - Đưa ra danh sách nhân viên bị kỷ luật theo số quyết định.(gồm mã nhân viên , tên nhân viên) button danh sách nhân viên bị kỉ luật.
         /// </summary>
+        ///
         public QuyetDinhKyLuat()
         {
             InitializeComponent();
@@ -40,7 +46,7 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.KyLuat' table. You can move, or remove it, as needed.
             this.kyLuatTableAdapter.Fill(this.tTN_QLNhanSuDataSet.KyLuat);
-
+            textBoxTong.Text = dataGridViewQuyetDinhKyLuat.Rows.Count.ToString();
         }
 
         private void buttonThem_Click(object sender, EventArgs e)
@@ -54,12 +60,16 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void FormThemQuyetDinhKyLuat_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            this.tTN_QLNhanSuDataSet.KyLuat.AcceptChanges();
+            this.kyLuatTableAdapter.Fill(this.tTN_QLNhanSuDataSet.KyLuat);
         }
 
         private void buttonChiTiet_Click(object sender, EventArgs e)
         {
+            DataGridViewCellCollection cell = dataGridViewQuyetDinhKyLuat.CurrentRow.Cells;
+            DTO.KyLuat kyLuat = new DTO.KyLuat(cell[0].Value.ToString(),DateTime.ParseExact(cell[1].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), DateTime.ParseExact(cell[2].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), cell[3].Value.ToString(), cell[4].Value.ToString(), cell[5].Value.ToString(),cell[6].Value.ToString());
             this.Hide();
-            ChiTietQuyetDinhKyLuat formChiTietQuyetDinhKyLuat = new ChiTietQuyetDinhKyLuat();
+            ChiTietQuyetDinhKyLuat formChiTietQuyetDinhKyLuat = new ChiTietQuyetDinhKyLuat(kyLuat);
             formChiTietQuyetDinhKyLuat.FormClosed += FormChiTietQuyetDinhKyLuat_FormClosed;
             formChiTietQuyetDinhKyLuat.Show();
         }
@@ -67,12 +77,16 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void FormChiTietQuyetDinhKyLuat_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            this.tTN_QLNhanSuDataSet.KyLuat.AcceptChanges();
+            this.kyLuatTableAdapter.Fill(this.tTN_QLNhanSuDataSet.KyLuat);
         }
 
         private void buttonKyLuatNhanSu_Click(object sender, EventArgs e)
         {
+            DataGridViewCellCollection cell = dataGridViewQuyetDinhKyLuat.CurrentRow.Cells;
+            DTO.KyLuat kyLuat = new DTO.KyLuat(cell[0].Value.ToString(), DateTime.ParseExact(cell[1].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), DateTime.ParseExact(cell[2].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), cell[3].Value.ToString(), cell[4].Value.ToString(), cell[5].Value.ToString(), cell[6].Value.ToString());
             this.Hide();
-            KyLuatNhanVien formKyLuatNhanVien = new KyLuatNhanVien();
+            KyLuatNhanVien formKyLuatNhanVien = new KyLuatNhanVien(kyLuat);
             formKyLuatNhanVien.FormClosed += FormKyLuatNhanVien_FormClosed;
             formKyLuatNhanVien.Show();
         }
@@ -84,7 +98,8 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-
+            dataGridViewQuyetDinhKyLuat.DataSource = tTN_QLNhanSuDataSet.KyLuat.Select("LiDo like '%" + textBoxTimKiem.Text + "%'").CopyToDataTable();
+            textBoxTong.Text = dataGridViewQuyetDinhKyLuat.Rows.Count.ToString();
         }
 
         private void buttonThoat_Click(object sender, EventArgs e)
@@ -95,7 +110,7 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void buttonDSNVBiKyLuat_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DanhSachNVBiKL danhSachNVBiKL = new DanhSachNVBiKL();
+            DanhSachNVBiKL danhSachNVBiKL = new DanhSachNVBiKL(dataGridViewQuyetDinhKyLuat.CurrentRow.Cells[0].Value.ToString());
             danhSachNVBiKL.FormClosed += DanhSachNVBiKL_FormClosed;
             danhSachNVBiKL.Show();
         }
@@ -103,6 +118,13 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void DanhSachNVBiKL_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+        }
+
+        private void dataGridViewQuyetDinhKyLuat_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            buttonChiTiet.Enabled = true;
+            buttonDSNVBiKyLuat.Enabled = true;
+            buttonKyLuatNhanSu.Enabled = true;
         }
     }
 }

@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +51,8 @@
   <ItemGroup>
     <Compile Include="BUS\HopDongNhanSuBUS.cs" />
     <Compile Include="BUS\HoSoNhanSuBUS.cs" />
+    <Compile Include="BUS\KyLuatBUS.cs" />
+    <Compile Include="BUS\NhanVienBUS.cs" />
     <Compile Include="DAL\DataProvider.cs" />
     <Compile Include="DTO\BaoHiem.cs" />
     <Compile Include="DTO\BoPhan.cs" />

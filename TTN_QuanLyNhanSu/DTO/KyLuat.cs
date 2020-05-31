@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TTN_QuanLyNhanSu.DTO
 {
-    class KyLuat
+    public class KyLuat
     {
         private string soQuyetDinh;
         DateTime ngayHieuLuc;

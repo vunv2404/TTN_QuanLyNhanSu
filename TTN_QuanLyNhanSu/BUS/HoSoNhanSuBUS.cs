@@ -176,6 +176,10 @@ namespace TTN_QuanLyNhanSu.BUS
                 command.Parameters.AddWithValue("@AnhDaiDien", image);
                 return DataProvider.Instance.ExecuteNonQuery(command) > 0;
             }
+        public DataTable NhanSuKyLuat(string SoQuyetDinh)
+        {
+            string query = string.Format("NhanVienBiKyLuat '{0}'", SoQuyetDinh);
+            return DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

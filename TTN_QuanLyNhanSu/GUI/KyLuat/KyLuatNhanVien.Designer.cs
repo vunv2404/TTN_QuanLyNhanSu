@@ -176,6 +176,7 @@
             this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
             this.comboBoxMaNhanVien.Size = new System.Drawing.Size(280, 23);
             this.comboBoxMaNhanVien.TabIndex = 30;
+            this.comboBoxMaNhanVien.TextChanged += new System.EventHandler(this.comboBoxMaNhanVien_TextChanged);
             // 
             // label6
             // 
@@ -433,6 +434,7 @@
             this.Name = "KyLuatNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KyLuatNhanVien";
+            this.Load += new System.EventHandler(this.KyLuatNhanVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
