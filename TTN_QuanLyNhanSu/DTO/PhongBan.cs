@@ -9,7 +9,7 @@ namespace TTN_QuanLyNhanSu.DTO
     class PhongBan
     {
         private string maPhongBan;
-        private string tenPhongBan;
+        private string tenPB;
         DateTime ngayThanhLap;
         private string maTruongPhong;
         private string email;
@@ -18,11 +18,11 @@ namespace TTN_QuanLyNhanSu.DTO
 
         public PhongBan() { }
 
-        public PhongBan(string maPhongBan, string tenPhongBan, DateTime ngayThanhLap, string maTruongPhong,
+        public PhongBan(string maPhongBan, string tenPB, DateTime ngayThanhLap, string maTruongPhong,
             string email, string soDienThoai, string fax)
         {
             this.maPhongBan = maPhongBan;
-            this.tenPhongBan = tenPhongBan;
+            this.tenPB = tenPB;
             this.ngayThanhLap = ngayThanhLap;
             this.maTruongPhong = maTruongPhong;
             this.email = email;
@@ -32,7 +32,7 @@ namespace TTN_QuanLyNhanSu.DTO
         }
 
         public string MaPhongBan { get => maPhongBan; set => maPhongBan = value; }
-        public string TenPhongBan { get => tenPhongBan; set => tenPhongBan = value; }
+        public string TenPB { get => tenPB; set => tenPB = value; }
         public DateTime NgayThanhLap { get => ngayThanhLap; set => ngayThanhLap = value; }
         public string MaTruongPhong { get => maTruongPhong; set => maTruongPhong = value; }
         public string Email { get => email; set => email = value; }

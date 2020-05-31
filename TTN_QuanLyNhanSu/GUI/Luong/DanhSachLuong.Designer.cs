@@ -180,14 +180,18 @@
             this.dataGridViewDanhSachLuong.DataSource = this.luongBindingSource;
             this.dataGridViewDanhSachLuong.Location = new System.Drawing.Point(4, 110);
             this.dataGridViewDanhSachLuong.Name = "dataGridViewDanhSachLuong";
+            this.dataGridViewDanhSachLuong.ReadOnly = true;
+            this.dataGridViewDanhSachLuong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDanhSachLuong.Size = new System.Drawing.Size(1059, 416);
             this.dataGridViewDanhSachLuong.TabIndex = 0;
+            this.dataGridViewDanhSachLuong.Click += new System.EventHandler(this.DataGridViewDanhSachLuong_Click);
             // 
             // maNVDataGridViewTextBoxColumn
             // 
             this.maNVDataGridViewTextBoxColumn.DataPropertyName = "MaNV";
             this.maNVDataGridViewTextBoxColumn.HeaderText = "Mã NV";
             this.maNVDataGridViewTextBoxColumn.Name = "maNVDataGridViewTextBoxColumn";
+            this.maNVDataGridViewTextBoxColumn.ReadOnly = true;
             this.maNVDataGridViewTextBoxColumn.Width = 70;
             // 
             // soQuyetDinhDataGridViewTextBoxColumn
@@ -195,6 +199,7 @@
             this.soQuyetDinhDataGridViewTextBoxColumn.DataPropertyName = "SoQuyetDinh";
             this.soQuyetDinhDataGridViewTextBoxColumn.HeaderText = "Số Quyết Định";
             this.soQuyetDinhDataGridViewTextBoxColumn.Name = "soQuyetDinhDataGridViewTextBoxColumn";
+            this.soQuyetDinhDataGridViewTextBoxColumn.ReadOnly = true;
             this.soQuyetDinhDataGridViewTextBoxColumn.Width = 110;
             // 
             // ngayKiDataGridViewTextBoxColumn
@@ -202,6 +207,7 @@
             this.ngayKiDataGridViewTextBoxColumn.DataPropertyName = "NgayKi";
             this.ngayKiDataGridViewTextBoxColumn.HeaderText = "Ngày Kí";
             this.ngayKiDataGridViewTextBoxColumn.Name = "ngayKiDataGridViewTextBoxColumn";
+            this.ngayKiDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayKiDataGridViewTextBoxColumn.Width = 80;
             // 
             // ngayHieuLucDataGridViewTextBoxColumn
@@ -209,6 +215,7 @@
             this.ngayHieuLucDataGridViewTextBoxColumn.DataPropertyName = "NgayHieuLuc";
             this.ngayHieuLucDataGridViewTextBoxColumn.HeaderText = "Ngày Hiệu Lực";
             this.ngayHieuLucDataGridViewTextBoxColumn.Name = "ngayHieuLucDataGridViewTextBoxColumn";
+            this.ngayHieuLucDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayHieuLucDataGridViewTextBoxColumn.Width = 110;
             // 
             // mucLuongDataGridViewTextBoxColumn
@@ -216,12 +223,14 @@
             this.mucLuongDataGridViewTextBoxColumn.DataPropertyName = "MucLuong";
             this.mucLuongDataGridViewTextBoxColumn.HeaderText = "Mức Lương";
             this.mucLuongDataGridViewTextBoxColumn.Name = "mucLuongDataGridViewTextBoxColumn";
+            this.mucLuongDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // heSoDataGridViewTextBoxColumn
             // 
             this.heSoDataGridViewTextBoxColumn.DataPropertyName = "HeSo";
             this.heSoDataGridViewTextBoxColumn.HeaderText = "Hệ Số";
             this.heSoDataGridViewTextBoxColumn.Name = "heSoDataGridViewTextBoxColumn";
+            this.heSoDataGridViewTextBoxColumn.ReadOnly = true;
             this.heSoDataGridViewTextBoxColumn.Width = 60;
             // 
             // tongNgayCongDataGridViewTextBoxColumn
@@ -229,6 +238,7 @@
             this.tongNgayCongDataGridViewTextBoxColumn.DataPropertyName = "TongNgayCong";
             this.tongNgayCongDataGridViewTextBoxColumn.HeaderText = "Ngày Công";
             this.tongNgayCongDataGridViewTextBoxColumn.Name = "tongNgayCongDataGridViewTextBoxColumn";
+            this.tongNgayCongDataGridViewTextBoxColumn.ReadOnly = true;
             this.tongNgayCongDataGridViewTextBoxColumn.Width = 85;
             // 
             // congLamThemGioDataGridViewTextBoxColumn
@@ -236,6 +246,7 @@
             this.congLamThemGioDataGridViewTextBoxColumn.DataPropertyName = "CongLamThemGio";
             this.congLamThemGioDataGridViewTextBoxColumn.HeaderText = "Công Làm Thêm";
             this.congLamThemGioDataGridViewTextBoxColumn.Name = "congLamThemGioDataGridViewTextBoxColumn";
+            this.congLamThemGioDataGridViewTextBoxColumn.ReadOnly = true;
             this.congLamThemGioDataGridViewTextBoxColumn.Width = 110;
             // 
             // phuCapDataGridViewTextBoxColumn
@@ -243,6 +254,7 @@
             this.phuCapDataGridViewTextBoxColumn.DataPropertyName = "PhuCap";
             this.phuCapDataGridViewTextBoxColumn.HeaderText = "Phụ Cấp";
             this.phuCapDataGridViewTextBoxColumn.Name = "phuCapDataGridViewTextBoxColumn";
+            this.phuCapDataGridViewTextBoxColumn.ReadOnly = true;
             this.phuCapDataGridViewTextBoxColumn.Width = 80;
             // 
             // thueThuNhapDataGridViewTextBoxColumn
@@ -250,6 +262,7 @@
             this.thueThuNhapDataGridViewTextBoxColumn.DataPropertyName = "ThueThuNhap";
             this.thueThuNhapDataGridViewTextBoxColumn.HeaderText = "Thuế Thu Nhập";
             this.thueThuNhapDataGridViewTextBoxColumn.Name = "thueThuNhapDataGridViewTextBoxColumn";
+            this.thueThuNhapDataGridViewTextBoxColumn.ReadOnly = true;
             this.thueThuNhapDataGridViewTextBoxColumn.Width = 110;
             // 
             // tongLuongNhanDataGridViewTextBoxColumn
@@ -257,6 +270,7 @@
             this.tongLuongNhanDataGridViewTextBoxColumn.DataPropertyName = "TongLuongNhan";
             this.tongLuongNhanDataGridViewTextBoxColumn.HeaderText = "Tổng Lương";
             this.tongLuongNhanDataGridViewTextBoxColumn.Name = "tongLuongNhanDataGridViewTextBoxColumn";
+            this.tongLuongNhanDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // luongBindingSource
             // 

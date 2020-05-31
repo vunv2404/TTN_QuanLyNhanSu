@@ -226,6 +226,8 @@
             this.textBoxNgayHieuLuc.Name = "textBoxNgayHieuLuc";
             this.textBoxNgayHieuLuc.Size = new System.Drawing.Size(533, 25);
             this.textBoxNgayHieuLuc.TabIndex = 11;
+            this.textBoxNgayHieuLuc.TextChanged += new System.EventHandler(this.TextBoxNgayHieuLuc_TextChanged);
+            this.textBoxNgayHieuLuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxNgayHieuLuc_KeyPress);
             // 
             // label11
             // 
@@ -244,6 +246,8 @@
             this.textBoxNgayKi.Name = "textBoxNgayKi";
             this.textBoxNgayKi.Size = new System.Drawing.Size(533, 25);
             this.textBoxNgayKi.TabIndex = 10;
+            this.textBoxNgayKi.TextChanged += new System.EventHandler(this.TextBoxNgayKi_TextChanged);
+            this.textBoxNgayKi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxNgayKi_KeyPress);
             // 
             // textBoxTongNgayCong
             // 

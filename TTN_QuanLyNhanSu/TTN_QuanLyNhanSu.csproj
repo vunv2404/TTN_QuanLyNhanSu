@@ -47,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BoPhanNhanSuBUS.cs" />
     <Compile Include="BUS\HoSoNhanSuBUS.cs" />
+    <Compile Include="BUS\LuongBUS.cs" />
+    <Compile Include="BUS\PhongBanBUS.cs" />
     <Compile Include="DAL\DataProvider.cs" />
     <Compile Include="DTO\BaoHiem.cs" />
     <Compile Include="DTO\BoPhan.cs" />
