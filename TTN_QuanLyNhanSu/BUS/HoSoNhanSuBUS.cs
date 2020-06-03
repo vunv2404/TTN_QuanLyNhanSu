@@ -148,7 +148,7 @@ namespace TTN_QuanLyNhanSu.BUS
                        MaTruongPhong = dr["MaTruongPhong"].ToString(),
                        NgayThanhLap = Convert.ToDateTime( dr["NgayThanhLap"]),
                        SoDienThoai = dr["SoDienThoai"].ToString(),
-                       TenPhongBan = dr["TenPB"].ToString(),
+                       TenPB = dr["TenPB"].ToString(),
                        MaPhongBan = dr["MaPhongBan"].ToString(),
                        Email = dr["Email"].ToString(),
                        Fax = dr["Fax"].ToString()
@@ -161,7 +161,7 @@ namespace TTN_QuanLyNhanSu.BUS
         }
         public bool AddNhanSu(HoSoNhanSu nhanSu, byte[] image)
         {
-            if(image == null)
+            if (image == null)
             {
                 string query = string.Format("AddNhanSuWithOutImage '{0}', N'{1}', '{2}', N'{3}', N'{4}', N'{5}', '{6}', '{7}', N'{8}', '{9}', '{10}', N'{11}', N'{12}', N'{13}', N'{14}' ",
                 nhanSu.MaNV, nhanSu.HoTenNV, nhanSu.NgaySinh, nhanSu.GioiTinh, nhanSu.ChucVu, nhanSu.BoPhan, nhanSu.MaPhongBan, nhanSu.NgayVaoCoQuan, nhanSu.QueQuan, nhanSu.Email, nhanSu.SoDienThoai, nhanSu.HocVi, nhanSu.HocHam, nhanSu.ChungChi, nhanSu.ChuyenMon);
@@ -176,6 +176,7 @@ namespace TTN_QuanLyNhanSu.BUS
                 command.Parameters.AddWithValue("@AnhDaiDien", image);
                 return DataProvider.Instance.ExecuteNonQuery(command) > 0;
             }
+        }
         public DataTable NhanSuKyLuat(string SoQuyetDinh)
         {
             string query = string.Format("NhanVienBiKyLuat '{0}'", SoQuyetDinh);

@@ -32,8 +32,8 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 
 
         private string ID;
-        BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
-        PhongBanBUS contrlPhongBan = new PhongBanBUS();
+        //BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
+        //PhongBanBUS contrlPhongBan = new PhongBanBUS();
 
         public ChiTietBoPhan(string mabophan)
         {
@@ -125,14 +125,14 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
                         bophan.DienThoai = textBoxSoDienThoai.Text;
                         bophan.Fax = textBoxFax.Text;
 
-                        if (contrlBoPhan.SuaPhongBoPhanNS(bophan))
+                        /*if (contrlBoPhan.SuaPhongBoPhanNS(bophan))
                         {
                             MessageBox.Show("Sửa bộ phận thành công");
 
                             DanhSachBoPhan.DtgvBP.DataSource = contrlBoPhan.XemTatCaBoPhanNS();
                             DanhSachBoPhan.DtgvBP.Refresh();
                         }
-                        else MessageBox.Show("Sửa bộ phận thất bại");
+                        else MessageBox.Show("Sửa bộ phận thất bại");*/
                     }
                 }
             }
@@ -145,7 +145,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 
         private void ChiTietBoPhan_Load(object sender, EventArgs e)
         {
-            textBoxMaBoPhan.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).MaBoPhan;
+            /*textBoxMaBoPhan.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).MaBoPhan;
             textBoxTenBoPhan.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).TenBoPhan;
             textBoxEmail.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).Email;
             textBoxSoDienThoai.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).DienThoai;
@@ -153,7 +153,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 
             comboBoxTenPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
             comboBoxTenPhongBan.DisplayMember = "TenPB";
-            comboBoxTenPhongBan.ValueMember = "MaPhongBan";
+            comboBoxTenPhongBan.ValueMember = "MaPhongBan";*/
         }
     }
 }
