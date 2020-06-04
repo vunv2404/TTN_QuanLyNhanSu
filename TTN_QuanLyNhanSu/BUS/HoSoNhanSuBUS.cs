@@ -111,6 +111,10 @@ namespace TTN_QuanLyNhanSu.BUS
             return DataProvider.Instance.ExecuteScalar(query).ToString();
 
         }
+        public DataTable GetDanhSachToanBoNhanSu()
+        {
+            return DataProvider.Instance.ExecuteQuery("GetDanhSachToanBoNhanSu");
+        }
 
         public DataTable GetDanhSachNhanSuFilter(string str1, string str2)
         {

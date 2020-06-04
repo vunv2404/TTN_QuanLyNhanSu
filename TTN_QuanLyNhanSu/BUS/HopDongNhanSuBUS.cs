@@ -37,5 +37,9 @@ namespace TTN_QuanLyNhanSu.BUS
             string query = string.Format("EditHopDong '{0}', '{1}', N'{2}', N'{3}', N'{4}', '{5}', '{6}', N'{7}'", sohd, ma, ten, loaihd , trangthai, ngayhieuluc, ngayhethan, nd);
             return DataProvider.Instance.ExecuteNonQuery(query) > 0;
         }
+        public DataTable GetDanhSachToanBoHopDong()
+        {
+            return DataProvider.Instance.ExecuteQuery("GetDanhSachToanBoHopDong");
+        }
     }
 }

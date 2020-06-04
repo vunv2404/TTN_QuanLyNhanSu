@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace TTN_QuanLyNhanSu.DAL
 {
@@ -34,7 +35,7 @@ namespace TTN_QuanLyNhanSu.DAL
         //private string str = @"";
 
         //Của Dũng
-        private string str = @"Data Source=.;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+        private string str = ConfigurationManager.ConnectionStrings["TTN_QuanLyNhanSu.Properties.Settings.TTN_QLNhanSuConnectionString"].ConnectionString;
 
 
         public DataTable ExecuteQuery(string query)
