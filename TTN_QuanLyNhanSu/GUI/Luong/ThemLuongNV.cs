@@ -36,13 +36,13 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
         /// 
         /// </summary>
 
-        LuongBUS contrlLuong = new LuongBUS();
+        //LuongBUS contrlLuong = new LuongBUS();
 
         public ThemLuongNV()
         {
             InitializeComponent();
 
-            comboBoxMaNhanVien.DataSource = contrlLuong.XemNV();
+            //comboBoxMaNhanVien.DataSource = contrlLuong.XemNV();
             comboBoxMaNhanVien.DisplayMember = "MaNV";
             comboBoxMaNhanVien.ValueMember = "MaNV";
 
@@ -169,7 +169,7 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
                     {
                         DTO.Luong luong = new DTO.Luong(comboBoxMaNhanVien.SelectedValue.ToString(), textBoxSoQuyetDinh.Text, DateTime.Parse(textBoxNgayKi.Text), DateTime.Parse(textBoxNgayHieuLuc.Text), decimal.Parse(textBoxMucLuong.Text), float.Parse(textBoxHeSo.Text), Int16.Parse(textBoxTongNgayCong.Text), decimal.Parse(textBoxCongLamThem.Text), decimal.Parse(textBoxPhuCap.Text), 0, 0);
 
-                        if (contrlLuong.ThemLuongNV(luong))
+                        /*if (contrlLuong.ThemLuongNV(luong))
                         {
                             MessageBox.Show("Thêm mới lương thành công");
 
@@ -193,7 +193,7 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
                             DanhSachLuong.TextboxTong.Text = i.ToString();
                             DanhSachLuong.TextboxTong.Refresh();
                         }
-                        else MessageBox.Show("Thêm mới lương thất bại");
+                        else MessageBox.Show("Thêm mới lương thất bại");*/
                     }
                 }
             }
