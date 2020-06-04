@@ -35,7 +35,7 @@ namespace TTN_QuanLyNhanSu.DAL
         //private string str = @"Data Source=DESKTOP-HKOJN4O;Initial Catalog=TTN_QLNS;Integrated Security=True";
 
         //Của Dũng
-        //private string str = @"Data Source=.;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+        private string str = ConfigurationManager.ConnectionStrings["TTN_QuanLyNhanSu.Properties.Settings.TTN_QLNhanSuConnectionString"].ConnectionString;
 
 
         public DataTable ExecuteQuery(string query)
