@@ -89,3 +89,4 @@ D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.Ge
 D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.CoreCompileInputs.cache
 D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.exe
 D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.pdb
+C:\Users\nguyenvanvu\source\repos\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.CoreCompileInputs.cache
