@@ -8,6 +8,7 @@ namespace TTN_QuanLyNhanSu.DTO
 {
     class DangKiChuyenCa
     {
+        private string ma;
         private string maNV;
         private string hoTenNV;
         private string caCu;
@@ -18,9 +19,10 @@ namespace TTN_QuanLyNhanSu.DTO
         private string trangThai;
 
         public DangKiChuyenCa() { }
-        public DangKiChuyenCa(string maNV, string hoTenNV, string caCu, string caMoi, DateTime tuNgay,
+        public DangKiChuyenCa(string ma,string maNV, string hoTenNV, string caCu, string caMoi, DateTime tuNgay,
             DateTime denNgay, string liDo, string trangThai)
         {
+            this.ma = ma;
             this.maNV = maNV;
             this.hoTenNV = hoTenNV;
             this.caCu = caCu;
@@ -30,7 +32,7 @@ namespace TTN_QuanLyNhanSu.DTO
             this.liDo = liDo;
             this.trangThai = trangThai;
         }
-
+        public string Ma { get => ma; set => ma = value; }
         public string MaNV { get => maNV; set => maNV = value; }
         public string HoTenNV { get => hoTenNV; set => hoTenNV = value; }
         public string CaCu { get => caCu; set => caCu = value; }

@@ -98,7 +98,7 @@ namespace TTN_QuanLyNhanSu.DTO
             this.boPhan = boPhan;
             this.phongBan = phongBan;
         }
-
+        
         public string MaNV { get => maNV; set => maNV = value; }
         public string HoTenNV { get => hoTenNV; set => hoTenNV = value; }
         public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }

@@ -175,7 +175,6 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
 
         private void ChiTietBaoHiem_Load(object sender, EventArgs e)
         {
-
             LoadThongTin();
         }
         private void LoadThongTin()
@@ -204,6 +203,16 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
         private void textBoxSoBaoHiemXH_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ChiTietBaoHiem_LocationChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

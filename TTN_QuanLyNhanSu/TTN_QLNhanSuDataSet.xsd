@@ -1314,6 +1314,7 @@ SELECT MaPhongBan, TenPB, NgayThanhLap, MaTruongPhong, Email, SoDienThoai, Fax F
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Ma" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnMa" msprop:Generator_ColumnPropNameInRow="Ma" msprop:Generator_ColumnPropNameInTable="MaColumn" msprop:Generator_UserColumnName="Ma" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -1345,6 +1346,7 @@ SELECT MaPhongBan, TenPB, NgayThanhLap, MaTruongPhong, Email, SoDienThoai, Fax F
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Ma" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnMa" msprop:Generator_ColumnPropNameInRow="Ma" msprop:Generator_ColumnPropNameInTable="MaColumn" msprop:Generator_UserColumnName="Ma" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -1381,6 +1383,7 @@ SELECT MaPhongBan, TenPB, NgayThanhLap, MaTruongPhong, Email, SoDienThoai, Fax F
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Ma" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnMa" msprop:Generator_ColumnPropNameInRow="Ma" msprop:Generator_ColumnPropNameInTable="MaColumn" msprop:Generator_UserColumnName="Ma" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -1787,17 +1790,17 @@ SELECT MaPhongBan, TenPB, NgayThanhLap, MaTruongPhong, Email, SoDienThoai, Fax F
       <xs:selector xpath=".//mstns:BoPhan" />
       <xs:field xpath="mstns:MaBoPhan" />
     </xs:unique>
-    <xs:unique name="DangKiChuyenCa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="DangKiChuyenCaKey1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DangKiChuyenCa" />
-      <xs:field xpath="mstns:MaNV" />
+      <xs:field xpath="mstns:Ma" />
     </xs:unique>
-    <xs:unique name="DangKilamThem_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="DangKilamThemKey1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DangKilamThem" />
-      <xs:field xpath="mstns:MaNV" />
+      <xs:field xpath="mstns:Ma" />
     </xs:unique>
-    <xs:unique name="DangKiNghi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="DangKiNghiKey1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DangKiNghi" />
-      <xs:field xpath="mstns:MaNV" />
+      <xs:field xpath="mstns:Ma" />
     </xs:unique>
     <xs:unique name="DaoTao_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DaoTao" />
