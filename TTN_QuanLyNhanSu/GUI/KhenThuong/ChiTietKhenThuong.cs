@@ -188,7 +188,6 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
             {
                 DialogResult dialogError = MessageBox.Show(error);
             }
-
             return checkAll;
         }
         private string NonUnicode(string text)

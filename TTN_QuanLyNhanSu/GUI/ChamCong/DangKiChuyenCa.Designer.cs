@@ -96,7 +96,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.textBoxTenNhanVien);
             this.panel1.Location = new System.Drawing.Point(1, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1245, 698);
             this.panel1.TabIndex = 0;
@@ -116,7 +116,7 @@
             // 
             this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTong.Location = new System.Drawing.Point(71, 320);
-            this.textBoxTong.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTong.Name = "textBoxTong";
             this.textBoxTong.Size = new System.Drawing.Size(99, 29);
             this.textBoxTong.TabIndex = 47;
@@ -129,7 +129,7 @@
             "Đã Phê Duyệt",
             "Chưa Phê Duyệt"});
             this.comboBoxTrangThai.Location = new System.Drawing.Point(725, 274);
-            this.comboBoxTrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTrangThai.Name = "comboBoxTrangThai";
             this.comboBoxTrangThai.Size = new System.Drawing.Size(335, 30);
             this.comboBoxTrangThai.TabIndex = 46;
@@ -139,7 +139,7 @@
             this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxMaNhanVien.FormattingEnabled = true;
             this.comboBoxMaNhanVien.Location = new System.Drawing.Point(161, 110);
-            this.comboBoxMaNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxMaNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
             this.comboBoxMaNhanVien.Size = new System.Drawing.Size(335, 30);
             this.comboBoxMaNhanVien.TabIndex = 45;
@@ -161,7 +161,7 @@
             this.buttonQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonQuayLai.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQuayLai.Location = new System.Drawing.Point(1073, 314);
-            this.buttonQuayLai.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonQuayLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonQuayLai.Name = "buttonQuayLai";
             this.buttonQuayLai.Size = new System.Drawing.Size(120, 37);
             this.buttonQuayLai.TabIndex = 43;
@@ -174,7 +174,7 @@
             this.buttonLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLuu.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLuu.Location = new System.Drawing.Point(925, 314);
-            this.buttonLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLuu.Name = "buttonLuu";
             this.buttonLuu.Size = new System.Drawing.Size(120, 37);
             this.buttonLuu.TabIndex = 42;
@@ -186,7 +186,7 @@
             // 
             this.textBoxCaCu.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxCaCu.Location = new System.Drawing.Point(161, 225);
-            this.textBoxCaCu.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCaCu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxCaCu.Name = "textBoxCaCu";
             this.textBoxCaCu.Size = new System.Drawing.Size(335, 29);
             this.textBoxCaCu.TabIndex = 40;
@@ -217,7 +217,7 @@
             // 
             this.textBoxCaMoi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxCaMoi.Location = new System.Drawing.Point(161, 281);
-            this.textBoxCaMoi.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCaMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxCaMoi.Name = "textBoxCaMoi";
             this.textBoxCaMoi.Size = new System.Drawing.Size(335, 29);
             this.textBoxCaMoi.TabIndex = 41;
@@ -238,7 +238,7 @@
             this.trangthaiDataGridViewTextBoxColumn});
             this.dataGridViewDangKiChuyenCa.DataSource = this.dangKiChuyenCaBindingSource;
             this.dataGridViewDangKiChuyenCa.Location = new System.Drawing.Point(4, 358);
-            this.dataGridViewDangKiChuyenCa.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewDangKiChuyenCa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewDangKiChuyenCa.Name = "dataGridViewDangKiChuyenCa";
             this.dataGridViewDangKiChuyenCa.RowHeadersWidth = 51;
             this.dataGridViewDangKiChuyenCa.Size = new System.Drawing.Size(1236, 336);
@@ -342,7 +342,7 @@
             // 
             this.textBoxLiDo.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxLiDo.Location = new System.Drawing.Point(725, 219);
-            this.textBoxLiDo.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLiDo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxLiDo.Name = "textBoxLiDo";
             this.textBoxLiDo.Size = new System.Drawing.Size(335, 29);
             this.textBoxLiDo.TabIndex = 35;
@@ -384,7 +384,7 @@
             // 
             this.textBoxDenNgay.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxDenNgay.Location = new System.Drawing.Point(725, 162);
-            this.textBoxDenNgay.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDenNgay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxDenNgay.Name = "textBoxDenNgay";
             this.textBoxDenNgay.Size = new System.Drawing.Size(335, 29);
             this.textBoxDenNgay.TabIndex = 33;
@@ -404,7 +404,7 @@
             // 
             this.textBoxTuNgay.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxTuNgay.Location = new System.Drawing.Point(725, 110);
-            this.textBoxTuNgay.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTuNgay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTuNgay.Name = "textBoxTuNgay";
             this.textBoxTuNgay.Size = new System.Drawing.Size(335, 29);
             this.textBoxTuNgay.TabIndex = 32;
@@ -425,7 +425,7 @@
             this.textBoxTenNhanVien.Enabled = false;
             this.textBoxTenNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.textBoxTenNhanVien.Location = new System.Drawing.Point(161, 169);
-            this.textBoxTenNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTenNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
             this.textBoxTenNhanVien.Size = new System.Drawing.Size(335, 29);
             this.textBoxTenNhanVien.TabIndex = 31;
@@ -440,7 +440,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 700);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DangKiChuyenCa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKiChuyenCa";

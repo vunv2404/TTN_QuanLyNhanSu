@@ -67,7 +67,7 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridViewQuyetDinhKhenThuong);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1255, 663);
             this.panel1.TabIndex = 1;
@@ -88,7 +88,7 @@
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThoat.Location = new System.Drawing.Point(1044, 87);
-            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(133, 31);
             this.buttonThoat.TabIndex = 7;
@@ -100,7 +100,7 @@
             // 
             this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTong.Location = new System.Drawing.Point(67, 89);
-            this.textBoxTong.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTong.Name = "textBoxTong";
             this.textBoxTong.Size = new System.Drawing.Size(99, 29);
             this.textBoxTong.TabIndex = 49;
@@ -115,9 +115,9 @@
             this.groupBox1.Controls.Add(this.buttonChiTiet);
             this.groupBox1.Controls.Add(this.buttonThem);
             this.groupBox1.Location = new System.Drawing.Point(31, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Size = new System.Drawing.Size(1179, 66);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -142,7 +142,7 @@
             this.buttonKhenThuongNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonKhenThuongNhanSu.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKhenThuongNhanSu.Location = new System.Drawing.Point(288, 22);
-            this.buttonKhenThuongNhanSu.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonKhenThuongNhanSu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonKhenThuongNhanSu.Name = "buttonKhenThuongNhanSu";
             this.buttonKhenThuongNhanSu.Size = new System.Drawing.Size(179, 31);
             this.buttonKhenThuongNhanSu.TabIndex = 5;
@@ -154,7 +154,7 @@
             // 
             this.textBoxTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTimKiem.Location = new System.Drawing.Point(715, 25);
-            this.textBoxTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTimKiem.Name = "textBoxTimKiem";
             this.textBoxTimKiem.Size = new System.Drawing.Size(289, 29);
             this.textBoxTimKiem.TabIndex = 4;
@@ -164,7 +164,7 @@
             this.buttonTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTimKiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTimKiem.Location = new System.Drawing.Point(1013, 23);
-            this.buttonTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTimKiem.Name = "buttonTimKiem";
             this.buttonTimKiem.Size = new System.Drawing.Size(133, 31);
             this.buttonTimKiem.TabIndex = 3;
@@ -178,7 +178,7 @@
             this.buttonChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChiTiet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChiTiet.Location = new System.Drawing.Point(147, 22);
-            this.buttonChiTiet.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonChiTiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonChiTiet.Name = "buttonChiTiet";
             this.buttonChiTiet.Size = new System.Drawing.Size(133, 31);
             this.buttonChiTiet.TabIndex = 2;
@@ -191,7 +191,7 @@
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThem.Location = new System.Drawing.Point(8, 22);
-            this.buttonThem.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(133, 31);
             this.buttonThem.TabIndex = 1;
@@ -213,7 +213,7 @@
             this.trangThaiDataGridViewTextBoxColumn});
             this.dataGridViewQuyetDinhKhenThuong.DataSource = this.khenThuongBindingSource;
             this.dataGridViewQuyetDinhKhenThuong.Location = new System.Drawing.Point(4, 126);
-            this.dataGridViewQuyetDinhKhenThuong.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewQuyetDinhKhenThuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewQuyetDinhKhenThuong.Name = "dataGridViewQuyetDinhKhenThuong";
             this.dataGridViewQuyetDinhKhenThuong.RowHeadersWidth = 51;
             this.dataGridViewQuyetDinhKhenThuong.Size = new System.Drawing.Size(1247, 534);
@@ -296,7 +296,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1257, 663);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "QuyetDinhKhenThuong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuyetDinhKhenThuong";
