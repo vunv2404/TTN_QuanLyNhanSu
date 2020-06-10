@@ -19,13 +19,13 @@ namespace TTN_QuanLyNhanSu.BUS
                                {
                                    Ma = dr["Ma"].ToString(),
                                    MaNV = dr["MaNV"].ToString(),
-                               HoTenNV = dr["HoTenNV"].ToString(),
-                               CaCu = dr["CaCu"].ToString(),
-                               CaMoi = dr["CaMoi"].ToString(),
-                               TuNgay = Convert.ToDateTime(dr["TuNgay"].ToString()),
-                               DenNgay = Convert.ToDateTime(dr["DenNgay"].ToString()),
-                               LiDo = dr["LiDo"].ToString(),
-                               TrangThai = dr["TrangThai"].ToString()
+                                   HoTenNV = dr["HoTenNV"].ToString(),
+                                   CaCu = dr["CaCu"].ToString(),
+                                   CaMoi = dr["CaMoi"].ToString(),
+                                   TuNgay = Convert.ToDateTime(dr["TuNgay"].ToString()),
+                                   DenNgay = Convert.ToDateTime(dr["DenNgay"].ToString()),
+                                   LiDo = dr["LiDo"].ToString(),
+                                   TrangThai = dr["TrangThai"].ToString()
                                }).ToList();
             return dangKiChuyenCas;
         }

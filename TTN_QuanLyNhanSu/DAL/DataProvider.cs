@@ -23,19 +23,19 @@ namespace TTN_QuanLyNhanSu.DAL
 
         //Copy vào 1 lần , lần sau của ai thì người ấy bỏ comment đi.
         //của Vũ
-        //private string str = @"Data Source=nguyenvanvu563a\sqlexpress;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+        private string str = @"Data Source=NGUYENVANVUAE35\SQLEXPRESS;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
 
         //Của Nam
         //private string str = ConfigurationManager.ConnectionStrings["TTN_QuanLyNhanSu.Properties.Settings.TTN_QLNhanSuConnectionString"].ConnectionString;
 
         //Của Trung
-        private string str = @"Data Source=DESKTOP-LAOT6MD\GNOS02;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
+        //private string str = @"Data Source=DESKTOP-LAOT6MD\GNOS02;Initial Catalog=TTN_QLNhanSu;Integrated Security=True";
 
         //Của Hiếu
         //private string str = @"Data Source=DESKTOP-HKOJN4O;Initial Catalog=TTN_QLNS;Integrated Security=True";
 
         //Của Dũng
-        private string str = ConfigurationManager.ConnectionStrings["TTN_QuanLyNhanSu.Properties.Settings.TTN_QLNhanSuConnectionString"].ConnectionString;
+        //private string str = ConfigurationManager.ConnectionStrings["TTN_QuanLyNhanSu.Properties.Settings.TTN_QLNhanSuConnectionString"].ConnectionString;
 
 
         public DataTable ExecuteQuery(string query)

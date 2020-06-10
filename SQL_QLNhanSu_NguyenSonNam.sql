@@ -12,7 +12,7 @@ UPDATE [dbo].[KyLuat]
  WHERE SoQuyetDinh = @SoQuyetDinh	
 end
 
-
+go
 create proc ThemKyLuat(@SoQuyetDinh varchar(20), @NgayHieuLuc datetime, @NgayHetHan datetime, @LiDo ntext, @NoiDung ntext, @HinhThuc nvarchar(50), @TrangThai nvarchar(50))
 as
 begin 
@@ -34,13 +34,14 @@ INSERT INTO [dbo].[KyLuat]
            ,@TrangThai)	
 end
 
+go
 create proc NhanVienBiKyLuat @SoQuyetDinh varchar(20)
 as
 begin
 	select MaNV,HotenNV,TenPB from HoSoNhanSu,PhongBan where MaNV in (select MaNV from KyLuatNhanVien where SoQuyetDinh = @SoQuyetDinh) and HoSoNhanSu.MaPhongBan = PhongBan.MaPhongBan
 end
 
-
+go
 create proc DanhSachNhanVien
 as
 begin

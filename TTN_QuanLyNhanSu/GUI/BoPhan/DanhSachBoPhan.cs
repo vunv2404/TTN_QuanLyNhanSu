@@ -23,7 +23,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
         /// - Textbox tổng là tổng dòng dữ liệu đang có trên datagridview
         /// </summary>
 
-        //BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
+        BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
         string mabophan;
 
         private static DataGridView dtgvBP;
@@ -43,7 +43,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.BoPhan' table. You can move, or remove it, as needed.
             //this.boPhanTableAdapter.Fill(this.tTN_QLNhanSuDataSet.BoPhan);
-            //dataGridViewDanhSachBoPhan.DataSource = contrlBoPhan.XemTatCaBoPhanNS();
+            dataGridViewDanhSachBoPhan.DataSource = contrlBoPhan.XemTatCaBoPhanNS();
             dataGridViewDanhSachBoPhan.Refresh();
 
             textBoxTong.Text = dataGridViewDanhSachBoPhan.Rows.Count.ToString();
@@ -87,7 +87,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
             }
             else
             {
-                /*loaiTT = comboBoxTimKiem.SelectedItem.ToString();
+                loaiTT = comboBoxTimKiem.SelectedItem.ToString();
 
                 List<DTO.BoPhan> dsBoPhan = contrlBoPhan.XemTatCaBoPhanNS();
                 List<DTO.BoPhan> items = dsBoPhan;
@@ -105,7 +105,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
                 }
 
                 dataGridViewDanhSachBoPhan.DataSource = items;
-                dataGridViewDanhSachBoPhan.Refresh();*/
+                dataGridViewDanhSachBoPhan.Refresh();
             }
         }
 

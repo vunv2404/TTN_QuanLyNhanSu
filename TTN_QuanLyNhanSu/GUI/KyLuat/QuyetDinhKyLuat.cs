@@ -67,7 +67,8 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void buttonChiTiet_Click(object sender, EventArgs e)
         {
             DataGridViewCellCollection cell = dataGridViewQuyetDinhKyLuat.CurrentRow.Cells;
-            DTO.KyLuat kyLuat = new DTO.KyLuat(cell[0].Value.ToString(),DateTime.ParseExact(cell[1].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), DateTime.ParseExact(cell[2].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), cell[3].Value.ToString(), cell[4].Value.ToString(), cell[5].Value.ToString(),cell[6].Value.ToString());
+            Trace.WriteLine(cell);
+            DTO.KyLuat kyLuat = new DTO.KyLuat(cell[0].Value.ToString(),DateTime.ParseExact(cell[1].Value.ToString(), "M/d/yy", null), DateTime.ParseExact(cell[2].Value.ToString(), "M/d/yyyy hh:mm:ss tt", null), cell[3].Value.ToString(), cell[4].Value.ToString(), cell[5].Value.ToString(),cell[6].Value.ToString());
             this.Hide();
             ChiTietQuyetDinhKyLuat formChiTietQuyetDinhKyLuat = new ChiTietQuyetDinhKyLuat(kyLuat);
             formChiTietQuyetDinhKyLuat.FormClosed += FormChiTietQuyetDinhKyLuat_FormClosed;
