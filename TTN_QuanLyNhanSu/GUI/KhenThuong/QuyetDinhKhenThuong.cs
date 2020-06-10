@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN_QuanLyNhanSu.BUS;
 
 namespace TTN_QuanLyNhanSu.GUI.KhenThuong
 {
@@ -34,14 +35,30 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
         {
             InitializeComponent();
         }
-
+        List<DTO.KhenThuong> khenThuongs;
+        KhenThuongBUS khenThuongController = new KhenThuongBUS();
+        public static string soQuyetDinh = "";
         private void QuyetDinhKhenThuong_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.KhenThuong' table. You can move, or remove it, as needed.
             this.khenThuongTableAdapter.Fill(this.tTN_QLNhanSuDataSet.KhenThuong);
+            dataGridViewQuyetDinhKhenThuong.AllowUserToAddRows = false;
+            dataGridViewQuyetDinhKhenThuong.AllowUserToDeleteRows = false;
+            dataGridViewQuyetDinhKhenThuong.AllowUserToResizeRows = false;
+            dataGridViewQuyetDinhKhenThuong.AllowUserToResizeColumns = false;
+            dataGridViewQuyetDinhKhenThuong.MultiSelect = false;
+            dataGridViewQuyetDinhKhenThuong.RowHeadersVisible = false;
+            dataGridViewQuyetDinhKhenThuong.ReadOnly = true;
+            dataGridViewQuyetDinhKhenThuong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            khenThuongs = khenThuongController.Show_All_KhenThuongs();
+            UpdateThongTin();
 
         }
-
+        private void UpdateThongTin()
+        {
+            dataGridViewQuyetDinhKhenThuong.DataSource = khenThuongs;
+            textBoxTong.Text = khenThuongs.Count.ToString();
+        }
         private void buttonThem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -53,6 +70,8 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
         private void FormThemQuyetDinhKhenThuong_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            khenThuongs = khenThuongController.Show_All_KhenThuongs();
+            UpdateThongTin();
         }
 
         private void buttonChiTiet_Click(object sender, EventArgs e)
@@ -67,6 +86,8 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
         private void FormChiTietKhenThuong_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            khenThuongs = khenThuongController.Show_All_KhenThuongs();
+            UpdateThongTin();
         }
 
         private void buttonKhenThuongNhanSu_Click(object sender, EventArgs e)
@@ -80,6 +101,8 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
         private void FormKhenThuongNhanVien_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            khenThuongs = khenThuongController.Show_All_KhenThuongs();
+            UpdateThongTin();
         }
 
         private void buttonThoat_Click(object sender, EventArgs e)
@@ -98,6 +121,30 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
         private void DanhSachNVDuocKT_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonTimKiem_Click(object sender, EventArgs e)
+        {
+            if(textBoxTimKiem.Text != "")
+            {
+                khenThuongs = khenThuongController.Search_KhenThuong_TheoNoiDung(textBoxTimKiem.Text);
+                UpdateThongTin();
+            }
+            else
+            {
+                khenThuongs = khenThuongController.Show_All_KhenThuongs();
+                UpdateThongTin();
+            }
+            
+        }
+
+        private void dataGridViewQuyetDinhKhenThuong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            buttonChiTiet.Enabled = true;
+            buttonDSNVDuocKhenThuong.Enabled = true;
+            buttonKhenThuongNhanSu.Enabled = true;
+            DataGridViewRow currentRow = dataGridViewQuyetDinhKhenThuong.CurrentRow;
+            soQuyetDinh = currentRow.Cells[0].Value.ToString();
         }
     }
 }

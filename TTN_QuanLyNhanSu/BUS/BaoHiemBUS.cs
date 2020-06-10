@@ -82,7 +82,7 @@ namespace TTN_QuanLyNhanSu.BUS
             DataProvider.Instance.ExecuteNonQuery("" +
                 "insert into BaoHiem(MaNV,HoTenNV,SoBaoHiemXH,SoBaoHiemYT,NoiCap,NgayCap) " +
                 $"values('{baoHiem.MaNV}',N'{baoHiem.HoTenNV}','{baoHiem.SoBaoHiemXH}'," +
-                $"'{baoHiem.SoBaoHiemYT}','{baoHiem.NoiCap}','{baoHiem.NgayCap.Month}/{baoHiem.NgayCap.Day}/{baoHiem.NgayCap.Year}')");
+                $"'{baoHiem.SoBaoHiemYT}',N'{baoHiem.NoiCap}','{baoHiem.NgayCap.Month}/{baoHiem.NgayCap.Day}/{baoHiem.NgayCap.Year}')");
         }
         public void Modify_1_BaoHiem(BaoHiem baoHiem)
         {

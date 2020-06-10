@@ -169,12 +169,13 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
 
         private void ThemBaoHiem_Load(object sender, EventArgs e)
         {
-            List<string> maNVs = new List<string>();
+            List<int> maNVs = new List<int>();
             DataTable dt = baoHiemController.DT_NhanVienKoCoBaoHiem();
             foreach(DataRow dr in dt.Rows)
             {
-                maNVs.Add(dr[0].ToString());
+                maNVs.Add(Convert.ToInt32(dr[0].ToString()));
             }
+            maNVs.Sort();
             comboBoxMaNhanVien.DataSource = maNVs;
             comboBoxMaNhanVien.DropDownStyle = ComboBoxStyle.DropDownList;
         }
