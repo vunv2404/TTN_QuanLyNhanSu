@@ -89,6 +89,7 @@
             this.textBoxSoQuyetDinh.Name = "textBoxSoQuyetDinh";
             this.textBoxSoQuyetDinh.Size = new System.Drawing.Size(443, 25);
             this.textBoxSoQuyetDinh.TabIndex = 2;
+            this.textBoxSoQuyetDinh.TextChanged += new System.EventHandler(this.EnableLuu);
             this.textBoxSoQuyetDinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSoQuyetDinh_KeyPress);
             // 
             // textBoxNgayHieuLuc
@@ -98,7 +99,7 @@
             this.textBoxNgayHieuLuc.Name = "textBoxNgayHieuLuc";
             this.textBoxNgayHieuLuc.Size = new System.Drawing.Size(443, 25);
             this.textBoxNgayHieuLuc.TabIndex = 9;
-            this.textBoxNgayHieuLuc.TextChanged += new System.EventHandler(this.textBoxDateTime_TextChanged);
+            this.textBoxNgayHieuLuc.TextChanged += new System.EventHandler(this.EnableLuu);
             this.textBoxNgayHieuLuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDateTime_KeyPress);
             // 
             // textBoxNgayHetHan
@@ -108,7 +109,7 @@
             this.textBoxNgayHetHan.Name = "textBoxNgayHetHan";
             this.textBoxNgayHetHan.Size = new System.Drawing.Size(443, 25);
             this.textBoxNgayHetHan.TabIndex = 10;
-            this.textBoxNgayHetHan.TextChanged += new System.EventHandler(this.textBoxDateTime_TextChanged);
+            this.textBoxNgayHetHan.TextChanged += new System.EventHandler(this.EnableLuu);
             this.textBoxNgayHetHan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDateTime_KeyPress);
             // 
             // buttonQuayLai
@@ -229,6 +230,7 @@
             this.textBoxLiDo.Name = "textBoxLiDo";
             this.textBoxLiDo.Size = new System.Drawing.Size(443, 25);
             this.textBoxLiDo.TabIndex = 13;
+            this.textBoxLiDo.TextChanged += new System.EventHandler(this.EnableLuu);
             // 
             // textBoxHinhThuc
             // 
@@ -237,6 +239,7 @@
             this.textBoxHinhThuc.Name = "textBoxHinhThuc";
             this.textBoxHinhThuc.Size = new System.Drawing.Size(443, 25);
             this.textBoxHinhThuc.TabIndex = 12;
+            this.textBoxHinhThuc.TextChanged += new System.EventHandler(this.EnableLuu);
             // 
             // label5
             // 
@@ -255,6 +258,7 @@
             this.textBoxNoiDung.Name = "textBoxNoiDung";
             this.textBoxNoiDung.Size = new System.Drawing.Size(443, 25);
             this.textBoxNoiDung.TabIndex = 11;
+            this.textBoxNoiDung.TextChanged += new System.EventHandler(this.EnableLuu);
             // 
             // label4
             // 

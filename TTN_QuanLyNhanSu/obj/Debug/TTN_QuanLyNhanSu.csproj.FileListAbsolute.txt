@@ -89,3 +89,5 @@ D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.Ge
 D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.CoreCompileInputs.cache
 D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.exe
 D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.pdb
+D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\bin\Debug\FastMember.dll
+D:\GitHub\TTN_QuanLyNhanSu\TTN_QuanLyNhanSu\obj\Debug\TTN_QuanLyNhanSu.csproj.CopyComplete

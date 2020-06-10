@@ -149,6 +149,8 @@
             this.textBoxNgayLap.Name = "textBoxNgayLap";
             this.textBoxNgayLap.Size = new System.Drawing.Size(443, 25);
             this.textBoxNgayLap.TabIndex = 9;
+            this.textBoxNgayLap.TextChanged += new System.EventHandler(this.textBoxNgayLap_TextChanged);
+            this.textBoxNgayLap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNgayLap_KeyPress);
             // 
             // textBoxMucDich
             // 

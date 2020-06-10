@@ -10,9 +10,6 @@
 
 #pragma warning disable 1591
 
-using System;
-using System.Data;
-
 namespace TTN_QuanLyNhanSu {
     
     
@@ -15625,11 +15622,6 @@ SELECT SoQuyetDinh, NgayHieuLuc, NgayHetHan, LiDo, NoiDung, HinhThuc, TrangThai 
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(global::System.Nullable<global::System.DateTime> NgayHieuLuc, global::System.Nullable<global::System.DateTime> NgayHetHan, string LiDo, string NoiDung, string HinhThuc, string TrangThai, string Original_SoQuyetDinh, global::System.Nullable<global::System.DateTime> Original_NgayHieuLuc, global::System.Nullable<global::System.DateTime> Original_NgayHetHan, string Original_HinhThuc, string Original_TrangThai) {
             return this.Update(Original_SoQuyetDinh, NgayHieuLuc, NgayHetHan, LiDo, NoiDung, HinhThuc, TrangThai, Original_SoQuyetDinh, Original_NgayHieuLuc, Original_NgayHetHan, Original_HinhThuc, Original_TrangThai);
-        }
-
-        internal void Fill(DataTable dataTable)
-        {
-            throw new NotImplementedException();
         }
     }
     
