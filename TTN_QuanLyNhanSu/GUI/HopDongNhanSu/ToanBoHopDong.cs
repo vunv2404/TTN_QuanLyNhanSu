@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,7 +42,7 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
         private void ToanBoHopDong_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.HopDongNhanSu' table. You can move, or remove it, as needed.
-            this.hopDongNhanSuTableAdapter.Fill(this.tTN_QLNhanSuDataSet.HopDongNhanSu);
+            dataGridViewToanBoHopDong.DataSource = hopDongBUS.GetDanhSachToanBoHopDong();
             textBoxTong.Text = dataGridViewToanBoHopDong.Rows.Count.ToString();
         }
 
@@ -56,6 +57,9 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
         private void FormThemMoiHopDong_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            dataGridViewToanBoHopDong.DataSource = null;
+            dataGridViewToanBoHopDong.DataSource = hopDongBUS.GetDanhSachToanBoHopDong();
+            textBoxTong.Text = dataGridViewToanBoHopDong.Rows.Count.ToString();
         }
 
         private void buttonChiTiet_Click(object sender, EventArgs e)
@@ -80,7 +84,9 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
         private void FormChiTietHopDong_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
-            //
+            dataGridViewToanBoHopDong.DataSource = null;
+            dataGridViewToanBoHopDong.DataSource = hopDongBUS.GetDanhSachToanBoHopDong();
+            textBoxTong.Text = dataGridViewToanBoHopDong.Rows.Count.ToString();
         }
 
         private void buttonTimKiem_Click(object sender, EventArgs e)

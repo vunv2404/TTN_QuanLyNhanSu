@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.comboBoxTrangThai = new System.Windows.Forms.ComboBox();
             this.comboBoxMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,8 +63,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
             this.dangKiChuyenCaTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.DangKiChuyenCaTableAdapter();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxTong = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDangKiChuyenCa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dangKiChuyenCaBindingSource)).BeginInit();
@@ -98,6 +98,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(934, 567);
             this.panel1.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label10.Location = new System.Drawing.Point(8, 265);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 17);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Tổng";
+            // 
+            // textBoxTong
+            // 
+            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTong.Location = new System.Drawing.Point(53, 260);
+            this.textBoxTong.Name = "textBoxTong";
+            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
+            this.textBoxTong.TabIndex = 47;
             // 
             // comboBoxTrangThai
             // 
@@ -370,24 +388,6 @@
             // dangKiChuyenCaTableAdapter
             // 
             this.dangKiChuyenCaTableAdapter.ClearBeforeFill = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.label10.Location = new System.Drawing.Point(8, 265);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 17);
-            this.label10.TabIndex = 48;
-            this.label10.Text = "Tổng";
-            // 
-            // textBoxTong
-            // 
-            this.textBoxTong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTong.Location = new System.Drawing.Point(53, 260);
-            this.textBoxTong.Name = "textBoxTong";
-            this.textBoxTong.Size = new System.Drawing.Size(75, 25);
-            this.textBoxTong.TabIndex = 47;
             // 
             // DangKiChuyenCa
             // 

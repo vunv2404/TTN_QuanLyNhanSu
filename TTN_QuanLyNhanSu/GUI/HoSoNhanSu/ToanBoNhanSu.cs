@@ -37,7 +37,7 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void ToanBoNhanSu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.HoSoNhanSu' table. You can move, or remove it, as needed.
-            this.hoSoNhanSuTableAdapter.Fill(this.tTN_QLNhanSuDataSet.HoSoNhanSu);
+            dataGridViewHoSoNhanSu.DataSource = BUS.GetDanhSachToanBoNhanSu();
             textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
         }
 
@@ -52,7 +52,8 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void FormThemMoiNhanSu_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
-            //
+            dataGridViewHoSoNhanSu.DataSource = null;
+            dataGridViewHoSoNhanSu.DataSource = BUS.GetDanhSachToanBoNhanSu();
             textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
         }
 
@@ -84,7 +85,9 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void FormChiTietNhanSu_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
-            //
+            dataGridViewHoSoNhanSu.DataSource = null;
+            dataGridViewHoSoNhanSu.DataSource = BUS.GetDanhSachToanBoNhanSu();
+            textBoxTong.Text = dataGridViewHoSoNhanSu.Rows.Count.ToString();
         }
 
         private void buttonTimKiem_Click(object sender, EventArgs e)

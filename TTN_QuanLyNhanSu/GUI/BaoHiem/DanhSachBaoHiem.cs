@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN_QuanLyNhanSu.BUS;
+using TTN_QuanLyNhanSu.DTO;
 
 namespace TTN_QuanLyNhanSu.GUI.BaoHiem
 {
@@ -30,8 +32,8 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
         /// 
         /// </summary>
 
-
-
+        List<DTO.BaoHiem> baoHiems;
+        BaoHiemBUS baoHiemController = new BaoHiemBUS();
         public DanhSachBaoHiem()
         {
             InitializeComponent();
@@ -43,9 +45,38 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
             this.baoHiemTableAdapter.Fill(this.tTN_QLNhanSuDataSet.BaoHiem);
             //// TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.BaoHiem' table. You can move, or remove it, as needed.
             //this.baoHiemTableAdapter.Fill(this.tTN_QLNhanSuDataSet.BaoHiem);
-
+            dataGridViewdsBaoHiem.AllowUserToAddRows = false;
+            dataGridViewdsBaoHiem.AllowUserToDeleteRows = false;
+            dataGridViewdsBaoHiem.AllowUserToResizeRows = false;
+            dataGridViewdsBaoHiem.AllowUserToResizeColumns = false;
+            dataGridViewdsBaoHiem.MultiSelect = false;
+            dataGridViewdsBaoHiem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewdsBaoHiem.ReadOnly = true;
+            dataGridViewdsBaoHiem.RowHeadersVisible = false;
+            comboBoxTimKiem.DropDownStyle = ComboBoxStyle.DropDownList;
+            baoHiems = baoHiemController.Show_All_BaoHiem();
+            updateThongTin();
         }
-
+        private void updateThongTin()
+        {
+            dataGridViewdsBaoHiem.DataSource = baoHiems;
+            if (baoHiems.Count == 0)
+            {
+                MessageBox.Show("Danh sách trống");
+                textBoxTong.Text = "0";
+            }     
+            else
+            {
+                int num = 0;
+                foreach (DataGridViewRow dr in dataGridViewdsBaoHiem.Rows)
+                {
+                    num++;
+                }
+                textBoxTong.Text = num.ToString();
+            }    
+            
+        }
+        
         private void buttonQuayLai_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -62,6 +93,8 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
         private void FormThemBaoHiem_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            baoHiems = baoHiemController.Show_All_BaoHiem();
+            updateThongTin();
         }
 
         private void buttonChiTiet_Click(object sender, EventArgs e)
@@ -75,12 +108,43 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
         private void FormChiTietBaoHiem_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            baoHiems = baoHiemController.Show_All_BaoHiem();
+            updateThongTin();
         }
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-            
+            string keyWord = textBoxTimKiem.Text;
+            if (keyWord != "")
+            {
+                if (comboBoxTimKiem.Text == "")
+                    MessageBox.Show("Chon loai thong tin muon tim kiem!");
+                else
+                {
+                    if (comboBoxTimKiem.Text == "Mã Nhân Viên")
+                    {
+                        baoHiems = baoHiemController.Search_MaNV(keyWord);
+                        updateThongTin();
+                    }
+                    else if (comboBoxTimKiem.Text == "Tên Nhân Viên")
+                    {
+                        baoHiems = baoHiemController.Search_TenNV(keyWord);
+                        updateThongTin();
+                    }
+                }
+            }
+            else
+            {
+                baoHiems = baoHiemController.Show_All_BaoHiem();
+                updateThongTin();
+            }    
+        }
 
+        private void dataGridViewdsBaoHiem_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow currentRow = dataGridViewdsBaoHiem.CurrentRow; 
+            buttonChiTiet.Enabled = true;
+            ChiTietBaoHiem.MaNV = currentRow.Cells[0].Value.ToString();
         }
     }
 }

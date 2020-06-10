@@ -127,6 +127,22 @@ begin
 	TrangThai = @trangthai,
 	NgayHieuLuc = @ngayhieuluc,
 	NgayHetHan = @ngayhethan,
-	@noidung = @noidung
+	NoiDung = @noidung
 	where SoHopDong = @sohd
+end
+
+go
+
+create proc GetDanhSachToanBoNhanSu
+as
+begin
+	select * from HoSoNhanSu
+end
+
+go
+
+create proc GetDanhSachToanBoHopDong
+as
+begin
+	select * from HopDongNhanSu
 end
