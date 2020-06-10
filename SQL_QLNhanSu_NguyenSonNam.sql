@@ -45,5 +45,5 @@ go
 create proc DanhSachNhanVien
 as
 begin
-	select MaNV,HoTenNV,convert(varchar, NgaySinh, 1),GioiTinh,ChucVu,BoPhan,TenPB from HoSoNhanSu,PhongBan where HoSoNhanSu.MaPhongBan = PhongBan.MaPhongBan
+	select MaNV,HoTenNV,convert(varchar, NgaySinh, 101) as NgaySinh,GioiTinh,ChucVu,BoPhan,TenPB from HoSoNhanSu,PhongBan where HoSoNhanSu.MaPhongBan = PhongBan.MaPhongBan
 end

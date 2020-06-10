@@ -28,12 +28,14 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         public ThemQuyetDinhKyLuat()
         {
             InitializeComponent();
+            buttonLuu.Enabled = false;
         }
 
         private void buttonLuu_Click(object sender, EventArgs e)
         {
             if (LuuDuLieu())
             {
+                buttonLuu.Enabled = false;
                 this.Close();
             }
         }
@@ -41,6 +43,11 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         private void buttonQuayLai_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void EnableLuu(object sender, EventArgs e)
+        {
+            buttonLuu.Enabled = true;
         }
 
         //Cách hàm xử lý datetime

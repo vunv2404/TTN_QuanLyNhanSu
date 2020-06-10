@@ -37,7 +37,8 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.DaoTao' table. You can move, or remove it, as needed.
             this.daoTaoTableAdapter.Fill(this.tTN_QLNhanSuDataSet.DaoTao);
-
+            textBoxTong.Text = dataGridViewKhoaHocDaoTao.Rows.Count.ToString();
+            comboBoxTimKiem.SelectedIndex = 0;
         }
 
         private void buttonThem_Click(object sender, EventArgs e)
@@ -81,7 +82,42 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-
+            switch (comboBoxTimKiem.Text)
+            {
+                case "Người Phụ Trách":
+                    {                     
+                        dataGridViewKhoaHocDaoTao.DataSource = this.tTN_QLNhanSuDataSet.DaoTao.Select("NguoiPhuTrach like '%"+textBoxTimKiem.Text+"%'");
+                        break;
+                    }
+                case "Chi Phí":
+                    {
+                        try
+                        {
+                            dataGridViewKhoaHocDaoTao.DataSource = this.tTN_QLNhanSuDataSet.DaoTao.Select("ChiPhi = " + textBoxTimKiem.Text);
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Không thể tìm kiếm");
+                        }
+                        break;
+                    }
+                case "Số Lượng": 
+                    {
+                        try
+                        {
+                            dataGridViewKhoaHocDaoTao.DataSource = this.tTN_QLNhanSuDataSet.DaoTao.Select("SoLuong =" + textBoxTimKiem.Text);
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Không thể tìm kiếm");
+                        }
+                            break;
+                    }
+                default:
+                    {
+                        break;
+                    }
+            }
         }
 
         private void buttonThoat_Click(object sender, EventArgs e)
@@ -89,7 +125,7 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
             this.Close();
         }
 
-        
+
         private void buttonDSNhanSuDaoTao_Click(object sender, EventArgs e)
         {
             this.Hide();
