@@ -136,7 +136,7 @@ go
 create proc GetDanhSachToanBoNhanSu
 as
 begin
-	select * from HoSoNhanSu
+	select MaNV,HoTenNV,Format( NgaySinh,'MM/dd/yyyy') as NgaySinh,GioiTinh,ChucVu,BoPhan,MaPhongBan,Format( NgayVaoCoQuan,'MM/dd/yyyy') as NgayVaoCoQuan,QueQuan,Email,SoDienThoai,HocVi,HocHam,ChungChi,chuyenMon from HoSoNhanSu
 end
 
 go
@@ -144,5 +144,5 @@ go
 create proc GetDanhSachToanBoHopDong
 as
 begin
-	select * from HopDongNhanSu
+	select HoTenNV,SoHopDong,MaNV,LoaiHopDong,TrangThai,Format( NgayHieuLuc,'MM/dd/yyyy') as NgayHieuLuc, Format( NgayHetHan,'MM/dd/yyyy') as NgayHetHan,NoiDung from HopDongNhanSu
 end

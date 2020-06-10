@@ -101,11 +101,11 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
 
         private void buttonCapNhat_Click(object sender, EventArgs e)
         {
-            if (!Regex.IsMatch(textBoxNgayVaoCoQuan.Text, @"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$"))
+            if (!Regex.IsMatch(textBoxNgayVaoCoQuan.Text, @"(((0[1-9]|1[0-2])\/(0|1)[0-9]|2[0-9]|3[0-1])\/((19|20)\d\d))$"))
             {
                 MessageBox.Show("Ngày vào nhập sai!");
             }
-            else if (!Regex.IsMatch(textBoxNgaySinh.Text, @"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$"))
+            else if (!Regex.IsMatch(textBoxNgaySinh.Text, @"(((0[1-9]|1[0-2])\/(0|1)[0-9]|2[0-9]|3[0-1])\/((19|20)\d\d))$"))
             {
                 MessageBox.Show("Ngày sinh nhập sai!");
             }
