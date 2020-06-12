@@ -24,10 +24,11 @@ namespace TTN_QuanLyNhanSu.GUI.KyLuat
         /// - thông báo có muốn thêm trước khi lưu thay đổi
         /// 
         /// </summary>
-
         public ThemQuyetDinhKyLuat()
         {
             InitializeComponent();
+            textBoxNgayHetHan.TextChanged += textBoxDateTime_TextChanged;
+            textBoxNgayHieuLuc.TextChanged += textBoxDateTime_TextChanged;
             buttonLuu.Enabled = false;
         }
 
