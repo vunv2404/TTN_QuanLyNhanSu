@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DaoTaoBUS.cs" />
     <Compile Include="BUS\HoSoNhanSuBUS.cs" />
     <Compile Include="BUS\KyLuatBUS.cs" />
     <Compile Include="BUS\NhanVienBUS.cs" />

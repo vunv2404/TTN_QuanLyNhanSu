@@ -46,8 +46,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBoxTinhTrang = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +57,6 @@
             this.panel1.BackColor = System.Drawing.Color.Linen;
             this.panel1.Controls.Add(this.buttonThoat);
             this.panel1.Controls.Add(this.buttonCapNhat);
-            this.panel1.Controls.Add(this.textBoxChiPhi);
             this.panel1.Controls.Add(this.textBoxNguoiPhuTrach);
             this.panel1.Controls.Add(this.textBoxSoLuong);
             this.panel1.Controls.Add(this.textBoxMucDich);
@@ -106,10 +105,11 @@
             // textBoxChiPhi
             // 
             this.textBoxChiPhi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxChiPhi.Location = new System.Drawing.Point(185, 288);
+            this.textBoxChiPhi.Location = new System.Drawing.Point(139, 245);
             this.textBoxChiPhi.Name = "textBoxChiPhi";
             this.textBoxChiPhi.Size = new System.Drawing.Size(556, 25);
             this.textBoxChiPhi.TabIndex = 13;
+            this.textBoxChiPhi.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
             // 
             // textBoxNguoiPhuTrach
             // 
@@ -118,6 +118,7 @@
             this.textBoxNguoiPhuTrach.Name = "textBoxNguoiPhuTrach";
             this.textBoxNguoiPhuTrach.Size = new System.Drawing.Size(556, 25);
             this.textBoxNguoiPhuTrach.TabIndex = 12;
+            this.textBoxNguoiPhuTrach.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
             // 
             // textBoxSoLuong
             // 
@@ -126,6 +127,7 @@
             this.textBoxSoLuong.Name = "textBoxSoLuong";
             this.textBoxSoLuong.Size = new System.Drawing.Size(556, 25);
             this.textBoxSoLuong.TabIndex = 11;
+            this.textBoxSoLuong.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
             // 
             // textBoxMucDich
             // 
@@ -134,6 +136,7 @@
             this.textBoxMucDich.Name = "textBoxMucDich";
             this.textBoxMucDich.Size = new System.Drawing.Size(556, 25);
             this.textBoxMucDich.TabIndex = 10;
+            this.textBoxMucDich.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
             // 
             // textBoxNgayLap
             // 
@@ -142,6 +145,7 @@
             this.textBoxNgayLap.Name = "textBoxNgayLap";
             this.textBoxNgayLap.Size = new System.Drawing.Size(556, 25);
             this.textBoxNgayLap.TabIndex = 9;
+            this.textBoxNgayLap.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
             // 
             // textBoxMaKhoaHoc
             // 
@@ -150,6 +154,7 @@
             this.textBoxMaKhoaHoc.Name = "textBoxMaKhoaHoc";
             this.textBoxMaKhoaHoc.Size = new System.Drawing.Size(556, 25);
             this.textBoxMaKhoaHoc.TabIndex = 8;
+            this.textBoxMaKhoaHoc.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
             // 
             // label8
             // 
@@ -234,19 +239,12 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.comboBoxTinhTrang);
+            this.groupBox1.Controls.Add(this.textBoxChiPhi);
             this.groupBox1.Location = new System.Drawing.Point(46, 48);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(712, 329);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Location = new System.Drawing.Point(449, 383);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(327, 54);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
             // 
             // comboBoxTinhTrang
             // 
@@ -260,6 +258,15 @@
             this.comboBoxTinhTrang.Name = "comboBoxTinhTrang";
             this.comboBoxTinhTrang.Size = new System.Drawing.Size(556, 25);
             this.comboBoxTinhTrang.TabIndex = 19;
+            this.comboBoxTinhTrang.TextChanged += new System.EventHandler(this.buttonCapNhapEnable);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(449, 383);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(327, 54);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
             // 
             // ChiTietKhoaHoc
             // 
@@ -273,6 +280,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }

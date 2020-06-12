@@ -52,12 +52,15 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         private void FormThemKhoaHoc_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            this.tTN_QLNhanSuDataSet.KyLuat.AcceptChanges();
+            this.daoTaoTableAdapter.Fill(this.tTN_QLNhanSuDataSet.DaoTao);
         }
 
         private void buttonChiTiet_Click(object sender, EventArgs e)
         {
+            DataGridViewCellCollection cell = dataGridViewKhoaHocDaoTao.CurrentRow.Cells;
             this.Hide();
-            ChiTietKhoaHoc formChiTietKhoaHoc = new ChiTietKhoaHoc();
+            ChiTietKhoaHoc formChiTietKhoaHoc = new ChiTietKhoaHoc(new DTO.DaoTao(cell[0].Value.ToString(),DateTime.Parse(cell[1].Value.ToString()), cell[2].Value.ToString(),Int32.Parse(cell[3].Value.ToString()), cell[4].Value.ToString(), decimal.Parse(cell[5].Value.ToString()),cell[6].Value.ToString()));
             formChiTietKhoaHoc.FormClosed += FormChiTietKhoaHoc_FormClosed;
             formChiTietKhoaHoc.Show();
         }
@@ -65,12 +68,15 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         private void FormChiTietKhoaHoc_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            this.tTN_QLNhanSuDataSet.KyLuat.AcceptChanges();
+            this.daoTaoTableAdapter.Fill(this.tTN_QLNhanSuDataSet.DaoTao);
         }
 
         private void buttonDaoTaoNhanSu_Click(object sender, EventArgs e)
         {
+            DataGridViewCellCollection cell = dataGridViewKhoaHocDaoTao.CurrentRow.Cells;
             this.Hide();
-            DaoTaoNhanVien formDaoTaoNhanVien = new DaoTaoNhanVien();
+            DaoTaoNhanVien formDaoTaoNhanVien = new DaoTaoNhanVien(new DTO.DaoTao(cell[0].Value.ToString(), DateTime.Parse(cell[1].Value.ToString()), cell[2].Value.ToString(), Int32.Parse(cell[3].Value.ToString()), cell[4].Value.ToString(), decimal.Parse(cell[5].Value.ToString()), cell[6].Value.ToString()));
             formDaoTaoNhanVien.FormClosed += FormDaoTaoNhanVien_FormClosed;
             formDaoTaoNhanVien.Show();
         }
@@ -137,6 +143,13 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         private void DanhSachNVDiDaoTao_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+        }
+
+        private void dataGridViewKhoaHocDaoTao_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            buttonChiTiet.Enabled = true;
+            buttonDaoTaoNhanSu.Enabled = true;
+            buttonThem.Enabled = true;
         }
     }
 }

@@ -147,121 +147,148 @@
             this.comboBoxMaNhanVien.Name = "comboBoxMaNhanVien";
             this.comboBoxMaNhanVien.Size = new System.Drawing.Size(280, 23);
             this.comboBoxMaNhanVien.TabIndex = 30;
+            this.comboBoxMaNhanVien.TextChanged += new System.EventHandler(this.comboBoxMaNhanVien_TextChanged);
             // 
             // textBoxPhongBan
             // 
+            this.textBoxPhongBan.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxPhongBan.Enabled = false;
             this.textBoxPhongBan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPhongBan.Location = new System.Drawing.Point(579, 292);
             this.textBoxPhongBan.Name = "textBoxPhongBan";
+            this.textBoxPhongBan.ReadOnly = true;
             this.textBoxPhongBan.Size = new System.Drawing.Size(280, 22);
             this.textBoxPhongBan.TabIndex = 29;
             // 
             // textBoxBoPhan
             // 
+            this.textBoxBoPhan.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxBoPhan.Enabled = false;
             this.textBoxBoPhan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBoPhan.Location = new System.Drawing.Point(579, 252);
             this.textBoxBoPhan.Name = "textBoxBoPhan";
+            this.textBoxBoPhan.ReadOnly = true;
             this.textBoxBoPhan.Size = new System.Drawing.Size(280, 22);
             this.textBoxBoPhan.TabIndex = 28;
             // 
             // textBoxChucVu
             // 
+            this.textBoxChucVu.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxChucVu.Enabled = false;
             this.textBoxChucVu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxChucVu.Location = new System.Drawing.Point(579, 213);
             this.textBoxChucVu.Name = "textBoxChucVu";
+            this.textBoxChucVu.ReadOnly = true;
             this.textBoxChucVu.Size = new System.Drawing.Size(280, 22);
             this.textBoxChucVu.TabIndex = 27;
             // 
             // textBoxGioiTinh
             // 
+            this.textBoxGioiTinh.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxGioiTinh.Enabled = false;
             this.textBoxGioiTinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGioiTinh.Location = new System.Drawing.Point(579, 173);
             this.textBoxGioiTinh.Name = "textBoxGioiTinh";
+            this.textBoxGioiTinh.ReadOnly = true;
             this.textBoxGioiTinh.Size = new System.Drawing.Size(280, 22);
             this.textBoxGioiTinh.TabIndex = 26;
             // 
             // textBoxNgaySinh
             // 
+            this.textBoxNgaySinh.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNgaySinh.Enabled = false;
             this.textBoxNgaySinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNgaySinh.Location = new System.Drawing.Point(579, 138);
             this.textBoxNgaySinh.Name = "textBoxNgaySinh";
+            this.textBoxNgaySinh.ReadOnly = true;
             this.textBoxNgaySinh.Size = new System.Drawing.Size(280, 22);
             this.textBoxNgaySinh.TabIndex = 25;
             // 
             // textBoxHoTen
             // 
+            this.textBoxHoTen.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxHoTen.Enabled = false;
             this.textBoxHoTen.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxHoTen.Location = new System.Drawing.Point(579, 99);
             this.textBoxHoTen.Name = "textBoxHoTen";
+            this.textBoxHoTen.ReadOnly = true;
             this.textBoxHoTen.Size = new System.Drawing.Size(280, 22);
             this.textBoxHoTen.TabIndex = 24;
             // 
             // textBoxTinhTrang
             // 
+            this.textBoxTinhTrang.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxTinhTrang.Enabled = false;
             this.textBoxTinhTrang.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTinhTrang.Location = new System.Drawing.Point(152, 292);
             this.textBoxTinhTrang.Name = "textBoxTinhTrang";
+            this.textBoxTinhTrang.ReadOnly = true;
             this.textBoxTinhTrang.Size = new System.Drawing.Size(250, 22);
             this.textBoxTinhTrang.TabIndex = 23;
             // 
             // textBoxChiPhi
             // 
+            this.textBoxChiPhi.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxChiPhi.Enabled = false;
             this.textBoxChiPhi.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxChiPhi.Location = new System.Drawing.Point(152, 252);
             this.textBoxChiPhi.Name = "textBoxChiPhi";
+            this.textBoxChiPhi.ReadOnly = true;
             this.textBoxChiPhi.Size = new System.Drawing.Size(250, 22);
             this.textBoxChiPhi.TabIndex = 22;
             // 
             // textBoxNguoiPhuTrach
             // 
+            this.textBoxNguoiPhuTrach.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNguoiPhuTrach.Enabled = false;
             this.textBoxNguoiPhuTrach.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNguoiPhuTrach.Location = new System.Drawing.Point(152, 211);
             this.textBoxNguoiPhuTrach.Name = "textBoxNguoiPhuTrach";
+            this.textBoxNguoiPhuTrach.ReadOnly = true;
             this.textBoxNguoiPhuTrach.Size = new System.Drawing.Size(250, 22);
             this.textBoxNguoiPhuTrach.TabIndex = 21;
             // 
             // textBoxSoLuong
             // 
+            this.textBoxSoLuong.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxSoLuong.Enabled = false;
             this.textBoxSoLuong.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSoLuong.Location = new System.Drawing.Point(152, 172);
             this.textBoxSoLuong.Name = "textBoxSoLuong";
+            this.textBoxSoLuong.ReadOnly = true;
             this.textBoxSoLuong.Size = new System.Drawing.Size(250, 22);
             this.textBoxSoLuong.TabIndex = 20;
             // 
             // textBoxMucDich
             // 
+            this.textBoxMucDich.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxMucDich.Enabled = false;
             this.textBoxMucDich.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMucDich.Location = new System.Drawing.Point(152, 133);
             this.textBoxMucDich.Name = "textBoxMucDich";
+            this.textBoxMucDich.ReadOnly = true;
             this.textBoxMucDich.Size = new System.Drawing.Size(250, 22);
             this.textBoxMucDich.TabIndex = 19;
             // 
             // textBoxNgayLap
             // 
+            this.textBoxNgayLap.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNgayLap.Enabled = false;
             this.textBoxNgayLap.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNgayLap.Location = new System.Drawing.Point(152, 96);
             this.textBoxNgayLap.Name = "textBoxNgayLap";
+            this.textBoxNgayLap.ReadOnly = true;
             this.textBoxNgayLap.Size = new System.Drawing.Size(250, 22);
             this.textBoxNgayLap.TabIndex = 18;
             // 
             // textBoxMaDaoTao
             // 
+            this.textBoxMaDaoTao.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxMaDaoTao.Enabled = false;
             this.textBoxMaDaoTao.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMaDaoTao.Location = new System.Drawing.Point(152, 61);
             this.textBoxMaDaoTao.Name = "textBoxMaDaoTao";
+            this.textBoxMaDaoTao.ReadOnly = true;
             this.textBoxMaDaoTao.Size = new System.Drawing.Size(250, 22);
             this.textBoxMaDaoTao.TabIndex = 17;
             // 
@@ -432,6 +459,7 @@
             this.Name = "DaoTaoNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaoTaoNhanVien";
+            this.Load += new System.EventHandler(this.DaoTaoNhanVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
