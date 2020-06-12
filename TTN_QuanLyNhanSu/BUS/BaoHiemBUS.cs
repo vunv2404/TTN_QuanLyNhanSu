@@ -110,14 +110,14 @@ namespace TTN_QuanLyNhanSu.BUS
                         listBaoHiem1 = ConvertToListBaoHiem(DataProvider.Instance.ExecuteQuery("" +
                             "select * " +
                             "from BaoHiem " +
-                            $"where HoTenNV like '%{listTenNV[i]}%'"));
+                            $"where HoTenNV like N'%{listTenNV[i]}%'"));
                     }
                     else
                     {
                         listBaoHiem2 = ConvertToListBaoHiem(DataProvider.Instance.ExecuteQuery("" +
                             "select * " +
                             "from BaoHiem " +
-                            $"where HoTenNV like '%{listTenNV[i]}%'"));
+                            $"where HoTenNV like N'%{listTenNV[i]}%'"));
                         foreach (BaoHiem bh in listBaoHiem1)
                         {
                             if (listBaoHiem2.Find(x => x.MaNV == bh.MaNV) != null)
@@ -133,7 +133,7 @@ namespace TTN_QuanLyNhanSu.BUS
                 return ConvertToListBaoHiem(DataProvider.Instance.ExecuteQuery("" +
                             "select * " +
                             "from BaoHiem " +
-                            $"where HoTenNV like '%{TenNV}%'"));
+                            $"where HoTenNV like N'%{TenNV}%'"));
         }
         public DataTable DT_NhanVienKoCoBaoHiem()
         {

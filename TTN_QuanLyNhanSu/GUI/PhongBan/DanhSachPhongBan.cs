@@ -26,7 +26,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         /// 
         /// 
         /// </summary>
-        //PhongBanBUS contrlPhongBan = new PhongBanBUS();
+        PhongBanBUS contrlPhongBan = new PhongBanBUS();
         string maphongban;
 
         private static DataGridView dtgvPB;
@@ -46,7 +46,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.PhongBan' table. You can move, or remove it, as needed.
             //this.phongBanTableAdapter.Fill(this.tTN_QLNhanSuDataSet.PhongBan);
-            //dataGridViewDanhSachPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
+            dataGridViewDanhSachPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
             dataGridViewDanhSachPhongBan.Refresh();
 
             textBoxTong.Text = dataGridViewDanhSachPhongBan.Rows.Count.ToString();
@@ -84,13 +84,13 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         {
             string keywords = textBoxTimKiem.Text;
 
-           /* List<DTO.PhongBan> dsPhongBan = contrlPhongBan.XemTatCaPB();
+            List<DTO.PhongBan> dsPhongBan = contrlPhongBan.XemTatCaPB();
             List<DTO.PhongBan> items = dsPhongBan;
 
             items = dsPhongBan.FindAll(item => item.TenPB.ToUpper().Contains(keywords.ToUpper()));
 
             dataGridViewDanhSachPhongBan.DataSource = items;
-            dataGridViewDanhSachPhongBan.Refresh();*/
+            dataGridViewDanhSachPhongBan.Refresh();
         }
 
         private void buttonThoat_Click(object sender, EventArgs e)
@@ -115,3 +115,4 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         }
     }
 }
+
