@@ -12,13 +12,13 @@ namespace TTN_QuanLyNhanSu.BUS
     {
         public bool ThemDaoTao(DaoTao daoTao)
         {
-            string query = string.Format("ThemDaoTao {0}, '{1}', '{2}' , {3}, N'{4}', {5}, N'{6}'", daoTao.MaDaoTao, daoTao.NgayLap, daoTao.SoLuong, daoTao.NguoiPhuTrach, daoTao.ChiPhi, daoTao.TrangThai);
+            string query = string.Format("ThemDaoTao {0}, '{1}', N'{2}' , {3}, N'{4}', {5}, N'{6}'", daoTao.MaDaoTao, daoTao.NgayLap, daoTao.MucDich, daoTao.SoLuong, daoTao.NguoiPhuTrach, daoTao.ChiPhi, daoTao.TrangThai);
             return DataProvider.Instance.ExecuteNonQuery(query) >= 1;
         }
 
         public bool SuaDaoTao(DaoTao daoTao)
         {
-            string query = string.Format("SuaDaoTao {0}, '{1}', '{2}' , {3}, N'{4}', {5}, N'{6}'", daoTao.MaDaoTao, daoTao.NgayLap, daoTao.SoLuong, daoTao.NguoiPhuTrach, daoTao.ChiPhi, daoTao.TrangThai);
+            string query = string.Format("SuaDaoTao {0}, '{1}', N'{2}' ,{3}, N'{4}', {5}, N'{6}'", daoTao.MaDaoTao, daoTao.NgayLap,daoTao.MucDich, daoTao.SoLuong, daoTao.NguoiPhuTrach, daoTao.ChiPhi, daoTao.TrangThai);
             return DataProvider.Instance.ExecuteNonQuery(query) >= 1;
         }
 

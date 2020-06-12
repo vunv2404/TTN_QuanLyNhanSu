@@ -135,7 +135,8 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         private void buttonDSNhanSuDaoTao_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DanhSachNVDiDaoTao danhSachNVDiDaoTao = new DanhSachNVDiDaoTao();
+            DataGridViewCellCollection cell = dataGridViewKhoaHocDaoTao.CurrentRow.Cells;
+            DanhSachNVDiDaoTao danhSachNVDiDaoTao = new DanhSachNVDiDaoTao(cell[0].Value.ToString());
             danhSachNVDiDaoTao.FormClosed += DanhSachNVDiDaoTao_FormClosed;
             danhSachNVDiDaoTao.Show();
         }
@@ -149,7 +150,7 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         {
             buttonChiTiet.Enabled = true;
             buttonDaoTaoNhanSu.Enabled = true;
-            buttonThem.Enabled = true;
+            buttonDSNhanSuDaoTao.Enabled = true;
         }
     }
 }

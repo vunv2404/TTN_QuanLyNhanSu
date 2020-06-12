@@ -51,7 +51,7 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         {
             if (daoTaoBUS.DaoTaoNhanVien(comboBoxMaNhanVien.Text, textBoxMaDaoTao.Text))
             {
-                MessageBox.Show("Nhân viên đã được thêm vào danh sách kỉ luật");
+                MessageBox.Show("Nhân viên đã được thêm vào danh sách đào tạo");
             }
             else
             {

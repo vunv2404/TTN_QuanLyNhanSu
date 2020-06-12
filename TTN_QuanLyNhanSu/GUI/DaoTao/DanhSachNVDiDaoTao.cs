@@ -23,7 +23,7 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
         {
             InitializeComponent();
             nhanVienBUS = new NhanVienBUS();
-            dataGridViewDSNVDiDaoTao.DataSource = nhanVienBUS.NhanVienKyLuat(MaDaoTao);
+            dataGridViewDSNVDiDaoTao.DataSource = nhanVienBUS.NhanVienDaoTao(MaDaoTao);
         }
 
 
