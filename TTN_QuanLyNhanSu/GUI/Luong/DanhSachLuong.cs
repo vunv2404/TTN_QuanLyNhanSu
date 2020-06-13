@@ -25,7 +25,7 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
         /// - textBox Tổng là số bản ghi hiện tại có trên datagridView
         /// </summary>
 
-        //LuongBUS contrlLuong = new LuongBUS();
+        LuongBUS contrlLuong = new LuongBUS();
         string maNV;
 
         private static DataGridView dtgvDSLuong;
@@ -45,7 +45,7 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
         {
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.Luong' table. You can move, or remove it, as needed.
             //this.luongTableAdapter.Fill(this.tTN_QLNhanSuDataSet.Luong);
-            //dataGridViewDanhSachLuong.DataSource = contrlLuong.TatCaLuongNV();
+            dataGridViewDanhSachLuong.DataSource = contrlLuong.TatCaLuongNV();
             dataGridViewDanhSachLuong.Refresh();
 
             textBoxTong.Text = dataGridViewDanhSachLuong.Rows.Count.ToString();
@@ -83,13 +83,13 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
         {
             string keywords = textBoxTimKiem.Text;
 
-            /*DataTable dsLuong = contrlLuong.TatCaLuongNV();
+            DataTable dsLuong = contrlLuong.TatCaLuongNV();
             DataTable items = dsLuong;
 
             items = contrlLuong.TimKiemTenNV(keywords);
 
             dataGridViewDanhSachLuong.DataSource = items;
-            dataGridViewDanhSachLuong.Refresh();*/
+            dataGridViewDanhSachLuong.Refresh();
         }
 
         private void buttonThoat_Click(object sender, EventArgs e)

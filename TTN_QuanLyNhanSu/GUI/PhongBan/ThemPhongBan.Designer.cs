@@ -132,6 +132,7 @@
             // 
             // comboBoxMaTruongPhong
             // 
+            this.comboBoxMaTruongPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMaTruongPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxMaTruongPhong.FormattingEnabled = true;
             this.comboBoxMaTruongPhong.Location = new System.Drawing.Point(188, 153);
