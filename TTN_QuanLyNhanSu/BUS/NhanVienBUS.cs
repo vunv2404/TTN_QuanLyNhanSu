@@ -17,6 +17,13 @@ namespace TTN_QuanLyNhanSu.BUS
             return DataProvider.Instance.ExecuteQuery(query);
         }
 
+        public DataTable NhanVienDaoTao(string maDaoTao)
+        {
+            string query = String.Format("NhanVienDiDaoTao '{0}'", maDaoTao);
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
+
+
         public List<NhanSu> DanhSachNhanSu()
         {
             string query = String.Format("DanhSachNhanVien");

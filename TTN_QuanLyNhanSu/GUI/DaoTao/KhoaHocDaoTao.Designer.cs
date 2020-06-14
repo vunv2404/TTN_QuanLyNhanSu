@@ -204,6 +204,8 @@
             // 
             // dataGridViewKhoaHocDaoTao
             // 
+            this.dataGridViewKhoaHocDaoTao.AllowUserToAddRows = false;
+            this.dataGridViewKhoaHocDaoTao.AllowUserToDeleteRows = false;
             this.dataGridViewKhoaHocDaoTao.AutoGenerateColumns = false;
             this.dataGridViewKhoaHocDaoTao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKhoaHocDaoTao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -219,6 +221,7 @@
             this.dataGridViewKhoaHocDaoTao.Name = "dataGridViewKhoaHocDaoTao";
             this.dataGridViewKhoaHocDaoTao.Size = new System.Drawing.Size(955, 434);
             this.dataGridViewKhoaHocDaoTao.TabIndex = 0;
+            this.dataGridViewKhoaHocDaoTao.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewKhoaHocDaoTao_CellClick);
             // 
             // maDaoTaoDataGridViewTextBoxColumn
             // 

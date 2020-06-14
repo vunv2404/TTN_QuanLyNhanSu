@@ -151,7 +151,7 @@ namespace TTN_QuanLyNhanSu.GUI.ChamCong
                 bool checkDate = DateTime.TryParse(text, out temp);
                 if (checkRegex == false || checkDate == false)
                 {
-                    error += $"\n Error: Từ ngày có định dạng dd/mm/yyyy";
+                    error += $"\n Error: Từ ngày có định dạng tháng/ngày/năm: mm/dd/yyyy";
                     checkAll = false;
                 }
             }
@@ -169,7 +169,7 @@ namespace TTN_QuanLyNhanSu.GUI.ChamCong
                 bool checkDate = DateTime.TryParse(text, out temp);
                 if (checkRegex == false || checkDate == false)
                 {
-                    error += $"\n Error: Đến ngày có định dạng dd/mm/yyyy";
+                    error += $"\n Error: Đến ngày có định dạng tháng/ngày/năm: mm/dd/yyyy";
                     checkAll = false;
                 }
             }

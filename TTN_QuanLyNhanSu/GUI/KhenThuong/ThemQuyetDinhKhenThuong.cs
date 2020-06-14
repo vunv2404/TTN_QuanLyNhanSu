@@ -100,7 +100,7 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
                 bool checkDate = DateTime.TryParse(textBoxNgayHieuLuc.Text, out temp);
                 if (checkRegex == false || checkDate == false)
                 {
-                    error += $"\n Error: Ngày hiệu lực có định dạng dd/mm/yyyy";
+                    error += $"\n Error: Ngày hiệu lực có định dạng tháng/ngày/năm: mm/dd/yyyy";
                     checkAll = false;
                 }
             }
@@ -118,7 +118,7 @@ namespace TTN_QuanLyNhanSu.GUI.KhenThuong
                 bool checkDate = DateTime.TryParse(textBoxNgayHetHan.Text, out temp);
                 if (checkRegex == false || checkDate == false)
                 {
-                    error += $"\n Error: Ngày hết hạn có định dạng dd/mm/yyyy";
+                    error += $"\n Error: Ngày hết hạn có định dạng tháng/ngày/năm: mm/dd/yyyy";
                     checkAll = false;
                 }
             }

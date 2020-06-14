@@ -81,6 +81,7 @@
             this.textBoxMaDaoTao.Name = "textBoxMaDaoTao";
             this.textBoxMaDaoTao.Size = new System.Drawing.Size(443, 25);
             this.textBoxMaDaoTao.TabIndex = 2;
+            this.textBoxMaDaoTao.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             // 
             // label2
             // 
@@ -149,7 +150,7 @@
             this.textBoxNgayLap.Name = "textBoxNgayLap";
             this.textBoxNgayLap.Size = new System.Drawing.Size(443, 25);
             this.textBoxNgayLap.TabIndex = 9;
-            this.textBoxNgayLap.TextChanged += new System.EventHandler(this.textBoxNgayLap_TextChanged);
+            this.textBoxNgayLap.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             this.textBoxNgayLap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNgayLap_KeyPress);
             // 
             // textBoxMucDich
@@ -159,6 +160,7 @@
             this.textBoxMucDich.Name = "textBoxMucDich";
             this.textBoxMucDich.Size = new System.Drawing.Size(443, 25);
             this.textBoxMucDich.TabIndex = 10;
+            this.textBoxMucDich.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             // 
             // textBoxSoLuong
             // 
@@ -167,6 +169,7 @@
             this.textBoxSoLuong.Name = "textBoxSoLuong";
             this.textBoxSoLuong.Size = new System.Drawing.Size(443, 25);
             this.textBoxSoLuong.TabIndex = 11;
+            this.textBoxSoLuong.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             // 
             // textBoxNguoiPhuTrach
             // 
@@ -175,6 +178,7 @@
             this.textBoxNguoiPhuTrach.Name = "textBoxNguoiPhuTrach";
             this.textBoxNguoiPhuTrach.Size = new System.Drawing.Size(443, 25);
             this.textBoxNguoiPhuTrach.TabIndex = 12;
+            this.textBoxNguoiPhuTrach.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             // 
             // textBoxChiPhi
             // 
@@ -183,6 +187,7 @@
             this.textBoxChiPhi.Name = "textBoxChiPhi";
             this.textBoxChiPhi.Size = new System.Drawing.Size(443, 25);
             this.textBoxChiPhi.TabIndex = 13;
+            this.textBoxChiPhi.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             // 
             // buttonQuayLai
             // 
@@ -261,6 +266,7 @@
             this.comboBoxTinhTrang.Name = "comboBoxTinhTrang";
             this.comboBoxTinhTrang.Size = new System.Drawing.Size(443, 25);
             this.comboBoxTinhTrang.TabIndex = 0;
+            this.comboBoxTinhTrang.TextChanged += new System.EventHandler(this.buttonLuuEnable);
             // 
             // ThemKhoaHoc
             // 

@@ -26,7 +26,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         /// 
         /// </summary>
         /// 
-        //PhongBanBUS contrlPhongBan = new PhongBanBUS();
+        PhongBanBUS contrlPhongBan = new PhongBanBUS();
         private string ID;
         public ChiTietPhongBan(string IDPhongBan)
         {
@@ -36,10 +36,10 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
 
             textBoxMaPhongBan.Enabled = false;
 
-            //comboBoxMaTruongPhong.DataSource = contrlPhongBan.XemTatCaTruongPhong();
+            comboBoxMaTruongPhong.DataSource = contrlPhongBan.XemTatCaTruongPhong();
             comboBoxMaTruongPhong.DisplayMember = "MaNV";
             comboBoxMaTruongPhong.ValueMember = "MaNV";
-            
+
         }
 
         private void buttonCapNhat_Click(object sender, EventArgs e)
@@ -136,14 +136,14 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
                         phongban.SoDienThoai = textBoxSoDienThoai.Text;
                         phongban.Fax = textBoxFax.Text;
 
-                        /*if (contrlPhongBan.SuaPhongBan(phongban))
+                        if (contrlPhongBan.SuaPhongBan(phongban))
                         {
                             MessageBox.Show("Sửa phòng ban thành công");
 
                             DanhSachPhongBan.DtgvPB.DataSource = contrlPhongBan.XemTatCaPB();
                             DanhSachPhongBan.DtgvPB.Refresh();
                         }
-                        else MessageBox.Show("Sửa phòng ban thất bại");*/
+                        else MessageBox.Show("Sửa phòng ban thất bại");
                     }
                 }
             }
@@ -156,13 +156,13 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
 
         private void ChiTietPhongBan_Load(object sender, EventArgs e)
         {
-            /*textBoxMaPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).MaPhongBan;
+            textBoxMaPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).MaPhongBan;
             textBoxTenPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).TenPB;
             textBoxNgayThanhLap.Text = contrlPhongBan.XemChiTietPB(ID).NgayThanhLap.ToString();
             comboBoxMaTruongPhong.SelectedText = contrlPhongBan.XemChiTietPB(ID).MaTruongPhong;
             textBoxEmail.Text = contrlPhongBan.XemChiTietPB(ID).Email;
             textBoxSoDienThoai.Text = contrlPhongBan.XemChiTietPB(ID).SoDienThoai;
-            textBoxFax.Text = contrlPhongBan.XemChiTietPB(ID).Fax;*/
+            textBoxFax.Text = contrlPhongBan.XemChiTietPB(ID).Fax;
         }
     }
 }

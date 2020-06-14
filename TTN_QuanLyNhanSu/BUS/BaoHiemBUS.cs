@@ -78,7 +78,7 @@ namespace TTN_QuanLyNhanSu.BUS
         }
         public void Insert_1_BaoHiem(BaoHiem baoHiem)
         {
-            ChuanHoaThongTin(baoHiem);
+            //ChuanHoaThongTin(baoHiem);
             DataProvider.Instance.ExecuteNonQuery("" +
                 "insert into BaoHiem(MaNV,HoTenNV,SoBaoHiemXH,SoBaoHiemYT,NoiCap,NgayCap) " +
                 $"values('{baoHiem.MaNV}',N'{baoHiem.HoTenNV}','{baoHiem.SoBaoHiemXH}'," +
@@ -86,7 +86,7 @@ namespace TTN_QuanLyNhanSu.BUS
         }
         public void Modify_1_BaoHiem(BaoHiem baoHiem)
         {
-            ChuanHoaThongTin(baoHiem);
+            //ChuanHoaThongTin(baoHiem);
             DataProvider.Instance.ExecuteNonQuery("" +
                 "update BaoHiem " +
                 $"set SoBaoHiemXH = N'{baoHiem.SoBaoHiemXH}'," +

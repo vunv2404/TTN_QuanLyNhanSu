@@ -30,7 +30,7 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
         /// 
         /// - thông báo có muốn lưu thay đổi trc khi cập nhật.
         /// </summary>
-        //LuongBUS contrlLuong = new LuongBUS();
+        LuongBUS contrlLuong = new LuongBUS();
         private string ID;
         public ChiTietLuongNV(string IDMaNV)
         {
@@ -164,14 +164,14 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
                         luong.CongLamThemGio = decimal.Parse(textBoxCongLamThem.Text);
                         luong.PhuCap = decimal.Parse(textBoxPhuCap.Text);
 
-                        /*if (contrlLuong.SuaLuongNV(luong))
+                        if (contrlLuong.SuaLuongNV(luong))
                         {
                             MessageBox.Show("Sửa lương nhân viên thành công");
 
                             DanhSachLuong.DtgvDSLuong.DataSource = contrlLuong.TatCaLuongNV();
                             DanhSachLuong.DtgvDSLuong.Refresh();
                         }
-                        else MessageBox.Show("Sửa lương nhân viên thất bại");*/
+                        else MessageBox.Show("Sửa lương nhân viên thất bại");
                     }
                 }
             }
@@ -184,17 +184,17 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
 
         private void ChiTietLuongNV_Load(object sender, EventArgs e)
         {
-            /*comboBoxMaNhanVien.SelectedText= contrlLuong.XemChiTietLuongNV(ID).MaNV;
+            comboBoxMaNhanVien.SelectedText = contrlLuong.XemChiTietLuongNV(ID).MaNV;
             textBoxSoQuyetDinh.Text = contrlLuong.XemChiTietLuongNV(ID).SoQuyetDinh;
             textBoxNgayKi.Text = contrlLuong.XemChiTietLuongNV(ID).NgayKi.ToString();
-            textBoxNgayHieuLuc.Text= contrlLuong.XemChiTietLuongNV(ID).NgayHieuLuc.ToString();
+            textBoxNgayHieuLuc.Text = contrlLuong.XemChiTietLuongNV(ID).NgayHieuLuc.ToString();
             textBoxMucLuong.Text = contrlLuong.XemChiTietLuongNV(ID).MucLuong.ToString();
             textBoxHeSo.Text = contrlLuong.XemChiTietLuongNV(ID).HeSo.ToString();
             textBoxTongNgayCong.Text = contrlLuong.XemChiTietLuongNV(ID).TongNgayCong.ToString();
             textBoxCongLamThem.Text = contrlLuong.XemChiTietLuongNV(ID).CongLamThemGio.ToString();
             textBoxPhuCap.Text = contrlLuong.XemChiTietLuongNV(ID).PhuCap.ToString();
             textBoxThueThuNhap.Text = contrlLuong.XemChiTietLuongNV(ID).ThueThuNhap.ToString();
-            textBoxTongLuongNhan.Text = contrlLuong.XemChiTietLuongNV(ID).TongLuongNhan.ToString();*/
+            textBoxTongLuongNhan.Text = contrlLuong.XemChiTietLuongNV(ID).TongLuongNhan.ToString();
         }
     }
 }
