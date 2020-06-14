@@ -27,6 +27,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
         /// 
         /// - xử lí dữ liệu trước khi thêm.(regex)
         /// </summary>
+
         BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
         PhongBanBUS contrlPhongBan = new PhongBanBUS();
 

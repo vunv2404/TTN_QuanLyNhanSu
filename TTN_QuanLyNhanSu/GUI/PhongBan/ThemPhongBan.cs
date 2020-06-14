@@ -25,6 +25,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         /// - thông báo có muốn thêm trước khi thêm.
         /// </summary>
         /// 
+
         PhongBanBUS contrlPhongBan = new PhongBanBUS();
 
         public ThemPhongBan()

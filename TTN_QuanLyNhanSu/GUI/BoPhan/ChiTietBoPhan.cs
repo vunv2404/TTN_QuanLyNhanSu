@@ -46,6 +46,15 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 
         private void buttonCapNhat_Click(object sender, EventArgs e)
         {
+            ID = mabophan;
+
+            InitializeComponent();
+
+            textBoxMaBoPhan.Enabled = false;
+        }
+
+        private void buttonCapNhat_Click(object sender, EventArgs e)
+        {
             bool matchMaBP = Regex.IsMatch(textBoxMaBoPhan.Text, @"^\s");
             bool matchTenBP = Regex.IsMatch(textBoxTenBoPhan.Text, @"^\s");
             bool matchEmail = Regex.IsMatch(textBoxEmail.Text, @"^\s");

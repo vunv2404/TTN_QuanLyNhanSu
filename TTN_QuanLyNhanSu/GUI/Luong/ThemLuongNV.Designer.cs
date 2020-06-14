@@ -170,6 +170,7 @@
             // 
             // comboBoxMaNhanVien
             // 
+            this.comboBoxMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.comboBoxMaNhanVien.FormattingEnabled = true;
             this.comboBoxMaNhanVien.Location = new System.Drawing.Point(162, 19);

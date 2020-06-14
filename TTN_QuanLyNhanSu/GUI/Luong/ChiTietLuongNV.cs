@@ -30,6 +30,7 @@ namespace TTN_QuanLyNhanSu.GUI.Luong
         /// 
         /// - thông báo có muốn lưu thay đổi trc khi cập nhật.
         /// </summary>
+
         LuongBUS contrlLuong = new LuongBUS();
         private string ID;
         public ChiTietLuongNV(string IDMaNV)

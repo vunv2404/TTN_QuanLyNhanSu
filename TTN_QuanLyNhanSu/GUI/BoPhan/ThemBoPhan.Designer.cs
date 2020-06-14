@@ -34,6 +34,7 @@
             this.buttonQuayLai = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTenPhongBan = new System.Windows.Forms.ComboBox();
             this.textBoxMaBoPhan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxTenBoPhan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxTenPhongBan = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -125,6 +125,16 @@
             this.groupBox1.Size = new System.Drawing.Size(715, 297);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxTenPhongBan
+            // 
+            this.comboBoxTenPhongBan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTenPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxTenPhongBan.FormattingEnabled = true;
+            this.comboBoxTenPhongBan.Location = new System.Drawing.Point(188, 112);
+            this.comboBoxTenPhongBan.Name = "comboBoxTenPhongBan";
+            this.comboBoxTenPhongBan.Size = new System.Drawing.Size(489, 25);
+            this.comboBoxTenPhongBan.TabIndex = 14;
             // 
             // textBoxMaBoPhan
             // 
@@ -225,15 +235,6 @@
             this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Bộ Phận";
-            // 
-            // comboBoxTenPhongBan
-            // 
-            this.comboBoxTenPhongBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBoxTenPhongBan.FormattingEnabled = true;
-            this.comboBoxTenPhongBan.Location = new System.Drawing.Point(188, 112);
-            this.comboBoxTenPhongBan.Name = "comboBoxTenPhongBan";
-            this.comboBoxTenPhongBan.Size = new System.Drawing.Size(489, 25);
-            this.comboBoxTenPhongBan.TabIndex = 14;
             // 
             // ThemBoPhan
             // 

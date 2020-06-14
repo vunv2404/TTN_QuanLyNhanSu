@@ -39,7 +39,6 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
             comboBoxMaTruongPhong.DataSource = contrlPhongBan.XemTatCaTruongPhong();
             comboBoxMaTruongPhong.DisplayMember = "MaNV";
             comboBoxMaTruongPhong.ValueMember = "MaNV";
-
         }
 
         private void buttonCapNhat_Click(object sender, EventArgs e)
@@ -50,6 +49,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
             bool matchEmail = Regex.IsMatch(textBoxEmail.Text, @"^\s");
             bool matchSDT = Regex.IsMatch(textBoxSoDienThoai.Text, @"^\s");
             bool matchFax = Regex.IsMatch(textBoxFax.Text, @"^\s");
+            bool matchMaTP = Regex.IsMatch(comboBoxMaTruongPhong.Text, @"^\s");
 
             textBoxMaPhongBan.Text = textBoxMaPhongBan.Text.Trim();
             textBoxTenPhongBan.Text = textBoxTenPhongBan.Text.Trim();
@@ -88,6 +88,11 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
                 MessageBox.Show("Số fax không Được Để Trống");
                 textBoxFax.Focus();
             }
+            else if (comboBoxMaTruongPhong.Text == "")
+            {
+                MessageBox.Show("Mã trưởng phòng không Được Để Trống");
+                textBoxFax.Focus();
+            }
             else
             {
                 if (matchMaPB)
@@ -119,6 +124,11 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
                 {
                     MessageBox.Show("Số fax không Được Để Tất Cả Là Khoảng Trắng");
                     textBoxFax.Focus();
+                }
+                else if (matchMaTP)
+                {
+                    MessageBox.Show("Mã trưởng phòng không Được Để Tất Cả Là Khoảng Trắng");
+                    comboBoxMaTruongPhong.Focus();
                 }
                 else
                 {
@@ -159,7 +169,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
             textBoxMaPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).MaPhongBan;
             textBoxTenPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).TenPB;
             textBoxNgayThanhLap.Text = contrlPhongBan.XemChiTietPB(ID).NgayThanhLap.ToString();
-            comboBoxMaTruongPhong.SelectedText = contrlPhongBan.XemChiTietPB(ID).MaTruongPhong;
+            comboBoxMaTruongPhong.Text = contrlPhongBan.XemChiTietPB(ID).MaTruongPhong;
             textBoxEmail.Text = contrlPhongBan.XemChiTietPB(ID).Email;
             textBoxSoDienThoai.Text = contrlPhongBan.XemChiTietPB(ID).SoDienThoai;
             textBoxFax.Text = contrlPhongBan.XemChiTietPB(ID).Fax;
