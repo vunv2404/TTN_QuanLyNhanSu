@@ -25,15 +25,15 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
         /// - thông báo có muốn thêm trước khi thêm.
         /// </summary>
         /// 
-        //PhongBanBUS contrlPhongBan = new PhongBanBUS();
+        PhongBanBUS contrlPhongBan = new PhongBanBUS();
 
         public ThemPhongBan()
         {
             InitializeComponent();
 
-            /*comboBoxMaTruongPhong.DataSource = contrlPhongBan.XemTatCaTruongPhong();
+            comboBoxMaTruongPhong.DataSource = contrlPhongBan.XemTatCaTruongPhong();
             comboBoxMaTruongPhong.DisplayMember = "MaNV";
-            comboBoxMaTruongPhong.ValueMember = "MaNV";*/
+            comboBoxMaTruongPhong.ValueMember = "MaNV";
 
         }
 
@@ -128,7 +128,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
                     {
                         DTO.PhongBan phongban = new DTO.PhongBan(textBoxMaPhongBan.Text, textBoxTenPhongBan.Text, DateTime.Parse(textBoxNgayThanhLap.Text), comboBoxMaTruongPhong.SelectedValue.ToString(), textBoxEmail.Text, textBoxSoDienThoai.Text, textBoxFax.Text);
 
-                        /*if (contrlPhongBan.TaoPhongBan(phongban))
+                        if (contrlPhongBan.TaoPhongBan(phongban))
                         {
                             MessageBox.Show("Thêm mới phòng ban thành công");
 
@@ -150,9 +150,9 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
                             DanhSachPhongBan.TextboxTong.Text = i.ToString();
                             DanhSachPhongBan.TextboxTong.Refresh();
                         }
-                        else MessageBox.Show("Thêm mới thất bại");*/
+                        else MessageBox.Show("Thêm mới thất bại");
                     }
-                       
+
                 }
             }
         }

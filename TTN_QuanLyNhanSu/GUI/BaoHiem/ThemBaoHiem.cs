@@ -124,7 +124,7 @@ namespace TTN_QuanLyNhanSu.GUI.BaoHiem
                 bool checkDate = DateTime.TryParse(textBoxNgayCap.Text, out temp);
                 if (checkRegex == false || checkDate == false)
                 {
-                    error += $"\n Error: Ngày Cấp có định dạng dd/mm/yyyy";
+                    error += $"\n Error: Ngày Cấp có định dạng tháng/ngày/năm: mm/dd/yyyy";
                     checkAll = false;
                 }
             }

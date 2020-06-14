@@ -78,7 +78,7 @@ namespace TTN_QuanLyNhanSu.BUS
         }
         public void Insert_1_BaoHiem(BaoHiem baoHiem)
         {
-            ChuanHoaThongTin(baoHiem);
+            //ChuanHoaThongTin(baoHiem);
             DataProvider.Instance.ExecuteNonQuery("" +
                 "insert into BaoHiem(MaNV,HoTenNV,SoBaoHiemXH,SoBaoHiemYT,NoiCap,NgayCap) " +
                 $"values('{baoHiem.MaNV}',N'{baoHiem.HoTenNV}','{baoHiem.SoBaoHiemXH}'," +
@@ -86,7 +86,7 @@ namespace TTN_QuanLyNhanSu.BUS
         }
         public void Modify_1_BaoHiem(BaoHiem baoHiem)
         {
-            ChuanHoaThongTin(baoHiem);
+            //ChuanHoaThongTin(baoHiem);
             DataProvider.Instance.ExecuteNonQuery("" +
                 "update BaoHiem " +
                 $"set SoBaoHiemXH = N'{baoHiem.SoBaoHiemXH}'," +
@@ -110,14 +110,14 @@ namespace TTN_QuanLyNhanSu.BUS
                         listBaoHiem1 = ConvertToListBaoHiem(DataProvider.Instance.ExecuteQuery("" +
                             "select * " +
                             "from BaoHiem " +
-                            $"where HoTenNV like '%{listTenNV[i]}%'"));
+                            $"where HoTenNV like N'%{listTenNV[i]}%'"));
                     }
                     else
                     {
                         listBaoHiem2 = ConvertToListBaoHiem(DataProvider.Instance.ExecuteQuery("" +
                             "select * " +
                             "from BaoHiem " +
-                            $"where HoTenNV like '%{listTenNV[i]}%'"));
+                            $"where HoTenNV like N'%{listTenNV[i]}%'"));
                         foreach (BaoHiem bh in listBaoHiem1)
                         {
                             if (listBaoHiem2.Find(x => x.MaNV == bh.MaNV) != null)
@@ -133,7 +133,7 @@ namespace TTN_QuanLyNhanSu.BUS
                 return ConvertToListBaoHiem(DataProvider.Instance.ExecuteQuery("" +
                             "select * " +
                             "from BaoHiem " +
-                            $"where HoTenNV like '%{TenNV}%'"));
+                            $"where HoTenNV like N'%{TenNV}%'"));
         }
         public DataTable DT_NhanVienKoCoBaoHiem()
         {

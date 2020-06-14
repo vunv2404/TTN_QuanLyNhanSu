@@ -27,13 +27,13 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
         /// 
         /// - xử lí dữ liệu trước khi thêm.(regex)
         /// </summary>
-        /*BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
-        PhongBanBUS contrlPhongBan = new PhongBanBUS();*/
+        BoPhanNhanSuBUS contrlBoPhan = new BoPhanNhanSuBUS();
+        PhongBanBUS contrlPhongBan = new PhongBanBUS();
 
         public ThemBoPhan()
         {
             InitializeComponent();
-            //comboBoxTenPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
+            comboBoxTenPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
             comboBoxTenPhongBan.DisplayMember = "TenPB";
             comboBoxTenPhongBan.ValueMember = "MaPhongBan";
         }
@@ -112,7 +112,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
                     {
                         DTO.BoPhan bophan = new DTO.BoPhan(textBoxMaBoPhan.Text, textBoxTenBoPhan.Text, comboBoxTenPhongBan.SelectedValue.ToString(), textBoxEmail.Text, textBoxSoDienThoai.Text, textBoxFax.Text);
 
-                        /*if (contrlBoPhan.TaoBoPhanNS(bophan))
+                        if (contrlBoPhan.TaoBoPhanNS(bophan))
                         {
                             MessageBox.Show("Thêm mới bộ phận thành công");
 
@@ -133,7 +133,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
                             DanhSachBoPhan.TextboxTong.Text = i.ToString();
                             DanhSachBoPhan.TextboxTong.Refresh();
                         }
-                        else MessageBox.Show("Thêm mới bộ phận thất bại");*/
+                        else MessageBox.Show("Thêm mới bộ phận thất bại");
 
                     }
                 }
