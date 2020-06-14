@@ -53,12 +53,7 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             maNS = BUS.GetMaNS();
             textBoxMaNhanVien.Text = maNS.ToString();
 
-            lbp = BUS.GetBoPhan();
-            comboBoxBoPhan.DataSource = lbp;
-            comboBoxBoPhan.ValueMember = "MaBoPhan";
-            comboBoxBoPhan.DisplayMember = "TenBoPhan";
-
-            lpb = BUS.GetPhongBan();
+            lpb= BUS.GetPhongBan();
             comboBoxPhongBan.DataSource = lpb;
             comboBoxPhongBan.ValueMember = "MaPhongBan";
             comboBoxPhongBan.DisplayMember = "TenPhongBan";
@@ -179,6 +174,14 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             {
                 e.Handled = true;
             }
+        }
+        private void comboBoxPhongBan_TextChanged(object sender, EventArgs e)
+        {
+            lbp = BUS.GetBoPhan(((DTO.PhongBan)comboBoxPhongBan.SelectedItem).MaPhongBan);
+            comboBoxBoPhan.DataSource = null;
+            comboBoxBoPhan.DataSource = lbp;
+            comboBoxBoPhan.ValueMember = "MaBoPhan";
+            comboBoxBoPhan.DisplayMember = "TenBoPhan";
         }
     }
 }

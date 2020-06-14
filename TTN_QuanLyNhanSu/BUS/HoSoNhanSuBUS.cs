@@ -139,9 +139,16 @@ namespace TTN_QuanLyNhanSu.BUS
                    }).ToList();
             return lbp;
         }
-        public List<BoPhan> GetBoPhan()
+        public List<BoPhan> GetBoPhan(string ma = null)
         {
-            return ConvertBP(DataProvider.Instance.ExecuteQuery("GetBoPhan"));
+            if (ma != null)
+            {
+                return ConvertBP(DataProvider.Instance.ExecuteQuery("GetBoPhan '" + ma + "'"));
+            }
+            else
+            {
+                return ConvertBP(DataProvider.Instance.ExecuteQuery("GetAllBoPhan"));
+            }
         }
         public List<PhongBan> ConvertPB(DataTable data)
         {
@@ -159,9 +166,17 @@ namespace TTN_QuanLyNhanSu.BUS
                    }).ToList();
             return lpb;
         }
-        public List<PhongBan> GetPhongBan()
+        public List<PhongBan> GetPhongBan(string ma = null)
         {
-            return ConvertPB(DataProvider.Instance.ExecuteQuery("GetPhongBan"));
+            if (ma != null)
+            {
+                return ConvertPB(DataProvider.Instance.ExecuteQuery("GetPhongBan '" + ma + "'"));
+            }
+            else
+            {
+                return ConvertPB(DataProvider.Instance.ExecuteQuery("GetAllPhongBan"));
+            }
+        
         }
         public bool AddNhanSu(HoSoNhanSu nhanSu, byte[] image)
         {

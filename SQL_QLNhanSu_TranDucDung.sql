@@ -31,7 +31,15 @@ end
 
 go
 
-create proc GetBoPhan
+alter proc GetBoPhan @ma varchar(10)
+as
+begin
+	select * from BoPhan where MaPhongban = @ma
+end 
+
+go
+
+create proc GetAllBoPhan
 as
 begin
 	select * from BoPhan
@@ -39,11 +47,21 @@ end
 
 go
 
-create proc GetPhongBan
+alter proc GetPhongBan @ma varchar(10)
+as
+begin
+	select * from PhongBan
+	where MaPhongban in (select MaPhongban from BoPhan where MaBoPhan = @ma)
+end
+
+go
+
+create proc GetAllPhongBan
 as
 begin
 	select * from PhongBan
 end
+
 
 go
 

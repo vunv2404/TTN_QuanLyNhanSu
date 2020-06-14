@@ -166,6 +166,7 @@
             this.comboBoxPhongBan.Name = "comboBoxPhongBan";
             this.comboBoxPhongBan.Size = new System.Drawing.Size(310, 25);
             this.comboBoxPhongBan.TabIndex = 39;
+            this.comboBoxPhongBan.TextChanged += new System.EventHandler(this.comboBoxPhongBan_TextChanged);
             // 
             // comboBoxBoPhan
             // 
