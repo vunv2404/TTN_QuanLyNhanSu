@@ -54,13 +54,18 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             comboBoxPhongBan.DataSource = lpb;
             comboBoxPhongBan.ValueMember = "MaPhongBan";
             comboBoxPhongBan.DisplayMember = "TenPhongBan";
+            comboBoxPhongBan.Text = NhanSuBUS.GetTenPhongNhanVien(maPhongBan);// ánh xạ mã pb sang tên pban
+
+            lbp = NhanSuBUS.GetBoPhan();
+            comboBoxBoPhan.DataSource = lbp;
+            comboBoxBoPhan.ValueMember = "MaBoPhan";
+            comboBoxBoPhan.DisplayMember = "TenBoPhan";
 
             textBoxMaNhanVien.Text = maNV;
             textBoxTenNhanVien.Text = hoTenNV;
             comboBoxGioiTinh.Text = gioiTinh;
             comboBoxChucVu.Text = chucVu;
             comboBoxBoPhan.Text = boPhan;
-            comboBoxPhongBan.Text = NhanSuBUS.GetTenPhongNhanVien( maPhongBan);// ánh xạ mã pb sang tên pban
             textBoxQueQuan.Text = queQuan;
             textBoxEmail.Text = email;
             textBoxSDT.Text = soDienThoai;
@@ -103,6 +108,38 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             else if (!Regex.IsMatch(textBoxNgaySinh.Text, @"(((0[1-9]|1[0-2])\/(0|1)[0-9]|2[0-9]|3[0-1])\/((19|20)\d\d))$"))
             {
                 MessageBox.Show("Ngày sinh nhập sai!");
+            }
+            else if (textBoxTenNhanVien.Text.ToString() == "" )
+            {
+                MessageBox.Show("Thiếu tên nhân viên!");
+            }
+            else if (comboBoxGioiTinh.Text.ToString() == "")
+            {
+                MessageBox.Show("Thiếu giới tính!");
+            }
+            else if (textBoxEmail.Text.ToString() == "" )
+            {
+                MessageBox.Show("Thiếu email!");
+            }
+            else if (textBoxSDT.Text.ToString() == "")
+            {
+                MessageBox.Show("Thiếu số điện thoại!");
+            }
+            else if (comboBoxChucVu.Text == "" )
+            {
+                MessageBox.Show("Thiếu chức vụ!");
+            }
+            else if (textBoxQueQuan.Text == "" )
+            {
+                MessageBox.Show("Thiếu quê quán!");
+            }
+            else if (comboBoxHocVi.Text == "" )
+            {
+                MessageBox.Show("Thiếu học vĩ!");
+            }
+            else if (comboBoxHocHam.Text == "")
+            {
+                MessageBox.Show("Thiếu học hàm!");
             }
             else
             {

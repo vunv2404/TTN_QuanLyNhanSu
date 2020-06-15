@@ -87,7 +87,7 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             {
                 MessageBox.Show("Thiếu số điện thoại!");
             }
-            else if (comboBoxChucVu.SelectedItem.ToString() == "")
+            else if (comboBoxChucVu.Text == "")
             {
                 MessageBox.Show("Thiếu chức vụ!");
             }
@@ -95,11 +95,11 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             {
                 MessageBox.Show("Thiếu quê quán!");
             }
-            else if (comboBoxHocVi.SelectedItem.ToString() == "")
+            else if (comboBoxHocVi.Text == "")
             {
                 MessageBox.Show("Thiếu học vĩ!");
             }
-            else if (comboBoxHocHam.SelectedItem.ToString() == "")
+            else if (comboBoxHocHam.Text == "")
             {
                 MessageBox.Show("Thiếu học hàm!");
             }
