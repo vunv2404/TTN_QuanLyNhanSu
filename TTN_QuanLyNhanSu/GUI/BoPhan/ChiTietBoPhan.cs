@@ -42,15 +42,10 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
             InitializeComponent();
 
             textBoxMaBoPhan.Enabled = false;
-        }
 
-        private void buttonCapNhat_Click(object sender, EventArgs e)
-        {
-            ID = mabophan;
-
-            InitializeComponent();
-
-            textBoxMaBoPhan.Enabled = false;
+            comboBoxTenPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
+            comboBoxTenPhongBan.DisplayMember = "TenPB";
+            comboBoxTenPhongBan.ValueMember = "MaPhongBan";
         }
 
         private void buttonCapNhat_Click(object sender, EventArgs e)
@@ -154,15 +149,14 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
 
         private void ChiTietBoPhan_Load(object sender, EventArgs e)
         {
+            string maPB = contrlBoPhan.XemChiTietBoPhanNS(ID).MaPhongBan;
+            comboBoxTenPhongBan.Text = contrlBoPhan.LayTenPB(maPB).Rows[0].Field<string>("TenPB");
+
             textBoxMaBoPhan.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).MaBoPhan;
             textBoxTenBoPhan.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).TenBoPhan;
             textBoxEmail.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).Email;
             textBoxSoDienThoai.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).DienThoai;
             textBoxFax.Text = contrlBoPhan.XemChiTietBoPhanNS(ID).Fax;
-
-            comboBoxTenPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
-            comboBoxTenPhongBan.DisplayMember = "TenPB";
-            comboBoxTenPhongBan.ValueMember = "MaPhongBan";
         }
     }
 }
