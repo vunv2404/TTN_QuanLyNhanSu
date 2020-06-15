@@ -81,6 +81,7 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         private void ThemNgay(TextBox textBox, DateTime ngay)
         {
             string str = ngay.ToShortDateString();
+            
             if (str.Length == 8)
             {
                 string[] strs = str.Split('/');
@@ -147,12 +148,12 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
 
                 hoSoNhanSu.MaNV = ID;
                 hoSoNhanSu.HoTenNV = textBoxTenNhanVien.Text;
-                hoSoNhanSu.NgaySinh = Convert.ToDateTime(textBoxNgaySinh.Text);
+                hoSoNhanSu.NgaySinh = DateTime.Parse(textBoxNgaySinh.Text);
                 hoSoNhanSu.GioiTinh = comboBoxGioiTinh.Text;
                 hoSoNhanSu.ChucVu = comboBoxChucVu.SelectedItem.ToString();
                 hoSoNhanSu.BoPhan = comboBoxBoPhan.Text;
                 hoSoNhanSu.MaPhongBan = comboBoxPhongBan.SelectedValue.ToString();// ánh xạ tên phòng ban sang mã phòng ban.
-                hoSoNhanSu.NgayVaoCoQuan = Convert.ToDateTime(textBoxNgayVaoCoQuan.Text);
+                hoSoNhanSu.NgayVaoCoQuan = DateTime.Parse(textBoxNgayVaoCoQuan.Text);
                 hoSoNhanSu.QueQuan = textBoxQueQuan.Text;
                 hoSoNhanSu.Email = textBoxEmail.Text;
                 hoSoNhanSu.SoDienThoai = textBoxSDT.Text;

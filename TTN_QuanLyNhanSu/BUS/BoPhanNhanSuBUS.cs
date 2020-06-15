@@ -58,5 +58,11 @@ namespace TTN_QuanLyNhanSu.BUS
             return DataProvider.Instance.ExecuteQuery(query).AsEnumerable().Select(m =>
            new BoPhan(m.Field<string>("MaBoPhan"), m.Field<string>("TenBoPhan"), m.Field<string>("MaPhongBan"), m.Field<string>("Email"), m.Field<string>("DienThoai"), m.Field<string>("Fax"))).ToList();
         }
+        public DataTable LayTenPB(string maPB)
+        {
+            string query = string.Format("select TenPB from PhongBan where MaPhongBan = '" + maPB + "' ");
+
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
     }
 }
