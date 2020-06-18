@@ -49,6 +49,7 @@ namespace TTN_QuanLyNhanSu.GUI.DaoTao
             textBoxNguoiPhuTrach.Text = daoTao.NguoiPhuTrach;
             textBoxChiPhi.Text = daoTao.ChiPhi.ToString();
             comboBoxTinhTrang.Text = daoTao.TrangThai;
+            buttonCapNhat.Enabled = false;
         }
 
 
