@@ -166,6 +166,7 @@ namespace TTN_QuanLyNhanSu.BUS
                    }).ToList();
             return lpb;
         }
+
         public List<PhongBan> GetPhongBan(string ma = null)
         {
             if (ma != null)
@@ -177,6 +178,12 @@ namespace TTN_QuanLyNhanSu.BUS
                 return ConvertPB(DataProvider.Instance.ExecuteQuery("GetAllPhongBan"));
             }
         
+        }
+        public DataTable DTGetPhongBan()
+        {
+            
+                return DataProvider.Instance.ExecuteQuery("select TenPB from PhongBan");
+            
         }
         public bool AddNhanSu(HoSoNhanSu nhanSu, byte[] image)
         {

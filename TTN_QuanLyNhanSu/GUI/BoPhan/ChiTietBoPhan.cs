@@ -118,7 +118,7 @@ namespace TTN_QuanLyNhanSu.GUI.BoPhan
                 {
                     DialogResult result = MessageBox.Show("Bạn có muốn sửa bộ phận?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                    if (result == System.Windows.Forms.DialogResult.Yes)
+                    if (result == DialogResult.Yes)
                     {
                         DTO.BoPhan bophan = new DTO.BoPhan();
 

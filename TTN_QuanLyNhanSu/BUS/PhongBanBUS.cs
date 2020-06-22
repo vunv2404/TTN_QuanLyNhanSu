@@ -19,7 +19,8 @@ namespace TTN_QuanLyNhanSu.BUS
         }
         public bool SuaPhongBan(PhongBan phongban)
         {
-            string query = string.Format("exec PROC_SuaPhongBan '{0}', N'{1}', '{2}', '{3}', '{4}', '{5}', '{6}' ", phongban.MaPhongBan, phongban.TenPB, phongban.NgayThanhLap, phongban.MaTruongPhong, phongban.Email, phongban.SoDienThoai, phongban.Fax);
+            string query = string.Format("exec PROC_SuaPhongBan '{0}', N'{1}', '{2}', '{3}', '{4}', '{5}', '{6}' ",
+                phongban.MaPhongBan, phongban.TenPB, phongban.NgayThanhLap, phongban.MaTruongPhong, phongban.Email, phongban.SoDienThoai, phongban.Fax);
 
             return DataProvider.Instance.ExecuteNonQuery(query) > 0;
         }

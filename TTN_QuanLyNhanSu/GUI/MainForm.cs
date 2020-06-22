@@ -200,7 +200,7 @@ namespace TTN_QuanLyNhanSu.GUI
 
             //set the member columns of the chart data source used to data bind to the X-values of the series  
             chart1.Series["Phòng Ban"].YValueMembers = "soluongnv";
-            chart1.Titles.Add("Nhân Viên Theo Phòng Ban");
+            chart1.Titles.Add("Nhân Sự-Phòng Ban");
 
 
         }

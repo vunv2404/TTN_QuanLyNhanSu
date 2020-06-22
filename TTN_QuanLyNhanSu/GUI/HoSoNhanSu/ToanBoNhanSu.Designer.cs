@@ -210,7 +210,10 @@
             this.chuyenMonDataGridViewTextBoxColumn});
             this.dataGridViewHoSoNhanSu.DataSource = this.hoSoNhanSuBindingSource;
             this.dataGridViewHoSoNhanSu.Location = new System.Drawing.Point(3, 117);
+            this.dataGridViewHoSoNhanSu.MultiSelect = false;
             this.dataGridViewHoSoNhanSu.Name = "dataGridViewHoSoNhanSu";
+            this.dataGridViewHoSoNhanSu.ReadOnly = true;
+            this.dataGridViewHoSoNhanSu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewHoSoNhanSu.Size = new System.Drawing.Size(1142, 369);
             this.dataGridViewHoSoNhanSu.TabIndex = 0;
             this.dataGridViewHoSoNhanSu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHoSoNhanSu_CellClick);

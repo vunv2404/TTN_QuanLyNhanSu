@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTN_QuanLyNhanSu.BUS;
+using TTN_QuanLyNhanSu.DAL;
 using TTN_QuanLyNhanSu.DTO;
 
 namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
@@ -50,16 +51,30 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         {
             InitializeComponent();
 
-            lpb = NhanSuBUS.GetPhongBan();
-            comboBoxPhongBan.DataSource = lpb;
-            comboBoxPhongBan.ValueMember = "MaPhongBan";
-            comboBoxPhongBan.DisplayMember = "TenPhongBan";
             comboBoxPhongBan.Text = NhanSuBUS.GetTenPhongNhanVien(maPhongBan);// ánh xạ mã pb sang tên pban
+            
+            lpb = NhanSuBUS.GetPhongBan();
+
+            comboBoxPhongBan.DataSource = lpb;
+            DataTable dataTable = NhanSuBUS.DTGetPhongBan();
+            //List tenPB = new List();
+            List<string> listTenPB = new List<string>();
+            foreach(DataRow dr in dataTable.Rows)
+            {
+                listTenPB.Add(dr[0].ToString());
+            }
+            comboBoxPhongBan.DataSource = listTenPB;
+            
+            string tenPB = DataProvider.Instance.ExecuteScalar($"select TenPB from PhongBan where MaPhongBan = '{maPhongBan}'").ToString();
+            
+            int index = comboBoxPhongBan.FindStringExact(tenPB);
+            comboBoxPhongBan.SelectedIndex = index;
 
             lbp = NhanSuBUS.GetBoPhan();
-            comboBoxBoPhan.DataSource = lbp;
-            comboBoxBoPhan.ValueMember = "MaBoPhan";
-            comboBoxBoPhan.DisplayMember = "TenBoPhan";
+            //comboBoxBoPhan.DataSource = lbp;
+            //comboBoxBoPhan.ValueMember = "MaBoPhan";
+            //comboBoxBoPhan.DisplayMember = "TenBoPhan";
+
 
             textBoxMaNhanVien.Text = maNV;
             textBoxTenNhanVien.Text = hoTenNV;
@@ -78,6 +93,8 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             ThemNgay(textBoxNgayVaoCoQuan, ngayVaoCoQuan);
             ThemNgay(textBoxNgaySinh, ngaySinh);
         }
+
+
         private void ThemNgay(TextBox textBox, DateTime ngay)
         {
             string str = ngay.ToShortDateString();
@@ -136,7 +153,7 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             }
             else if (comboBoxHocVi.Text == "" )
             {
-                MessageBox.Show("Thiếu học vĩ!");
+                MessageBox.Show("Thiếu học vị!");
             }
             else if (comboBoxHocHam.Text == "")
             {
@@ -238,11 +255,19 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
 
         private void comboBoxPhongBan_TextChanged(object sender, EventArgs e)
         {
-            lbp = NhanSuBUS.GetBoPhan(((DTO.PhongBan)comboBoxPhongBan.SelectedItem).MaPhongBan);
+            //lbp = NhanSuBUS.GetBoPhan(((DTO.PhongBan)comboBoxPhongBan.SelectedItem).MaPhongBan);
+            DataTable dataTable = DataProvider.Instance.ExecuteQuery("" +
+                $"select TenBoPhan from BoPhan where MaPhongBan in (select MaPhongBan from PhongBan where " +
+                $"TenPB = N'{comboBoxPhongBan.Text}')");
+            List<string> listTenBoPhan = new List<string>();
+            foreach(DataRow dr in dataTable.Rows)
+            {
+                listTenBoPhan.Add(dr[0].ToString());
+            }    
             comboBoxBoPhan.DataSource = null;
-            comboBoxBoPhan.DataSource = lbp;
-            comboBoxBoPhan.ValueMember = "MaBoPhan";
-            comboBoxBoPhan.DisplayMember = "TenBoPhan";
+            comboBoxBoPhan.DataSource = listTenBoPhan;
+            //comboBoxBoPhan.ValueMember = "MaBoPhan";
+            //comboBoxBoPhan.DisplayMember = "TenBoPhan";
         }
     }
 }

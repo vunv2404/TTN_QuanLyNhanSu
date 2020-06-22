@@ -200,6 +200,12 @@
     <Compile Include="GUI\HoSoNhanSu\ToanBoNhanSu.Designer.cs">
       <DependentUpon>ToanBoNhanSu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\HuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HuongDan.Designer.cs">
+      <DependentUpon>HuongDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\KhenThuong\ChiTietKhenThuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,6 +378,9 @@
     <EmbeddedResource Include="GUI\HoSoNhanSu\ToanBoNhanSu.resx">
       <DependentUpon>ToanBoNhanSu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HuongDan.resx">
+      <DependentUpon>HuongDan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\KhenThuong\ChiTietKhenThuong.resx">
       <DependentUpon>ChiTietKhenThuong.cs</DependentUpon>
     </EmbeddedResource>
@@ -463,6 +472,47 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\96609563_2432920986811277_6825875735509467136_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_assignment_ind_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_airline_seat_flat_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_store_mall_directory_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_sync_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_group_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_text_snippet_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_priority_high_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_how_to_reg_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_note_add_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_euro_symbol_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_cancel_schedule_send_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_device_hub_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-19 at 11.25.43.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
