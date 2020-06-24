@@ -74,7 +74,9 @@
             this.noiDungDataGridViewTextBoxColumn});
             this.dataGridViewToanBoHopDong.DataSource = this.hopDongNhanSuBindingSource;
             this.dataGridViewToanBoHopDong.Location = new System.Drawing.Point(0, 106);
+            this.dataGridViewToanBoHopDong.MultiSelect = false;
             this.dataGridViewToanBoHopDong.Name = "dataGridViewToanBoHopDong";
+            this.dataGridViewToanBoHopDong.ReadOnly = true;
             this.dataGridViewToanBoHopDong.Size = new System.Drawing.Size(1030, 391);
             this.dataGridViewToanBoHopDong.TabIndex = 0;
             this.dataGridViewToanBoHopDong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewToanBoHopDong_CellClick);
@@ -84,12 +86,14 @@
             this.soHopDongDataGridViewTextBoxColumn.DataPropertyName = "SoHopDong";
             this.soHopDongDataGridViewTextBoxColumn.HeaderText = "Số Hợp Đồng";
             this.soHopDongDataGridViewTextBoxColumn.Name = "soHopDongDataGridViewTextBoxColumn";
+            this.soHopDongDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // maNVDataGridViewTextBoxColumn
             // 
             this.maNVDataGridViewTextBoxColumn.DataPropertyName = "MaNV";
             this.maNVDataGridViewTextBoxColumn.HeaderText = "Mã NV";
             this.maNVDataGridViewTextBoxColumn.Name = "maNVDataGridViewTextBoxColumn";
+            this.maNVDataGridViewTextBoxColumn.ReadOnly = true;
             this.maNVDataGridViewTextBoxColumn.Width = 70;
             // 
             // hoTenNVDataGridViewTextBoxColumn
@@ -97,6 +101,7 @@
             this.hoTenNVDataGridViewTextBoxColumn.DataPropertyName = "HoTenNV";
             this.hoTenNVDataGridViewTextBoxColumn.HeaderText = "Họ Tên NV";
             this.hoTenNVDataGridViewTextBoxColumn.Name = "hoTenNVDataGridViewTextBoxColumn";
+            this.hoTenNVDataGridViewTextBoxColumn.ReadOnly = true;
             this.hoTenNVDataGridViewTextBoxColumn.Width = 150;
             // 
             // loaiHopDongDataGridViewTextBoxColumn
@@ -104,6 +109,7 @@
             this.loaiHopDongDataGridViewTextBoxColumn.DataPropertyName = "LoaiHopDong";
             this.loaiHopDongDataGridViewTextBoxColumn.HeaderText = "Loại Hợp Đồng";
             this.loaiHopDongDataGridViewTextBoxColumn.Name = "loaiHopDongDataGridViewTextBoxColumn";
+            this.loaiHopDongDataGridViewTextBoxColumn.ReadOnly = true;
             this.loaiHopDongDataGridViewTextBoxColumn.Width = 110;
             // 
             // trangThaiDataGridViewTextBoxColumn
@@ -111,12 +117,14 @@
             this.trangThaiDataGridViewTextBoxColumn.DataPropertyName = "TrangThai";
             this.trangThaiDataGridViewTextBoxColumn.HeaderText = "Trạng Thái";
             this.trangThaiDataGridViewTextBoxColumn.Name = "trangThaiDataGridViewTextBoxColumn";
+            this.trangThaiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ngayHieuLucDataGridViewTextBoxColumn
             // 
             this.ngayHieuLucDataGridViewTextBoxColumn.DataPropertyName = "NgayHieuLuc";
             this.ngayHieuLucDataGridViewTextBoxColumn.HeaderText = "Ngày Hiệu Lực";
             this.ngayHieuLucDataGridViewTextBoxColumn.Name = "ngayHieuLucDataGridViewTextBoxColumn";
+            this.ngayHieuLucDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayHieuLucDataGridViewTextBoxColumn.Width = 110;
             // 
             // ngayHetHanDataGridViewTextBoxColumn
@@ -124,6 +132,7 @@
             this.ngayHetHanDataGridViewTextBoxColumn.DataPropertyName = "NgayHetHan";
             this.ngayHetHanDataGridViewTextBoxColumn.HeaderText = "Ngày Hết Hạn";
             this.ngayHetHanDataGridViewTextBoxColumn.Name = "ngayHetHanDataGridViewTextBoxColumn";
+            this.ngayHetHanDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayHetHanDataGridViewTextBoxColumn.Width = 110;
             // 
             // noiDungDataGridViewTextBoxColumn
@@ -132,6 +141,7 @@
             this.noiDungDataGridViewTextBoxColumn.DataPropertyName = "NoiDung";
             this.noiDungDataGridViewTextBoxColumn.HeaderText = "Nội Dung";
             this.noiDungDataGridViewTextBoxColumn.Name = "noiDungDataGridViewTextBoxColumn";
+            this.noiDungDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hopDongNhanSuBindingSource
             // 

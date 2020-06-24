@@ -199,5 +199,415 @@ namespace TTN_QuanLyNhanSu.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_23_at_17_11_25 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-23 at 17.11.25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_23_at_22_17_27 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-23 at 22.17.27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_23_at_22_18_02 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-23 at 22.18.02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_23_at_22_18_30 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-23 at 22.18.30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_23_at_22_181 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-23 at 22.181", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_08_35_25 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 08.35.25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_08_35_38 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 08.35.38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_08_51_36 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 08.51.36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_12_00 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.12.00", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_12_15 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.12.15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_12_32 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.12.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_21_46 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.21.46", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_28_29 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.28.29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_28_43 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.28.43", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_30_53 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.30.53", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_35_25 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.35.25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_09_35_36 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 09.35.36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_08_36 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.08.36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_08_50 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.08.50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_081 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.081", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_09_17 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.09.17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_33_55 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.33.55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_34_08 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.34.08", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_34_27 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.34.27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_51_44 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.51.44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_51_59 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.51.59", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_52_11 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.52.11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_52_26 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.52.26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_10_57_15 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 10.57.15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_11_27_14 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 11.27.14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_11_27_24 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 11.27.24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_11_27_37 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 11.27.37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_11_27_49 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 11.27.49", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_11_28_00 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 11.28.00", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_13_27_51 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 13.27.51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_13_28_25 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 13.28.25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_13_28_39 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 13.28.39", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_13_51_04 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 13.51.04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_13_51_19 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 13.51.19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_14_25_16 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 14.25.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2020_06_24_at_14_49_45 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2020-06-24 at 14.49.45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

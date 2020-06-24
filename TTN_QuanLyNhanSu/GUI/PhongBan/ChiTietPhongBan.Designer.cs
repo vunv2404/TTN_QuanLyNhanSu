@@ -267,6 +267,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietPhongBan";
             this.Load += new System.EventHandler(this.ChiTietPhongBan_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ChiTietPhongBan_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

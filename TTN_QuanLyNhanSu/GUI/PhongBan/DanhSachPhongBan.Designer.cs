@@ -39,9 +39,6 @@
             this.buttonChiTiet = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
             this.dataGridViewDanhSachPhongBan = new System.Windows.Forms.DataGridView();
-            this.phongBanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
-            this.phongBanTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.PhongBanTableAdapter();
             this.maPhongBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenPBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayThanhLapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +46,9 @@
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.faxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phongBanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tTN_QLNhanSuDataSet = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSet();
+            this.phongBanTableAdapter = new TTN_QuanLyNhanSu.TTN_QLNhanSuDataSetTableAdapters.PhongBanTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDanhSachPhongBan)).BeginInit();
@@ -178,20 +178,6 @@
             this.dataGridViewDanhSachPhongBan.TabIndex = 0;
             this.dataGridViewDanhSachPhongBan.Click += new System.EventHandler(this.DataGridViewDanhSachPhongBan_Click);
             // 
-            // phongBanBindingSource
-            // 
-            this.phongBanBindingSource.DataMember = "PhongBan";
-            this.phongBanBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
-            // 
-            // tTN_QLNhanSuDataSet
-            // 
-            this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
-            this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // phongBanTableAdapter
-            // 
-            this.phongBanTableAdapter.ClearBeforeFill = true;
-            // 
             // maPhongBanDataGridViewTextBoxColumn
             // 
             this.maPhongBanDataGridViewTextBoxColumn.DataPropertyName = "MaPhongBan";
@@ -246,6 +232,20 @@
             this.faxDataGridViewTextBoxColumn.Name = "faxDataGridViewTextBoxColumn";
             this.faxDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // phongBanBindingSource
+            // 
+            this.phongBanBindingSource.DataMember = "PhongBan";
+            this.phongBanBindingSource.DataSource = this.tTN_QLNhanSuDataSet;
+            // 
+            // tTN_QLNhanSuDataSet
+            // 
+            this.tTN_QLNhanSuDataSet.DataSetName = "TTN_QLNhanSuDataSet";
+            this.tTN_QLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // phongBanTableAdapter
+            // 
+            this.phongBanTableAdapter.ClearBeforeFill = true;
+            // 
             // DanhSachPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,6 +256,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanhSachPhongBan";
             this.Load += new System.EventHandler(this.DanhSachPhongBan_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DanhSachPhongBan_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

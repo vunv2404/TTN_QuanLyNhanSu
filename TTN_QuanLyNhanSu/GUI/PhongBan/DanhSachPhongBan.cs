@@ -44,6 +44,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
 
         private void DanhSachPhongBan_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             // TODO: This line of code loads data into the 'tTN_QLNhanSuDataSet.PhongBan' table. You can move, or remove it, as needed.
             //this.phongBanTableAdapter.Fill(this.tTN_QLNhanSuDataSet.PhongBan);
             dataGridViewDanhSachPhongBan.DataSource = contrlPhongBan.XemTatCaPB();
@@ -111,6 +112,16 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
                 maphongban = dataGridViewDanhSachPhongBan.Rows[index].Cells["maPhongBanDataGridViewTextBoxColumn"].Value.ToString();
 
                 buttonChiTiet.Enabled = true;
+            }
+        }
+
+        private void DanhSachPhongBan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                HuongDan.FormName = "DanhSachPhongBan";
+                HuongDan huongDan = new HuongDan();
+                huongDan.ShowDialog();
             }
         }
     }

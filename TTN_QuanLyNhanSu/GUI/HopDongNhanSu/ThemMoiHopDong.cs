@@ -65,11 +65,11 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
             }
             else if(!Regex.IsMatch(textBoxNgayHieuLuc.Text, @"(((0[1-9]|1[0-2])\/(0|1)[0-9]|2[0-9]|3[0-1])\/((19|20)\d\d))$"))
             {
-                MessageBox.Show("Nhập sai ngày hiệu lực!");
+                MessageBox.Show("Nhập sai ngày hiệu lực! mm/dd/yyyy");
             }
             else if(!Regex.IsMatch(textBoxNgayHetHan.Text, @"(((0[1-9]|1[0-2])\/(0|1)[0-9]|2[0-9]|3[0-1])\/((19|20)\d\d))$"))
             {
-                MessageBox.Show("Nhập sai ngày hết hạn!");
+                MessageBox.Show("Nhập sai ngày hết hạn! mm/dd/yyyy");
             }
             else if(textBoxNoiDung.Text == "")
             {
@@ -80,7 +80,8 @@ namespace TTN_QuanLyNhanSu.GUI.HopDongNhanSu
                 DTO.HopDongNhanSu hd = new DTO.HopDongNhanSu(textBoxSoHopDong.Text, comboBoxMaNhanVien.Text,textBoxTenNhanVien.Text,comboBoxLoaiHopDong.Text,comboBoxTrangThai.Text,Convert.ToDateTime( textBoxNgayHieuLuc.Text), Convert.ToDateTime(textBoxNgayHetHan.Text), textBoxNoiDung.Text);
                 if (hopDongBUS.AddHopDong(hd))
                 {
-                    MessageBox.Show("Đã thêm!");
+                    MessageBox.Show("Đã thêm thành công!");
+                    this.Close();
                 }
                 else
                 {

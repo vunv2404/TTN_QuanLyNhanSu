@@ -118,46 +118,169 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="baseline_assignment_ind_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseline_assignment_ind_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="round_cancel_schedule_send_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\round_cancel_schedule_send_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="baseline_priority_high_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseline_priority_high_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="round_device_hub_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\round_device_hub_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="baseline_airline_seat_flat_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseline_airline_seat_flat_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screen Shot 2020-06-19 at 11.25.43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-19 at 11.25.43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="96609563_2432920986811277_6825875735509467136_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\96609563_2432920986811277_6825875735509467136_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="baseline_text_snippet_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseline_text_snippet_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screen Shot 2020-06-24 at 11.27.37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 11.27.37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="round_euro_symbol_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\round_euro_symbol_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screen Shot 2020-06-24 at 09.28.29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.28.29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="baseline_store_mall_directory_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseline_store_mall_directory_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="baseline_group_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseline_group_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="round_how_to_reg_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\round_how_to_reg_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screen Shot 2020-06-24 at 11.27.24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 11.27.24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="round_note_add_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\round_note_add_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Screen Shot 2020-06-24 at 09.28.43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.28.43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 08.35.38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 08.35.38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 08.51.36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 08.51.36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="baseline_sync_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baseline_sync_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screen Shot 2020-06-19 at 11.25.43" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screen Shot 2020-06-19 at 11.25.43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screen Shot 2020-06-24 at 11.27.14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 11.27.14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.12.32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.12.32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 11.27.49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 11.27.49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-23 at 17.11.25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-23 at 17.11.25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 11.28.00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 11.28.00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.34.27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.34.27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 13.28.25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 13.28.25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_priority_high_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_priority_high_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_how_to_reg_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_how_to_reg_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 13.51.19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 13.51.19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.21.46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.21.46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.08.361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 13.28.39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 13.28.39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.08.36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.08.36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 08.35.25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 08.35.25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.33.55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.33.55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.51.44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.51.44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_cancel_schedule_send_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_cancel_schedule_send_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.12.00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.12.00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 13.51.04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 13.51.04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_group_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_group_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-23 at 22.18.30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-23 at 22.18.30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 14.25.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 14.25.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_store_mall_directory_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_store_mall_directory_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-23 at 22.18.02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-23 at 22.18.02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.09.17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.09.17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.51.59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.51.59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_text_snippet_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_text_snippet_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.35.25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.35.25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.12.15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.12.15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-23 at 22.181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-23 at 22.18.301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.57.15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.57.15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-23 at 22.17.27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-23 at 22.17.27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.30.53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.30.53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.52.11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.52.11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_device_hub_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_device_hub_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.34.08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.34.08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.52.26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.52.26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_airline_seat_flat_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_airline_seat_flat_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 09.35.36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 09.35.36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 13.27.51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 13.27.51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_euro_symbol_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_euro_symbol_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_assignment_ind_black_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_assignment_ind_black_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 10.08.50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 10.08.50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2020-06-24 at 14.49.45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2020-06-24 at 14.49.45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

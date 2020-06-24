@@ -166,6 +166,7 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
 
         private void ChiTietPhongBan_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             textBoxMaPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).MaPhongBan;
             textBoxTenPhongBan.Text = contrlPhongBan.XemChiTietPB(ID).TenPB;
             textBoxNgayThanhLap.Text = contrlPhongBan.XemChiTietPB(ID).NgayThanhLap.ToString();
@@ -173,6 +174,16 @@ namespace TTN_QuanLyNhanSu.GUI.PhongBan
             textBoxEmail.Text = contrlPhongBan.XemChiTietPB(ID).Email;
             textBoxSoDienThoai.Text = contrlPhongBan.XemChiTietPB(ID).SoDienThoai;
             textBoxFax.Text = contrlPhongBan.XemChiTietPB(ID).Fax;
+        }
+
+        private void ChiTietPhongBan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                HuongDan.FormName = "CTPB";
+                HuongDan huongDan = new HuongDan();
+                huongDan.ShowDialog();
+            }
         }
     }
 }

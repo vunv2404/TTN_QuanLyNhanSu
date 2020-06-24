@@ -514,5 +514,128 @@
   <ItemGroup>
     <None Include="Resources\Screen Shot 2020-06-19 at 11.25.43.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-23 at 17.11.25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-23 at 22.17.27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-23 at 22.18.30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-23 at 22.18.301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-23 at 22.18.02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 08.35.38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 08.35.25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 08.51.36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.12.00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.12.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.12.15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.21.46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.30.53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.28.29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.35.25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.28.43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 09.35.36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.08.36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.08.361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.09.17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.08.50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.33.55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.34.27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.34.08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.51.44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.51.59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.57.15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.52.26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 10.52.11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 11.27.14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 11.27.37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 11.27.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 11.27.49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 11.28.00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 13.27.51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 13.28.39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 13.28.25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 13.51.19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 13.51.04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 14.25.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2020-06-24 at 14.49.45.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

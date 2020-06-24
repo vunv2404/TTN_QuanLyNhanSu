@@ -41,7 +41,15 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         public ChiTietNhanSu()
         {
             InitializeComponent();
-            image = null;
+            
+            if (pictureBoxNhanSu.Image != null)
+            {
+                image = (byte[])(new ImageConverter()).ConvertTo(pictureBoxNhanSu.Image, typeof(byte[]));
+            }
+            else
+            {
+                image = null;
+            }
 
         }
 
@@ -51,13 +59,12 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
         {
             InitializeComponent();
 
-            comboBoxPhongBan.Text = NhanSuBUS.GetTenPhongNhanVien(maPhongBan);// ánh xạ mã pb sang tên pban
+            comboBoxPhongBan.Text = NhanSuBUS.GetTenPhongNhanVien(maPhongBan);
             
             lpb = NhanSuBUS.GetPhongBan();
 
             comboBoxPhongBan.DataSource = lpb;
             DataTable dataTable = NhanSuBUS.DTGetPhongBan();
-            //List tenPB = new List();
             List<string> listTenPB = new List<string>();
             foreach(DataRow dr in dataTable.Rows)
             {
@@ -71,16 +78,14 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             comboBoxPhongBan.SelectedIndex = index;
 
             lbp = NhanSuBUS.GetBoPhan();
-            //comboBoxBoPhan.DataSource = lbp;
-            //comboBoxBoPhan.ValueMember = "MaBoPhan";
-            //comboBoxBoPhan.DisplayMember = "TenBoPhan";
-
-
+            string a = boPhan;
             textBoxMaNhanVien.Text = maNV;
             textBoxTenNhanVien.Text = hoTenNV;
             comboBoxGioiTinh.Text = gioiTinh;
             comboBoxChucVu.Text = chucVu;
-            comboBoxBoPhan.Text = boPhan;
+
+            comboBoxBoPhan.Text = lbp.ToString();
+
             textBoxQueQuan.Text = queQuan;
             textBoxEmail.Text = email;
             textBoxSDT.Text = soDienThoai;
@@ -169,7 +174,8 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
                 hoSoNhanSu.GioiTinh = comboBoxGioiTinh.Text;
                 hoSoNhanSu.ChucVu = comboBoxChucVu.SelectedItem.ToString();
                 hoSoNhanSu.BoPhan = comboBoxBoPhan.Text;
-                hoSoNhanSu.MaPhongBan = comboBoxPhongBan.SelectedValue.ToString();// ánh xạ tên phòng ban sang mã phòng ban.
+                //hoSoNhanSu.MaPhongBan = comboBoxPhongBan.SelectedValue.ToString();// ánh xạ tên phòng ban sang mã phòng ban.
+                hoSoNhanSu.MaPhongBan = DataProvider.Instance.ExecuteScalar($"select MaPhongBan from PhongBan where TenPB = N'{comboBoxPhongBan.Text}'").ToString();
                 hoSoNhanSu.NgayVaoCoQuan = DateTime.Parse(textBoxNgayVaoCoQuan.Text);
                 hoSoNhanSu.QueQuan = textBoxQueQuan.Text;
                 hoSoNhanSu.Email = textBoxEmail.Text;
@@ -255,7 +261,6 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
 
         private void comboBoxPhongBan_TextChanged(object sender, EventArgs e)
         {
-            //lbp = NhanSuBUS.GetBoPhan(((DTO.PhongBan)comboBoxPhongBan.SelectedItem).MaPhongBan);
             DataTable dataTable = DataProvider.Instance.ExecuteQuery("" +
                 $"select TenBoPhan from BoPhan where MaPhongBan in (select MaPhongBan from PhongBan where " +
                 $"TenPB = N'{comboBoxPhongBan.Text}')");
@@ -266,8 +271,6 @@ namespace TTN_QuanLyNhanSu.GUI.HoSoNhanSu
             }    
             comboBoxBoPhan.DataSource = null;
             comboBoxBoPhan.DataSource = listTenBoPhan;
-            //comboBoxBoPhan.ValueMember = "MaBoPhan";
-            //comboBoxBoPhan.DisplayMember = "TenBoPhan";
         }
     }
 }
