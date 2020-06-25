@@ -27,14 +27,10 @@ namespace TTN_QuanLyNhanSu.GUI
             else if(FormName == "DanhSachPhongBan")
             {
                 tabHuongDan.SelectedTab = tabPhongBan;
-                if (FormName.Contains("CTPB") == true)
-                {
-                    tabControlPB.SelectedTab = tabChiTietPhongBan;
-                }
-                else if(FormName.Contains("THEMPB") == true)
-                {
-                    tabControlPB.SelectedTab = tabThemPhongBan;
-                }
+            }
+            else if (FormName == "CTPB")
+            {
+                tabControlPB.SelectedTab = tabChiTietPhongBan;
             }
             else if (FormName == "BaoHiem")
             {

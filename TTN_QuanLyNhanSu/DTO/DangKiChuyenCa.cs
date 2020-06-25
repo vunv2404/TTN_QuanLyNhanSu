@@ -19,8 +19,7 @@ namespace TTN_QuanLyNhanSu.DTO
         private string trangThai;
 
         public DangKiChuyenCa() { }
-        public DangKiChuyenCa(string ma,string maNV, string hoTenNV, string caCu, string caMoi, DateTime tuNgay,
-            DateTime denNgay, string liDo, string trangThai)
+        public DangKiChuyenCa(string ma,string maNV, string hoTenNV, string caCu, string caMoi, DateTime tuNgay,DateTime denNgay, string liDo, string trangThai)
         {
             this.ma = ma;
             this.maNV = maNV;

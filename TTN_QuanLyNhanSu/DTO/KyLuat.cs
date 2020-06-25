@@ -15,9 +15,7 @@ namespace TTN_QuanLyNhanSu.DTO
         private string noiDung;
         private string hinhThuc;
         private string trangThai;
-
         public KyLuat() { }
-
         public KyLuat(string soQuyetDinh, DateTime ngayHieuLuc, DateTime ngayHetHan, string liDo,
             string noiDung, string hinhThuc, string trangThai)
         {

@@ -19,9 +19,7 @@ namespace TTN_QuanLyNhanSu.DTO
         private decimal phuCap;
         private decimal thueThuNhap;
         private decimal tongLuongNhan;
-
         public Luong() { }
-
         public Luong(string maNV, string soQuyetDinh, DateTime ngayKi, DateTime ngayHieuLuc, decimal mucLuong
             , float heSo, int tongNgayCong, decimal congLamThemGio, decimal phuCap, decimal thueThuNhap, decimal tongLuongNhan)
         {

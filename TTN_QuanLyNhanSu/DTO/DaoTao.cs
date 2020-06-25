@@ -17,7 +17,6 @@ namespace TTN_QuanLyNhanSu.DTO
         private string trangThai;
 
         public DaoTao() { }
-
         public DaoTao(string maDaoTao, DateTime ngayLap, string mucDich, int soLuong, string nguoiPhuTrach,
             decimal chiPhi, string trangThai) 
         {
@@ -28,7 +27,6 @@ namespace TTN_QuanLyNhanSu.DTO
             this.nguoiPhuTrach = nguoiPhuTrach;
             this.chiPhi = chiPhi;
             this.trangThai = trangThai;
-
         }
 
         public string MaDaoTao { get => maDaoTao; set => maDaoTao = value; }

@@ -17,7 +17,6 @@ namespace TTN_QuanLyNhanSu.DTO
         private string trangThai;
 
         public KhenThuong() { }
-
         public KhenThuong(string soQuyetDinh, DateTime ngayHieuLuc, DateTime ngayHetHan, string noiDung, 
             string hinhThuc, decimal soTien, string trangThai )
         {
